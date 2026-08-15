@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Rajdhani", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  --color-primary-background: #0c0d10;
+  --color-secondary-background: #17181c;
+  --color-brand-accent: #ff2a2a;
+  --color-simply-accent: #00d9ff;
+  --color-brand-accent-light: #fc5a5a;
+  --color-simply-accent-dark: #014753;
+  --color-primary-text: #ffffff;
+  --color-secondary-text: #a0a3ac;
+  --color-border-gray: #26282e;
+}

@@ -1,25 +1,34 @@
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header__container container">
-        <div className="logo">
-          <a className="logo__link link" href="/">
-            Fire <span className="text__accent--brand">Wheel</span>
+    <header className="border border-b-border-gray">
+      <div className="flex flex-row px-16 justify-between">
+        <div className="">
+          <a
+            className="font-primary text-[32px] font-black italic text-brand-accent"
+            href="/"
+          >
+            Fire<span className="text-primary-text">Wheel</span>
           </a>
         </div>
-        <nav className="header__nav nav">
-          <ul className="nav__list list">
-            <li className="nav__item list__item">
-              <a className="nav__link link" href="#">
-                <button className="nav__button button__nav" type="button">
-                  Inventory
+        <nav className="flex">
+          <ul className="flex flex-row gap-8 text-primary-text font-medium text-sm font-secondary">
+            <li className="flex block-full">
+              <a className="block content-center" href="#">
+                <button
+                  className="block-full px-4 hover:bg-border-gray"
+                  type="button"
+                >
+                  Features
                 </button>
               </a>
             </li>
-            <li className="nav__item list__item">
-              <a className="nav__link link" href="#">
-                <button className="nav__button button__nav" type="button">
-                  Admin
+            <li className="flex block-full">
+              <a className="block content-center" href="#">
+                <button
+                  className="block-full px-4 hover:bg-border-gray"
+                  type="button"
+                >
+                  Cart
                 </button>
               </a>
             </li>
