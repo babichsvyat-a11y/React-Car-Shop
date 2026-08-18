@@ -5,7 +5,7 @@ const Info = () => {
         our advantages
       </h2>
       <ul className="font-secondary text-primary-text flex flex-row gap-2 flex-wrap justify-center">
-        <li className="flex flex-row gap-2 p-5 bg-secondary-background">
+        <li className="flex flex-row gap-2 p-5 bg-secondary-background hover:scale-105 transition delay-100 duration-200 easy-in">
           <div className="flex flex-row">
             <img
               className=""
@@ -24,7 +24,7 @@ const Info = () => {
             </p>
           </div>
         </li>
-        <li className="flex flex-row gap-2 p-5 bg-secondary-background">
+        <li className="flex flex-row gap-2 p-5 bg-secondary-background hover:scale-105 transition delay-100 duration-200 easy-in">
           <div className="flex flex-row">
             <img
               className=""
@@ -43,7 +43,7 @@ const Info = () => {
             </p>
           </div>
         </li>
-        <li className="flex flex-row gap-2 p-5 bg-secondary-background">
+        <li className="flex flex-row gap-2 p-5 bg-secondary-background hover:scale-105 transition delay-100 duration-200 easy-in">
           <div className="flex flex-row">
             <img
               className=""

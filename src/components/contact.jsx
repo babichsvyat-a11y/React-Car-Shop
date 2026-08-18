@@ -1,15 +1,15 @@
 const Contact = () => {
   return (
-    <section className="text-primary-text font-secondary">
-      <h2 className="px-[10%] py-10 uppercase text-3xl font-semibold text-center">
+    <section className="text-primary-text font-secondary mb-10 flex flex-col items-center-safe">
+      <h2 className=" py-10 uppercase text-3xl font-semibold text-center">
         book a test drive
       </h2>
-      <div className="flex flex-row gap-10 px-[5%] py-10 mx-[15%] bg-secondary-background justify-center">
+      <div className="flex flex-row gap-10 px-[5%] py-10 mx- bg-secondary-background justify-center flex-wrap">
         <div className="flex flex-col gap-4">
           <h3 className="uppercase text-xl font-semibold text-center">
             the best environment for your emotions
           </h3>
-          <ul className=" text-xs flex flex-col gap-4">
+          <ul className=" text-sm text-secondary-text font-normal flex flex-col gap-4">
             <li className="flex flex-row gap-2">
               <img
                 className=""
@@ -47,22 +47,24 @@ const Contact = () => {
             <h3 className="uppercase text-xl font-semibold text-center">
               Share your contact info
             </h3>
-            <p className="text-xs text-center">Your car is ready for you !!</p>
+            <p className="text-sm text-secondary-text text-center">
+              Your car is ready for you !!
+            </p>
             <input
-              className="bg-white border-simply-accent-light border-2 rounded-xl text-secondary-text font-secondary text-base pl-4"
+              className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-120 focus:border-brand-accent-light"
               name="user_name"
               placeholder="Your name"
               type="text"
             />
             <input
-              className="bg-white border-simply-accent-light border-2 rounded-xl text-secondary-text font-secondary text-base pl-4"
+              className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-120 focus:border-brand-accent-light"
               name=" user_tel"
               placeholder="Your number"
               type="tel"
             />
 
             <button
-              className="font-secondary text-primary-text uppercase tracking-tighter font-semibold text-[12px] px-3.5 py-2 bg-brand-accent hover:bg-brand-accent-dark  rounded-md"
+              className="font-secondary text-primary-text uppercase tracking-tighter font-semibold text-[12px] px-3.5 py-2 bg-brand-accent hover:bg-brand-accent-dark hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer rounded-md"
               type="submit"
             >
               start your engine, chief !

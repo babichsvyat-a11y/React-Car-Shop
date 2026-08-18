@@ -11,24 +11,24 @@ const Header = () => {
           </a>
         </div>
         <nav className="flex">
-          <ul className="flex flex-row gap-[10%] text-primary-text font-medium text-sm font-secondary">
+          <ul className="flex flex-row gap-[10%] text-primary-text font-semibold text-sm font-secondary">
             <li className="flex block-full">
               <a className="block content-center" href="#">
                 <button
-                  className="block-full px-4 hover:bg-border-gray"
+                  className="block-full px-4 hover:bg-border-gray uppercase hover:text-brand-accent-dark transition delay-100 duration-200 easy-in cursor-pointer"
                   type="button"
                 >
-                  Features
+                  catalog
                 </button>
               </a>
             </li>
             <li className="flex block-full">
               <a className="block content-center" href="#">
                 <button
-                  className="block-full px-4 hover:bg-border-gray"
+                  className="block-full px-4 hover:bg-border-gray uppercase hover:text-brand-accent-dark transition delay-100 duration-200 easy-in cursor-pointer"
                   type="button"
                 >
-                  Cart
+                  cart
                 </button>
               </a>
             </li>

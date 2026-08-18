@@ -11,13 +11,13 @@ const Footer = () => {
               Fire<span className="text-primary-text">Wheel</span>
             </a>
           </div>
-          <p className="italic font-light">
+          <p className="italic font-light text-secondary-text">
             "Code is like DNA, but spun from our thoughts, desires and dreams"
           </p>
         </div>
         <div className="flex flex-col gap-2">
           <nav className="">
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-2 text-sm">
               <li className="">
                 <a className="" href="https://github.com/babichsvyat-a11y">
                   <button
@@ -54,7 +54,7 @@ const Footer = () => {
             </ul>
           </nav>
 
-          <p class="">
+          <p class="text-secondary-text text-sm">
             &copy; 2026 RunDNA. All rights reserved. Private Policy
           </p>
         </div>
