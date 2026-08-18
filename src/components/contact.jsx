@@ -49,13 +49,13 @@ const Contact = () => {
             </h3>
             <p className="text-xs text-center">Your car is ready for you !!</p>
             <input
-              className="bg-white border-simply-accent-light border-2 rounded-xl text-secondary-text font-secondary text-base pl-2"
+              className="bg-white border-simply-accent-light border-2 rounded-xl text-secondary-text font-secondary text-base pl-4"
               name="user_name"
               placeholder="Your name"
               type="text"
             />
             <input
-              className="bg-white border-simply-accent-light border-2 rounded-xl text-secondary-text font-secondary text-base pl-2"
+              className="bg-white border-simply-accent-light border-2 rounded-xl text-secondary-text font-secondary text-base pl-4"
               name=" user_tel"
               placeholder="Your number"
               type="tel"
