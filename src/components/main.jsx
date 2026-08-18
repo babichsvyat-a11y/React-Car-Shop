@@ -1,108 +1,11 @@
 import Poster from "./poster";
+import Top from "./top";
 
 const Main = () => {
   return (
     <main>
       <Poster />
-      <section className="top">
-        <div className="top__container container">
-          <h2 className="top__title">our top models</h2>
-          <ul className="top__list list">
-            <li className="card list__item">
-              <div className="card__container">
-                <div className="card__title-box">
-                  <h3 className="card__title text__uppercase">venom gt</h3>
-                </div>
-                <div className="card__info">
-                  <div className="card__info--power">
-                    <h4 className="card__info--power-text text__uppercase">
-                      720<span className="text__small">hp</span>
-                    </h4>
-                  </div>
-                  <div className="card__info--acsel">
-                    <h4 className="card__info--acsel-time text__uppercase">
-                      3.1<span className="text__small">s</span>
-                    </h4>
-                    <p className="card__info--acsel-text">0-100 km/h</p>
-                  </div>
-                </div>
-              </div>
-              <button className="button__brand text__uppercase" type="button">
-                details
-              </button>
-            </li>
-            <li className="card list__item">
-              <div className="card__container">
-                <div className="card__title-box">
-                  <h3 className="card__title text__uppercase">venom gt</h3>
-                </div>
-                <div className="card__info">
-                  <div className="card__info--power">
-                    <h4 className="card__info--power-text text__uppercase">
-                      720<span className="text__small">hp</span>
-                    </h4>
-                  </div>
-                  <div className="card__info--acsel">
-                    <h4 className="card__info--acsel-time text__uppercase">
-                      3.1<span className="text__small">s</span>
-                    </h4>
-                    <p className="card__info--acsel-text">0-100 km/h</p>
-                  </div>
-                </div>
-              </div>
-              <button className="button__brand text__uppercase" type="button">
-                details
-              </button>
-            </li>
-            <li className="card list__item">
-              <div className="card__container">
-                <div className="card__title-box">
-                  <h3 className="card__title text__uppercase">venom gt</h3>
-                </div>
-                <div className="card__info">
-                  <div className="card__info--power">
-                    <h4 className="card__info--power-text text__uppercase">
-                      720<span className="text__small">hp</span>
-                    </h4>
-                  </div>
-                  <div className="card__info--acsel">
-                    <h4 className="card__info--acsel-time text__uppercase">
-                      3.1<span className="text__small">s</span>
-                    </h4>
-                    <p className="card__info--acsel-text">0-100 km/h</p>
-                  </div>
-                </div>
-              </div>
-              <button className="button__brand text__uppercase" type="button">
-                details
-              </button>
-            </li>
-            <li className="card list__item">
-              <div className="card__container">
-                <div className="card__title-box">
-                  <h3 className="card__title text__uppercase">venom gt</h3>
-                </div>
-                <div className="card__info">
-                  <div className="card__info--power">
-                    <h4 className="card__info--power-text text__uppercase">
-                      720<span className="text__small">hp</span>
-                    </h4>
-                  </div>
-                  <div className="card__info--acsel">
-                    <h4 className="card__info--acsel-time text__uppercase">
-                      3.1<span className="text__small">s</span>
-                    </h4>
-                    <p className="card__info--acsel-text">0-100 km/h</p>
-                  </div>
-                </div>
-              </div>
-              <button className="button__brand text__uppercase" type="button">
-                details
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <Top />
       <section className="info">
         <div className="info__container container">
           <ul className="info__list list">
