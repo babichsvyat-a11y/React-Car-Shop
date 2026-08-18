@@ -1,7 +1,7 @@
-const Poster = () => {
+const PosterSection = () => {
   return (
     <section className="">
-      <div className="bg-[url(/assets/icons/main.gif)] bg-no-repeat bg-cover bg-center border-y-4 border-brand-accent">
+      <div className="bg-[url(@/shared/assets/gif/main.gif)] bg-no-repeat bg-cover bg-center border-y-4 border-brand-accent">
         <div className="flex flex-col gap-3 max-w-110  py-[10%] ml-[10%] ">
           <h1 className="font-primary text-8xl font-black text-primary-text uppercase leading-none">
             <span className=" text-simply-accent">unleash</span> the speed
@@ -25,4 +25,4 @@ const Poster = () => {
   );
 };
 
-export default Poster;
+export default PosterSection;
