@@ -1,37 +1,52 @@
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__container">
-        <div className="footer__box--left">
-          <div className="logo">
-            <a className="logo__link link" href="/">
-              Fire <span className="text__accent--brand">Wheel</span>
+    <footer className=" text-primary-text font-medium text-sm font-secondary border-t-brand-accent border-t-4">
+      <div className="flex flex-row justify-between px-[10%] py-10">
+        <div className="flex flex-col gap-5">
+          <div className="">
+            <a
+              className="font-primary text-[32px] font-black italic text-brand-accent"
+              href="/"
+            >
+              Fire<span className="text-primary-text">Wheel</span>
             </a>
           </div>
-          <p className="footer__text">
-            Code is like DNA, but spun from our thoughts, desires and dreams
+          <p className="italic font-light">
+            "Code is like DNA, but spun from our thoughts, desires and dreams"
           </p>
         </div>
-        <div className="footer__box--right">
-          <nav className="footer__nav nav">
-            <ul className="nav__list list">
-              <li className="nav__item list__item">
-                <a className="nav__link link " href="#">
-                  <button className="nav__button button__nav" type="button">
+        <div className="flex flex-col gap-2">
+          <nav className="">
+            <ul className="flex flex-col gap-2">
+              <li className="">
+                <a className="" href="https://github.com/babichsvyat-a11y">
+                  <button
+                    className="hover:text-brand-accent-dark transition delay-100 duration-200 easy-in cursor-pointer"
+                    type="button"
+                  >
                     GitHub
                   </button>
                 </a>
               </li>
-              <li className="nav__item list__item">
-                <a className="nav__link link " href="#">
-                  <button className="nav__button button__nav" type="button">
+              <li className="">
+                <a
+                  className=""
+                  href="https://www.linkedin.com/in/svyatoslav-babych-72a3a83a0/"
+                >
+                  <button
+                    className="hover:text-brand-accent-dark transition delay-100 duration-200 easy-in cursor-pointer"
+                    type="button"
+                  >
                     LinkedIn
                   </button>
                 </a>
               </li>
-              <li className="nav__item list__item">
-                <a className="nav__link link " href="#">
-                  <button className="nav__button button__nav" type="button">
+              <li className="">
+                <a className="" href="https://www.instagram.com/da.baby4_/">
+                  <button
+                    className="hover:text-brand-accent-dark transition delay-100 duration-200 easy-in cursor-pointer"
+                    type="button"
+                  >
                     Instagram
                   </button>
                 </a>
@@ -39,7 +54,7 @@ const Footer = () => {
             </ul>
           </nav>
 
-          <p class="footer__confidition">
+          <p class="">
             &copy; 2026 RunDNA. All rights reserved. Private Policy
           </p>
         </div>
