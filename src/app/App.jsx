@@ -1,9 +1,9 @@
-import Shop from "./components/shop";
+import ShopPage from "@/pages/ShopPage";
 
 const App = () => {
   return (
     <>
-      <Shop />
+      <ShopPage />
     </>
   );
 };
