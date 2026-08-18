@@ -4,7 +4,7 @@ const Top = () => {
       <h2 className="px-[10%] py-10 uppercase text-3xl font-semibold text-center">
         our top models
       </h2>
-      <ul className="grid xl:grid-cols-4 lg:gap-x-[5%] gap-x-[10%] gap-y-[5%] px-[10%] lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+      <ul className="grid xl:grid-cols-4 lg:gap-x-[5%] gap-x-[10%] md:gap-y-[5%] gap-y-8 px-[10%] lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
         <li className="bg-secondary-background flex flex-col h-150 md:h-87.5 sm:h-150">
           <div className="py-2 px-3 flex flex-col justify-between bg-[url(/assets/icons/top_car1.svg)] bg-no-repeat bg-cover bg-bottom flex-2">
             <div className="after:block after:bg-brand-accent after:w-[25%] after:h-1">
