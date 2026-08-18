@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header className="border border-b-border-gray">
-      <div className="flex flex-row px-16 justify-between">
+      <div className="flex flex-row px-[5%] justify-between">
         <div className="">
           <a
             className="font-primary text-[32px] font-black italic text-brand-accent"
@@ -11,7 +11,7 @@ const Header = () => {
           </a>
         </div>
         <nav className="flex">
-          <ul className="flex flex-row gap-8 text-primary-text font-medium text-sm font-secondary">
+          <ul className="flex flex-row gap-[10%] text-primary-text font-medium text-sm font-secondary">
             <li className="flex block-full">
               <a className="block content-center" href="#">
                 <button

@@ -6,9 +6,11 @@
   --font-secondary: "Inter", sans-serif;
   --color-primary-background: #0c0d10;
   --color-secondary-background: #17181c;
-  --color-brand-accent: #ff2a2a;
+  --color-brand-accent: #d02020;
   --color-simply-accent: #00d9ff;
+  --color-simply-accent-light: #b5f4ff;
   --color-brand-accent-light: #fc5a5a;
+  --color-brand-accent-dark: #822f2f;
   --color-simply-accent-dark: #014753;
   --color-primary-text: #ffffff;
   --color-secondary-text: #a0a3ac;
