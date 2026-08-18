@@ -43,22 +43,31 @@ const Contact = () => {
           </ul>
         </div>
         <div className="">
-          <form className="flex flex-col gap-4" action="" method="get">
+          <form
+            id="contactForm"
+            className="flex flex-col gap-4"
+            action=""
+            method="get"
+          >
             <h3 className="uppercase text-xl font-semibold text-center">
               Share your contact info
             </h3>
             <p className="text-sm text-secondary-text text-center">
               Your car is ready for you !!
             </p>
+            <label className="hidden" htmlFor="name"></label>
             <input
               className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-120 focus:border-brand-accent-light"
               name="user_name"
+              id="name"
               placeholder="Your name"
               type="text"
             />
+            <label className="hidden" htmlFor="number"></label>
             <input
               className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-120 focus:border-brand-accent-light"
               name=" user_tel"
+              id="number"
               placeholder="Your number"
               type="tel"
             />
