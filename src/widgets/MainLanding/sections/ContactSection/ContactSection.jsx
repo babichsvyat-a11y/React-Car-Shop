@@ -201,7 +201,7 @@ const ContactSection = () => {
             </p>
             <label className="hidden" htmlFor="name"></label>
             <input
-              className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-120 focus:border-brand-accent-light"
+              className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-105 focus:border-brand-accent-light"
               name="user_name"
               id="name"
               placeholder="Your name"
@@ -209,7 +209,7 @@ const ContactSection = () => {
             />
             <label className="hidden" htmlFor="number"></label>
             <input
-              className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-120 focus:border-brand-accent-light"
+              className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-105 focus:border-brand-accent-light"
               name=" user_tel"
               id="number"
               placeholder="Your number"
