@@ -2,6 +2,8 @@ const totalAuto = [
   {
     id: 51,
     name: "amg c 63 s",
+    style: "lap",
+    rating: 4.2,
     acceleration0To100: 3.9,
     brand: "Mercedes-AMG",
     model: "C 63 S E PERFORMANCE",
@@ -14,15 +16,11 @@ const totalAuto = [
     },
     powertrain: {
       type: "Plug-in Hybrid (PHEV)",
-      engineVolume: 2.0, // liters (M139l Turbo)
-      batteryCapacity: 6.1, // kWh
-      power: {
-        totalHp: 680,
-        totalKw: 500,
-        torqueNm: 1020,
-      },
-      fuelConsumption: 6.9, // l/100 km (combined)
-      electricRange: 13, // km (pure EV range)
+      engineVolume: 2.0,
+      batteryCapacity: 6.1,
+      power: { totalHp: 680, totalKw: 500, torqueNm: 1020 },
+      fuelConsumption: 6.9,
+      electricRange: 13,
     },
     drivetrain: {
       transmission: "9G-TRONIC AMG SPEEDSHIFT MCT",
@@ -32,6 +30,8 @@ const totalAuto = [
   {
     id: 52,
     name: "srt demon 170",
+    style: "drag",
+    rating: 4.9,
     acceleration0To100: 1.7,
     brand: "Dodge",
     model: "Challenger SRT Demon 170",
@@ -44,14 +44,10 @@ const totalAuto = [
     },
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 6.2, // liters (Supercharged HEMI V8)
-      batteryCapacity: null, // N/A for ICE
-      power: {
-        totalHp: 1025, // on E85 ethanol blend
-        totalKw: 764,
-        torqueNm: 1281,
-      },
-      fuelConsumption: 21.4, // l/100 km (approximate combined)
+      engineVolume: 6.2,
+      batteryCapacity: null,
+      power: { totalHp: 1025, totalKw: 764, torqueNm: 1281 },
+      fuelConsumption: 21.4,
       electricRange: 0,
     },
     drivetrain: {
@@ -62,6 +58,8 @@ const totalAuto = [
   {
     id: 53,
     name: "r8 V10 Type 4s",
+    style: "lap",
+    rating: 4.7,
     acceleration0To100: 3.1,
     brand: "Audi",
     model: "R8 V10 performance quattro (Type 4S)",
@@ -74,14 +72,10 @@ const totalAuto = [
     },
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.2, // liters (Naturally Aspirated V10)
+      engineVolume: 5.2,
       batteryCapacity: null,
-      power: {
-        totalHp: 620,
-        totalKw: 456,
-        torqueNm: 580,
-      },
-      fuelConsumption: 13.1, // l/100 km (WLTP combined)
+      power: { totalHp: 620, totalKw: 456, torqueNm: 580 },
+      fuelConsumption: 13.1,
       electricRange: 0,
     },
     drivetrain: {
@@ -92,6 +86,8 @@ const totalAuto = [
   {
     id: 54,
     name: "chiron super sport",
+    style: "drag",
+    rating: 5.0,
     acceleration0To100: 2.4,
     brand: "Bugatti",
     model: "Chiron Super Sport",
@@ -104,14 +100,10 @@ const totalAuto = [
     },
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 8.0, // liters (Quad-Turbocharged W16)
+      engineVolume: 8.0,
       batteryCapacity: null,
-      power: {
-        totalHp: 1600,
-        totalKw: 1176,
-        torqueNm: 1600,
-      },
-      fuelConsumption: 21.47, // l/100 km (WLTP combined)
+      power: { totalHp: 1600, totalKw: 1176, torqueNm: 1600 },
+      fuelConsumption: 21.47,
       electricRange: 0,
     },
     drivetrain: {
@@ -122,6 +114,8 @@ const totalAuto = [
   {
     id: 1,
     name: "911 GT3 RS",
+    style: "lap",
+    rating: 5.0,
     acceleration0To100: 3.2,
     brand: "Porsche",
     model: "911 GT3 RS",
@@ -148,6 +142,8 @@ const totalAuto = [
   {
     id: 2,
     name: "BMW M5 CS",
+    style: "lap",
+    rating: 4.8,
     acceleration0To100: 3.0,
     brand: "BMW",
     model: "M5 CS",
@@ -174,6 +170,8 @@ const totalAuto = [
   {
     id: 3,
     name: "GT-R Nismo",
+    style: "lap",
+    rating: 4.7,
     acceleration0To100: 2.8,
     brand: "Nissan",
     model: "GT-R Nismo",
@@ -200,6 +198,8 @@ const totalAuto = [
   {
     id: 4,
     name: "Corvette Z06",
+    style: "lap",
+    rating: 4.8,
     acceleration0To100: 2.7,
     brand: "Chevrolet",
     model: "Corvette Z06",
@@ -226,6 +226,8 @@ const totalAuto = [
   {
     id: 5,
     name: "Shelby GT500",
+    style: "drag",
+    rating: 4.6,
     acceleration0To100: 3.5,
     brand: "Ford",
     model: "Mustang Shelby GT500",
@@ -252,6 +254,8 @@ const totalAuto = [
   {
     id: 6,
     name: "Huracán STO",
+    style: "lap",
+    rating: 4.8,
     acceleration0To100: 3.0,
     brand: "Lamborghini",
     model: "Huracán STO",
@@ -275,6 +279,8 @@ const totalAuto = [
   {
     id: 7,
     name: "SF90 Stradale",
+    style: "lap",
+    rating: 4.9,
     acceleration0To100: 2.5,
     brand: "Ferrari",
     model: "SF90 Stradale",
@@ -301,6 +307,8 @@ const totalAuto = [
   {
     id: 8,
     name: "McLaren 720S",
+    style: "lap",
+    rating: 4.7,
     acceleration0To100: 2.9,
     brand: "McLaren",
     model: "720S",
@@ -327,6 +335,8 @@ const totalAuto = [
   {
     id: 9,
     name: "Model S Plaid",
+    style: "drag",
+    rating: 4.6,
     acceleration0To100: 2.1,
     brand: "Tesla",
     model: "Model S Plaid",
@@ -353,6 +363,8 @@ const totalAuto = [
   {
     id: 10,
     name: "AMG GT Black",
+    style: "lap",
+    rating: 4.9,
     acceleration0To100: 3.2,
     brand: "Mercedes-AMG",
     model: "GT Black Series",
@@ -379,6 +391,8 @@ const totalAuto = [
   {
     id: 11,
     name: "DBS Superleg",
+    style: "drag",
+    rating: 4.5,
     acceleration0To100: 3.4,
     brand: "Aston Martin",
     model: "DBS Superleggera",
@@ -402,6 +416,8 @@ const totalAuto = [
   {
     id: 12,
     name: "GR Supra 3.0",
+    style: "lap",
+    rating: 4.4,
     acceleration0To100: 3.9,
     brand: "Toyota",
     model: "GR Supra",
@@ -425,6 +441,8 @@ const totalAuto = [
   {
     id: 13,
     name: "Lexus LFA",
+    style: "lap",
+    rating: 5.0,
     acceleration0To100: 3.7,
     brand: "Lexus",
     model: "LFA",
@@ -451,6 +469,8 @@ const totalAuto = [
   {
     id: 14,
     name: "Jesko Attack",
+    style: "lap",
+    rating: 5.0,
     acceleration0To100: 2.5,
     brand: "Koenigsegg",
     model: "Jesko",
@@ -477,6 +497,8 @@ const totalAuto = [
   {
     id: 15,
     name: "Huayra BC",
+    style: "lap",
+    rating: 4.9,
     acceleration0To100: 2.8,
     brand: "Pagani",
     model: "Huayra Roadster BC",
@@ -503,6 +525,8 @@ const totalAuto = [
   {
     id: 16,
     name: "Rimac Nevera",
+    style: "drag",
+    rating: 4.9,
     acceleration0To100: 1.8,
     brand: "Rimac",
     model: "Nevera",
@@ -529,6 +553,8 @@ const totalAuto = [
   {
     id: 17,
     name: "Taycan Turbo S",
+    style: "lap",
+    rating: 4.7,
     acceleration0To100: 2.8,
     brand: "Porsche",
     model: "Taycan Turbo S",
@@ -555,6 +581,8 @@ const totalAuto = [
   {
     id: 18,
     name: "RS 6 Avant GT",
+    style: "lap",
+    rating: 4.8,
     acceleration0To100: 3.3,
     brand: "Audi",
     model: "RS 6 Avant",
@@ -581,6 +609,8 @@ const totalAuto = [
   {
     id: 19,
     name: "BMW M3 Comp",
+    style: "lap",
+    rating: 4.6,
     acceleration0To100: 3.5,
     brand: "BMW",
     model: "M3 Competition",
@@ -607,6 +637,8 @@ const totalAuto = [
   {
     id: 20,
     name: "G 63 Grand",
+    style: "drag",
+    rating: 4.5,
     acceleration0To100: 4.5,
     brand: "Mercedes-AMG",
     model: "G 63",
@@ -633,6 +665,8 @@ const totalAuto = [
   {
     id: 21,
     name: "Giulia GTAm",
+    style: "lap",
+    rating: 4.7,
     acceleration0To100: 3.6,
     brand: "Alfa Romeo",
     model: "Giulia GTA",
@@ -659,6 +693,8 @@ const totalAuto = [
   {
     id: 22,
     name: "Maserati MC20",
+    style: "lap",
+    rating: 4.6,
     acceleration0To100: 2.9,
     brand: "Maserati",
     model: "MC20",
@@ -685,6 +721,8 @@ const totalAuto = [
   {
     id: 23,
     name: "Ford GT",
+    style: "lap",
+    rating: 4.8,
     acceleration0To100: 3.0,
     brand: "Ford",
     model: "GT",
@@ -711,6 +749,8 @@ const totalAuto = [
   {
     id: 24,
     name: "Camaro ZL1 1LE",
+    style: "lap",
+    rating: 4.6,
     acceleration0To100: 3.5,
     brand: "Chevrolet",
     model: "Camaro ZL1",
@@ -734,6 +774,8 @@ const totalAuto = [
   {
     id: 25,
     name: "WRX STI EJ25",
+    style: "rally",
+    rating: 4.5,
     acceleration0To100: 5.2,
     brand: "Subaru",
     model: "WRX STI",
@@ -760,6 +802,8 @@ const totalAuto = [
   {
     id: 26,
     name: "NSX Type S",
+    style: "lap",
+    rating: 4.7,
     acceleration0To100: 2.9,
     brand: "Honda",
     model: "NSX",
@@ -786,6 +830,8 @@ const totalAuto = [
   {
     id: 27,
     name: "Evo X FQ-440",
+    style: "rally",
+    rating: 4.7,
     acceleration0To100: 3.6,
     brand: "Mitsubishi",
     model: "Lancer Evolution X",
@@ -809,6 +855,8 @@ const totalAuto = [
   {
     id: 28,
     name: "Skyline GT-R",
+    style: "lap",
+    rating: 5.0,
     acceleration0To100: 4.9,
     brand: "Nissan",
     model: "Skyline GT-R",
@@ -835,6 +883,8 @@ const totalAuto = [
   {
     id: 29,
     name: "RX-7 Spirit R",
+    style: "lap",
+    rating: 4.9,
     acceleration0To100: 5.1,
     brand: "Mazda",
     model: "RX-7",
@@ -861,6 +911,8 @@ const totalAuto = [
   {
     id: 30,
     name: "F8 Tributo",
+    style: "lap",
+    rating: 4.7,
     acceleration0To100: 2.9,
     brand: "Ferrari",
     model: "F8 Tributo",
@@ -887,6 +939,8 @@ const totalAuto = [
   {
     id: 31,
     name: "Revuelto",
+    style: "drag",
+    rating: 4.9,
     acceleration0To100: 2.5,
     brand: "Lamborghini",
     model: "Revuelto",
@@ -913,6 +967,8 @@ const totalAuto = [
   {
     id: 32,
     name: "McLaren P1",
+    style: "lap",
+    rating: 5.0,
     acceleration0To100: 2.8,
     brand: "McLaren",
     model: "P1",
@@ -939,6 +995,8 @@ const totalAuto = [
   {
     id: 33,
     name: "918 Spyder",
+    style: "lap",
+    rating: 5.0,
     acceleration0To100: 2.6,
     brand: "Porsche",
     model: "918 Spyder",
@@ -965,6 +1023,8 @@ const totalAuto = [
   {
     id: 34,
     name: "LaFerrari",
+    style: "lap",
+    rating: 5.0,
     acceleration0To100: 2.6,
     brand: "Ferrari",
     model: "LaFerrari",
@@ -991,6 +1051,8 @@ const totalAuto = [
   {
     id: 35,
     name: "Veyron SS",
+    style: "drag",
+    rating: 4.9,
     acceleration0To100: 2.5,
     brand: "Bugatti",
     model: "Veyron 16.4",
@@ -1017,6 +1079,8 @@ const totalAuto = [
   {
     id: 36,
     name: "Agera RS",
+    style: "drag",
+    rating: 5.0,
     acceleration0To100: 2.8,
     brand: "Koenigsegg",
     model: "Agera RS",
@@ -1043,6 +1107,8 @@ const totalAuto = [
   {
     id: 37,
     name: "Zonda Cinque",
+    style: "lap",
+    rating: 4.9,
     acceleration0To100: 3.4,
     brand: "Pagani",
     model: "Zonda",
@@ -1069,6 +1135,8 @@ const totalAuto = [
   {
     id: 38,
     name: "Venom F5",
+    style: "drag",
+    rating: 4.8,
     acceleration0To100: 2.6,
     brand: "Hennessey",
     model: "Venom F5",
@@ -1095,6 +1163,8 @@ const totalAuto = [
   {
     id: 39,
     name: "SSC Tuatara",
+    style: "drag",
+    rating: 4.7,
     acceleration0To100: 2.6,
     brand: "SSC",
     model: "Tuatara",
@@ -1121,6 +1191,8 @@ const totalAuto = [
   {
     id: 40,
     name: "Lotus Evija",
+    style: "drag",
+    rating: 4.8,
     acceleration0To100: 2.9,
     brand: "Lotus",
     model: "Evija",
@@ -1147,6 +1219,8 @@ const totalAuto = [
   {
     id: 41,
     name: "AM Valkyrie",
+    style: "lap",
+    rating: 5.0,
     acceleration0To100: 2.5,
     brand: "Aston Martin",
     model: "Valkyrie",
@@ -1173,6 +1247,8 @@ const totalAuto = [
   {
     id: 42,
     name: "SLS AMG Black",
+    style: "lap",
+    rating: 4.9,
     acceleration0To100: 3.6,
     brand: "Mercedes-Benz",
     model: "SLS AMG",
@@ -1199,6 +1275,8 @@ const totalAuto = [
   {
     id: 43,
     name: "Lexus LC 500",
+    style: "drag",
+    rating: 4.5,
     acceleration0To100: 4.7,
     brand: "Lexus",
     model: "LC 500",
@@ -1225,6 +1303,8 @@ const totalAuto = [
   {
     id: 44,
     name: "F-Type SVR",
+    style: "drag",
+    rating: 4.4,
     acceleration0To100: 3.7,
     brand: "Jaguar",
     model: "F-Type SVR",
@@ -1251,6 +1331,8 @@ const totalAuto = [
   {
     id: 45,
     name: "Conti GT Speed",
+    style: "drag",
+    rating: 4.6,
     acceleration0To100: 3.6,
     brand: "Bentley",
     model: "Continental GT Speed",
@@ -1277,6 +1359,8 @@ const totalAuto = [
   {
     id: 46,
     name: "RR Spectre",
+    style: "drag",
+    rating: 4.7,
     acceleration0To100: 4.5,
     brand: "Rolls-Royce",
     model: "Spectre",
@@ -1303,6 +1387,8 @@ const totalAuto = [
   {
     id: 47,
     name: "BMW M4 CSL",
+    style: "lap",
+    rating: 4.6,
     acceleration0To100: 3.7,
     brand: "BMW",
     model: "M4 CSL",
@@ -1329,6 +1415,8 @@ const totalAuto = [
   {
     id: 48,
     name: "718 GT4 RS",
+    style: "lap",
+    rating: 4.9,
     acceleration0To100: 3.4,
     brand: "Porsche",
     model: "718 Cayman GT4 RS",
@@ -1355,6 +1443,8 @@ const totalAuto = [
   {
     id: 49,
     name: "Corvette ZR1",
+    style: "drag",
+    rating: 4.8,
     acceleration0To100: 2.9,
     brand: "Chevrolet",
     model: "Corvette ZR1",
@@ -1381,6 +1471,8 @@ const totalAuto = [
   {
     id: 50,
     name: "Focus RS",
+    style: "rally",
+    rating: 4.5,
     acceleration0To100: 4.7,
     brand: "Ford",
     model: "Focus RS",
@@ -1399,6 +1491,90 @@ const totalAuto = [
     drivetrain: {
       transmission: "6-speed Manual",
       driveType: "Ford Performance AWD with Drift Mode",
+    },
+  },
+  {
+    id: 55,
+    name: "GR Yaris Rally",
+    style: "rally",
+    rating: 4.8,
+    acceleration0To100: 5.2,
+    brand: "Toyota",
+    model: "GR Yaris",
+    trim: "Circuit Pack / Morizo Selection",
+    year: 2024,
+    vin: "JTJAR10C00M000055",
+    color: {
+      exterior: "Precious Metal Grey",
+      interior: "Black Ultrasuede with Red Stitching",
+    },
+    powertrain: {
+      type: "Internal Combustion Engine (ICE)",
+      engineVolume: 1.6,
+      batteryCapacity: null,
+      power: { totalHp: 280, totalKw: 206, torqueNm: 390 },
+      fuelConsumption: 8.2,
+      electricRange: 0,
+    },
+    drivetrain: {
+      transmission: "6-speed Manual",
+      driveType: "GR-FOUR Full-Time AWD",
+    },
+  },
+  {
+    id: 56,
+    name: "Delta Integrale",
+    style: "rally",
+    rating: 4.9,
+    acceleration0To100: 5.7,
+    brand: "Lancia",
+    model: "Delta HF Integrale",
+    trim: "Evoluzione II",
+    year: 1993,
+    vin: "ZLA831AB00000056",
+    color: {
+      exterior: "Monza Red",
+      interior: "Beige Alcantara Highback Recaro Seats",
+    },
+    powertrain: {
+      type: "Internal Combustion Engine (ICE)",
+      engineVolume: 2.0,
+      batteryCapacity: null,
+      power: { totalHp: 215, totalKw: 158, torqueNm: 314 },
+      fuelConsumption: 10.5,
+      electricRange: 0,
+    },
+    drivetrain: {
+      transmission: "5-speed Manual",
+      driveType: "Permanent All-Wheel Drive (AWD)",
+    },
+  },
+  {
+    id: 57,
+    name: "911 Dakar",
+    style: "rally",
+    rating: 4.9,
+    acceleration0To100: 3.4,
+    brand: "Porsche",
+    model: "911 Dakar",
+    trim: "Rallye Design Package",
+    year: 2023,
+    vin: "WP0AC2A95PS000057",
+    color: {
+      exterior: "White / Gentian Blue Metallic Heritage Livery",
+      interior: "Black Race-Tex with Shade Green Stitching",
+    },
+    powertrain: {
+      type: "Internal Combustion Engine (ICE)",
+      engineVolume: 3.0,
+      batteryCapacity: null,
+      power: { totalHp: 480, totalKw: 353, torqueNm: 570 },
+      fuelConsumption: 11.3,
+      electricRange: 0,
+    },
+    drivetrain: {
+      transmission: "8-speed PDK Dual-Clutch",
+      driveType: "All-Wheel Drive (AWD Offroad Tuned)",
     },
   },
 ];
