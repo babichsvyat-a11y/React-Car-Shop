@@ -1,7 +1,7 @@
 const totalAuto = [
   {
     id: 51,
-    image: "mer63",
+    image: "mer63c.svg",
     name: "amg c 63 s",
     style: "lap",
     rating: 4.2,
@@ -30,7 +30,7 @@ const totalAuto = [
   },
   {
     id: 52,
-    image: "dod17",
+    image: "dod17.svg",
     name: "srt demon 170",
     style: "drag",
     rating: 4.9,
@@ -59,7 +59,7 @@ const totalAuto = [
   },
   {
     id: 53,
-    image: "aud08",
+    image: "aud08.svg",
     name: "r8 V10 Type 4s",
     style: "lap",
     rating: 4.7,
@@ -88,7 +88,7 @@ const totalAuto = [
   },
   {
     id: 54,
-    image: "bug00",
+    image: "bug00.svg",
     name: "chiron super sport",
     style: "drag",
     rating: 5.0,
@@ -117,7 +117,7 @@ const totalAuto = [
   },
   {
     id: 1,
-    image: "por91",
+    image: "por91.svg",
     name: "911 GT3 RS",
     style: "lap",
     rating: 5.0,
@@ -146,7 +146,7 @@ const totalAuto = [
   },
   {
     id: 2,
-    image: "bmw05",
+    image: "bmw05.svg",
     name: "BMW M5 CS",
     style: "lap",
     rating: 4.8,
@@ -175,7 +175,7 @@ const totalAuto = [
   },
   {
     id: 3,
-    image: "nis35",
+    image: "nis35.svg",
     name: "GT-R Nismo",
     style: "lap",
     rating: 4.7,
@@ -204,7 +204,7 @@ const totalAuto = [
   },
   {
     id: 4,
-    image: "che06",
+    image: "che06.svg",
     name: "Corvette Z06",
     style: "lap",
     rating: 4.8,
@@ -233,7 +233,7 @@ const totalAuto = [
   },
   {
     id: 5,
-    image: "for50",
+    image: "for50.svg",
     name: "Shelby GT500",
     style: "drag",
     rating: 4.6,
@@ -262,7 +262,7 @@ const totalAuto = [
   },
   {
     id: 6,
-    image: "lam61",
+    image: "lam61.svg",
     name: "Huracán STO",
     style: "lap",
     rating: 4.8,
@@ -288,7 +288,7 @@ const totalAuto = [
   },
   {
     id: 7,
-    image: "fer90",
+    image: "fer90.svg",
     name: "SF90 Stradale",
     style: "lap",
     rating: 4.9,
@@ -317,7 +317,7 @@ const totalAuto = [
   },
   {
     id: 8,
-    image: "mcl72",
+    image: "mcl72.svg",
     name: "McLaren 720S",
     style: "lap",
     rating: 4.7,
@@ -346,7 +346,7 @@ const totalAuto = [
   },
   {
     id: 9,
-    image: "tes00",
+    image: "tes00.svg",
     name: "Model S Plaid",
     style: "drag",
     rating: 4.6,
@@ -375,7 +375,7 @@ const totalAuto = [
   },
   {
     id: 10,
-    image: "mer19",
+    image: "mer19.svg",
     name: "AMG GT Black",
     style: "lap",
     rating: 4.9,
@@ -404,7 +404,7 @@ const totalAuto = [
   },
   {
     id: 11,
-    image: "ast12",
+    image: "ast12.svg",
     name: "DBS Superleg",
     style: "drag",
     rating: 4.5,
@@ -430,7 +430,7 @@ const totalAuto = [
   },
   {
     id: 12,
-    image: "toy90",
+    image: "toy90.svg",
     name: "GR Supra 3.0",
     style: "lap",
     rating: 4.4,
@@ -456,7 +456,7 @@ const totalAuto = [
   },
   {
     id: 13,
-    image: "lex10",
+    image: "lex10.svg",
     name: "Lexus LFA",
     style: "lap",
     rating: 5.0,
@@ -485,7 +485,7 @@ const totalAuto = [
   },
   {
     id: 14,
-    image: "koe00",
+    image: "koe00.svg",
     name: "Jesko Attack",
     style: "lap",
     rating: 5.0,
@@ -514,7 +514,7 @@ const totalAuto = [
   },
   {
     id: 15,
-    image: "pag00",
+    image: "pag00.svg",
     name: "Huayra BC",
     style: "lap",
     rating: 4.9,
@@ -543,7 +543,7 @@ const totalAuto = [
   },
   {
     id: 16,
-    image: "rim00",
+    image: "rim00.svg",
     name: "Rimac Nevera",
     style: "drag",
     rating: 4.9,
@@ -572,7 +572,7 @@ const totalAuto = [
   },
   {
     id: 17,
-    image: "por00",
+    image: "por00.svg",
     name: "Taycan Turbo S",
     style: "lap",
     rating: 4.7,
@@ -601,7 +601,7 @@ const totalAuto = [
   },
   {
     id: 18,
-    image: "aud06",
+    image: "aud06.svg",
     name: "RS 6 Avant GT",
     style: "lap",
     rating: 4.8,
@@ -630,7 +630,7 @@ const totalAuto = [
   },
   {
     id: 19,
-    image: "bmw03",
+    image: "bmw03.svg",
     name: "BMW M3 Comp",
     style: "lap",
     rating: 4.6,
@@ -659,7 +659,7 @@ const totalAuto = [
   },
   {
     id: 20,
-    image: "mer63",
+    image: "mer63g.svg",
     name: "G 63 Grand",
     style: "drag",
     rating: 4.5,
@@ -688,7 +688,7 @@ const totalAuto = [
   },
   {
     id: 21,
-    image: "alf00",
+    image: "alf00.svg",
     name: "Giulia GTAm",
     style: "lap",
     rating: 4.7,
@@ -717,7 +717,7 @@ const totalAuto = [
   },
   {
     id: 22,
-    image: "mas20",
+    image: "mas20.svg",
     name: "Maserati MC20",
     style: "lap",
     rating: 4.6,
@@ -746,7 +746,7 @@ const totalAuto = [
   },
   {
     id: 23,
-    image: "for00",
+    image: "for00.svg",
     name: "Ford GT",
     style: "lap",
     rating: 4.8,
@@ -775,7 +775,7 @@ const totalAuto = [
   },
   {
     id: 24,
-    image: "che01",
+    image: "che01.svg",
     name: "Camaro ZL1 1LE",
     style: "lap",
     rating: 4.6,
@@ -801,7 +801,7 @@ const totalAuto = [
   },
   {
     id: 25,
-    image: "sub00",
+    image: "sub00.svg",
     name: "WRX STI EJ25",
     style: "rally",
     rating: 4.5,
@@ -830,7 +830,7 @@ const totalAuto = [
   },
   {
     id: 26,
-    image: "hon00",
+    image: "hon00.svg",
     name: "NSX Type S",
     style: "lap",
     rating: 4.7,
@@ -859,7 +859,7 @@ const totalAuto = [
   },
   {
     id: 27,
-    image: "mit10",
+    image: "mit10.svg",
     name: "Evo X FQ-440",
     style: "rally",
     rating: 4.7,
@@ -885,7 +885,7 @@ const totalAuto = [
   },
   {
     id: 28,
-    image: "nis34",
+    image: "nis34.svg",
     name: "Skyline GT-R",
     style: "lap",
     rating: 5.0,
@@ -914,7 +914,7 @@ const totalAuto = [
   },
   {
     id: 29,
-    image: "maz07",
+    image: "maz07.svg",
     name: "RX-7 Spirit R",
     style: "lap",
     rating: 4.9,
@@ -943,7 +943,7 @@ const totalAuto = [
   },
   {
     id: 30,
-    image: "fer08",
+    image: "fer08.svg",
     name: "F8 Tributo",
     style: "lap",
     rating: 4.7,
@@ -972,7 +972,7 @@ const totalAuto = [
   },
   {
     id: 31,
-    image: "lam12",
+    image: "lam12.svg",
     name: "Revuelto",
     style: "drag",
     rating: 4.9,
@@ -1001,7 +1001,7 @@ const totalAuto = [
   },
   {
     id: 32,
-    image: "mcl01",
+    image: "mcl01.svg",
     name: "McLaren P1",
     style: "lap",
     rating: 5.0,
@@ -1030,7 +1030,7 @@ const totalAuto = [
   },
   {
     id: 33,
-    image: "por18",
+    image: "por18.svg",
     name: "918 Spyder",
     style: "lap",
     rating: 5.0,
@@ -1059,7 +1059,7 @@ const totalAuto = [
   },
   {
     id: 34,
-    image: "fer00",
+    image: "fer00.svg",
     name: "LaFerrari",
     style: "lap",
     rating: 5.0,
@@ -1088,7 +1088,7 @@ const totalAuto = [
   },
   {
     id: 35,
-    image: "bug16",
+    image: "bug16.svg",
     name: "Veyron SS",
     style: "drag",
     rating: 4.9,
@@ -1117,7 +1117,7 @@ const totalAuto = [
   },
   {
     id: 36,
-    image: "koe00",
+    image: "koe01.svg",
     name: "Agera RS",
     style: "drag",
     rating: 5.0,
@@ -1146,7 +1146,7 @@ const totalAuto = [
   },
   {
     id: 37,
-    image: "pag00",
+    image: "pag01.svg",
     name: "Zonda Cinque",
     style: "lap",
     rating: 4.9,
@@ -1175,7 +1175,7 @@ const totalAuto = [
   },
   {
     id: 38,
-    image: "hen05",
+    image: "hen05.svg",
     name: "Venom F5",
     style: "drag",
     rating: 4.8,
@@ -1204,7 +1204,7 @@ const totalAuto = [
   },
   {
     id: 39,
-    image: "ssc00",
+    image: "ssc00.svg",
     name: "SSC Tuatara",
     style: "drag",
     rating: 4.7,
@@ -1233,7 +1233,7 @@ const totalAuto = [
   },
   {
     id: 40,
-    image: "lot00",
+    image: "lot00.svg",
     name: "Lotus Evija",
     style: "drag",
     rating: 4.8,
@@ -1262,7 +1262,7 @@ const totalAuto = [
   },
   {
     id: 41,
-    image: "ast12",
+    image: "ast13.svg",
     name: "AM Valkyrie",
     style: "lap",
     rating: 5.0,
@@ -1291,7 +1291,7 @@ const totalAuto = [
   },
   {
     id: 42,
-    image: "mer00",
+    image: "mer00.svg",
     name: "SLS AMG Black",
     style: "lap",
     rating: 4.9,
@@ -1320,7 +1320,7 @@ const totalAuto = [
   },
   {
     id: 43,
-    image: "lex50",
+    image: "lex50.svg",
     name: "Lexus LC 500",
     style: "drag",
     rating: 4.5,
@@ -1349,7 +1349,7 @@ const totalAuto = [
   },
   {
     id: 44,
-    image: "jag00",
+    image: "jag00.svg",
     name: "F-Type SVR",
     style: "drag",
     rating: 4.4,
@@ -1378,7 +1378,7 @@ const totalAuto = [
   },
   {
     id: 45,
-    image: "ben12",
+    image: "ben12.svg",
     name: "Conti GT Speed",
     style: "drag",
     rating: 4.6,
@@ -1407,7 +1407,7 @@ const totalAuto = [
   },
   {
     id: 46,
-    image: "rol00",
+    image: "rol00.svg",
     name: "RR Spectre",
     style: "drag",
     rating: 4.7,
@@ -1436,7 +1436,7 @@ const totalAuto = [
   },
   {
     id: 47,
-    image: "bmw04",
+    image: "bmw04.svg",
     name: "BMW M4 CSL",
     style: "lap",
     rating: 4.6,
@@ -1465,7 +1465,7 @@ const totalAuto = [
   },
   {
     id: 48,
-    image: "por71",
+    image: "por71.svg",
     name: "718 GT4 RS",
     style: "lap",
     rating: 4.9,
@@ -1494,7 +1494,7 @@ const totalAuto = [
   },
   {
     id: 49,
-    image: "che07",
+    image: "che07.svg",
     name: "Corvette ZR1",
     style: "drag",
     rating: 4.8,
@@ -1523,7 +1523,7 @@ const totalAuto = [
   },
   {
     id: 50,
-    image: "for00",
+    image: "for01.svg",
     name: "Focus RS",
     style: "rally",
     rating: 4.5,
@@ -1549,7 +1549,7 @@ const totalAuto = [
   },
   {
     id: 55,
-    image: "toy00",
+    image: "toy00.svg",
     name: "GR Yaris Rally",
     style: "rally",
     rating: 4.8,
@@ -1578,7 +1578,7 @@ const totalAuto = [
   },
   {
     id: 56,
-    image: "lan00",
+    image: "lan00.svg",
     name: "Delta Integrale",
     style: "rally",
     rating: 4.9,
@@ -1607,7 +1607,7 @@ const totalAuto = [
   },
   {
     id: 57,
-    image: "por91d",
+    image: "por91d.svg",
     name: "911 Dakar",
     style: "rally",
     rating: 4.9,

@@ -1,11 +1,12 @@
-export default function CarCard(auto, i) {
+export default function CarCard(auto) {
   return (
     <li
       key={auto.id}
-      className="bg-secondary-background flex flex-col h-150 md:h-87.5 sm:h-150 md:brightness-60 md:hover:brightness-100 md:hover:scale-105 transition delay-100 duration-200 easy-in"
+      className="bg-secondary-background flex flex-col h-150 md:h-87.5 sm:h-150 md:brightness-80 md:hover:brightness-100 md:hover:scale-105 transition delay-100 duration-200 easy-in"
     >
       <div
-        className={`py-2 px-3 flex flex-col justify-between bg-[url(@/shared/assets/img/${auto.image}.svg)] bg-no-repeat bg-cover bg-bottom flex-2`}
+        className={`py-2 px-3 flex flex-col justify-between bg-no-repeat bg-cover bg-center flex-2`}
+        style={{ backgroundImage: `url(${auto.image})` }}
       >
         <div
           className={

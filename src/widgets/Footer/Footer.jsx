@@ -54,7 +54,7 @@ const Footer = () => {
             </ul>
           </nav>
 
-          <p class="text-secondary-text text-sm">
+          <p className="text-secondary-text text-sm">
             &copy; 2026 RunDNA. All rights reserved. Private Policy
           </p>
         </div>
