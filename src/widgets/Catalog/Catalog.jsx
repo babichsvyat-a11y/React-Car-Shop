@@ -58,7 +58,7 @@ const Catalog = () => {
 
   // const searchCar = ;
   return (
-    <main className="text-primary-text font-secondary bg-[url(@/shared/assets/img/mountain.svg)] bg-fixed bg-no-repeat bg-cover relative">
+    <main className="text-primary-text font-secondary bg-[url(@/shared/assets/img/back.svg)] bg-fixed bg-no-repeat bg-cover relative">
       <div className="backdrop-blur-xs">
         <h1 className="font-primary text-6xl font-black text-primary-text uppercase leading-none pt-22 text-center">
           The Vault
@@ -73,7 +73,7 @@ const Catalog = () => {
           <div className="xl:w-[50%] lg:w-[45%] md:w-[60%] w-[70%]">
             <form className="w-full">
               <label
-                for="search"
+                htmlFor="search"
                 className="block mb-2.5 text-sm font-medium sr-only "
               >
                 lock it in
@@ -271,7 +271,7 @@ const Catalog = () => {
           </div>
         </section>
         <section>
-          <CarList />;
+          <CarList />
         </section>
       </div>
     </main>
