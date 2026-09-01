@@ -1,4 +1,5 @@
-import CarCard from "../../../../CarCard";
+import CarCard from "@/enteties/CarCard";
+import totalAuto from "@/db";
 
 const TopSection = () => {
   return (
@@ -7,10 +8,11 @@ const TopSection = () => {
         our top models
       </h2>
       <ul className="grid xl:grid-cols-4 lg:gap-x-[5%] gap-x-[10%] md:gap-y-[5%] gap-y-8 px-[10%] lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-        <CarCard />
-        <CarCard />
-        <CarCard />
-        <CarCard />
+        {totalAuto
+          .filter((auto, i) => i <= 3)
+          .map((auto) => (
+            <CarCard key={auto.id} {...auto} />
+          ))}
       </ul>
     </section>
   );

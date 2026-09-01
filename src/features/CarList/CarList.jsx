@@ -1,5 +1,5 @@
-import CarCard from "./CarCard";
-import totalAuto from "./db";
+import CarCard from "@/enteties/CarCard";
+import totalAuto from "@/db";
 
 export default function CarList() {
   return (
