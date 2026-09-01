@@ -1,6 +1,6 @@
 import totalAuto from "@/db";
 import { useState } from "react";
-import CarList from "../../CarList";
+import CarList from "@/features/CarList/CarList";
 
 const Catalog = () => {
   const [classFilter, setFilterClass] = useState("hidden");
@@ -58,7 +58,7 @@ const Catalog = () => {
 
   // const searchCar = ;
   return (
-    <main className="text-primary-text font-secondary bg-[url(@/shared/assets/img/back.svg)] bg-fixed bg-no-repeat bg-cover relative">
+    <main className="text-primary-text font-secondary bg-primary-background bg-fixed bg-no-repeat bg-cover relative">
       <div className="backdrop-blur-xs">
         <h1 className="font-primary text-6xl font-black text-primary-text uppercase leading-none pt-22 text-center">
           The Vault
@@ -67,7 +67,9 @@ const Catalog = () => {
           <div className="">
             <p className="font-secondary text-primary-text uppercase tracking-tighter font-semibold text-lg hidden md:block">
               the roster :{" "}
-              <span className="text-brand-accent"> {totalAuto.length} </span>
+              <span className="text-brand-accent text-xl font-bold">
+                {totalAuto.length}{" "}
+              </span>
             </p>
           </div>
           <div className="xl:w-[50%] lg:w-[45%] md:w-[60%] w-[70%]">
