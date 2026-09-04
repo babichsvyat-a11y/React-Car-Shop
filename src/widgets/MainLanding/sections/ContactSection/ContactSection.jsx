@@ -1,15 +1,15 @@
 const ContactSection = () => {
   return (
-    <section className="text-primary-text font-secondary mb-10 flex flex-col items-center-safe">
+    <section className="dark:text-primary-text text-light-accent font-secondary pb-10 flex flex-col items-center-safe">
       <h2 className=" py-10 uppercase text-3xl font-semibold text-center">
         book a test drive
       </h2>
-      <div className="flex flex-row gap-10 px-[5%] py-10 mx- bg-secondary-background justify-center flex-wrap">
+      <div className="flex flex-row gap-10 px-[5%] py-10 mx- dark:bg-secondary-background bg-light-bg dark:shadow-none inset-shadow-lg justify-center flex-wrap">
         <div className="flex flex-col gap-4">
           <h3 className="uppercase text-xl font-semibold text-center">
             the best environment for your emotions
           </h3>
-          <ul className=" text-sm text-secondary-text font-normal flex flex-col gap-4">
+          <ul className="text-sm dark:text-secondary-text text-light-accent/30 font-medium flex flex-col gap-4">
             <li className="flex flex-row gap-2">
               <svg
                 width="20"
@@ -18,7 +18,7 @@ const ContactSection = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_2002_110)">
+                <g clipPath="url(#clip0_2002_110)">
                   <path
                     d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
                     fill="#191919"
@@ -76,7 +76,7 @@ const ContactSection = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_2002_110)">
+                <g clipPath="url(#clip0_2002_110)">
                   <path
                     d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
                     fill="#191919"
@@ -134,7 +134,7 @@ const ContactSection = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_2002_110)">
+                <g clipPath="url(#clip0_2002_110)">
                   <path
                     d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
                     fill="#191919"
@@ -196,7 +196,7 @@ const ContactSection = () => {
             <h3 className="uppercase text-xl font-semibold text-center">
               Share your contact info
             </h3>
-            <p className="text-sm text-secondary-text text-center">
+            <p className="text-sm text-center dark:text-secondary-text text-light-accent/30 font-medium">
               Your car is ready for you !!
             </p>
             <label className="hidden" htmlFor="name"></label>
@@ -217,7 +217,7 @@ const ContactSection = () => {
             />
 
             <button
-              className="font-secondary text-primary-text uppercase tracking-tighter font-semibold text-[12px] px-3.5 py-2 bg-brand-accent hover:bg-brand-accent-dark hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer rounded-md"
+              className="font-secondary text-primary-text uppercase tracking-tighter font-semibold text-[12px] px-3.5 py-2 dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer rounded-md"
               type="submit"
             >
               start your engine, chief !

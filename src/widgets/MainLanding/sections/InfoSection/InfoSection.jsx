@@ -1,11 +1,11 @@
 const InfoSection = () => {
   return (
     <section className="">
-      <h2 className="px-[10%] py-10 uppercase text-3xl font-semibold text-center text-primary-text font-secondary">
+      <h2 className="px-[10%] py-10 uppercase text-3xl font-semibold text-center dark:text-primary-text text-light-accent font-secondary">
         our advantages
       </h2>
       <ul className="font-secondary text-primary-text flex flex-row gap-2 flex-wrap justify-center">
-        <li className="flex flex-row gap-2 p-5 bg-secondary-background hover:scale-105 transition delay-100 duration-200 easy-in">
+        <li className="flex flex-row gap-2 p-5 dark:bg-secondary-background bg-light-bg hover:scale-105 transition delay-100 duration-200 easy-in">
           <div className="flex flex-row">
             <svg
               width="40"
@@ -21,15 +21,15 @@ const InfoSection = () => {
             </svg>
           </div>
           <div className="">
-            <h4 className="uppercase text-xl font-semibold">
+            <h4 className="uppercase text-xl font-semibold dark:text-primary-text text-light-accent">
               financing options
             </h4>
-            <p className="text-sm font-normal text-secondary-text">
+            <p className="text-sm dark:font-normal font-medium dark:text-secondary-text text-light-simp-accent/50">
               Flexible Playment Plans
             </p>
           </div>
         </li>
-        <li className="flex flex-row gap-2 p-5 bg-secondary-background hover:scale-105 transition delay-100 duration-200 easy-in">
+        <li className="flex flex-row gap-2 p-5 dark:bg-secondary-background bg-light-bg hover:scale-105 transition delay-100 duration-200 easy-in">
           <div className="flex flex-row content-center">
             <svg
               className="block"
@@ -47,15 +47,15 @@ const InfoSection = () => {
           </div>
 
           <div className="">
-            <h4 className="uppercase text-xl font-semibold">
+            <h4 className="uppercase text-xl font-semibold dark:text-primary-text text-light-accent">
               trade-in program
             </h4>
-            <p className="text-sm font-normal text-secondary-text">
+            <p className="text-sm dark:font-normal font-medium dark:text-secondary-text text-light-simp-accent/50">
               Get the Best Value
             </p>
           </div>
         </li>
-        <li className="flex flex-row gap-2 p-5 bg-secondary-background hover:scale-105 transition delay-100 duration-200 easy-in">
+        <li className="flex flex-row gap-2 p-5 dark:bg-secondary-background bg-light-bg hover:scale-105 transition delay-100 duration-200 easy-in">
           <div className="flex flex-row">
             <svg
               width="40"
@@ -71,10 +71,10 @@ const InfoSection = () => {
             </svg>
           </div>
           <div className="">
-            <h4 className="uppercase text-xl font-semibold">
+            <h4 className="uppercase text-xl font-semibold dark:text-primary-text text-light-accent">
               customer reviewes
             </h4>
-            <p className="text-sm font-normal text-secondary-text">
+            <p className="text-sm dark:font-normal font-medium dark:text-secondary-text text-light-simp-accent/50">
               5-Star Rated Service
             </p>
           </div>

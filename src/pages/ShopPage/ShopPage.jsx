@@ -4,7 +4,7 @@ import Footer from "@/widgets/Footer";
 
 const ShopPage = () => {
   return (
-    <div className="bg-primary-background">
+    <div className="bg-light-bg dark:bg-primary-background">
       <Header />
       <MainLanding />
       <Footer />

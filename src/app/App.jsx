@@ -4,8 +4,8 @@ import CatalogPage from "@/pages/CatalogPage/CatalogPage";
 const App = () => {
   return (
     <>
-      <CatalogPage />
-      {/* <ShopPage /> */}
+      {/* <CatalogPage /> */}
+      <ShopPage />
     </>
   );
 };
