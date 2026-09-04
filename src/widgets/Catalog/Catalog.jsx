@@ -10,15 +10,9 @@ const Catalog = () => {
   const [isActive, setIsActive] = useState(false);
 
   function goFilterModal() {
-    setFilterClass("");
-    setFilterClassBtn("");
-    setIsActive(true);
-  }
-
-  function backFilterModal() {
-    setFilterClass("hidden");
-    setFilterClassBtn("hidden");
-    setIsActive(false);
+    setFilterClass((prev) => (prev === "hidden" ? "" : "hidden"));
+    setFilterClassBtn((prev) => (prev === "hidden" ? "" : "hidden"));
+    setIsActive((prev) => (prev === false ? true : false));
   }
 
   return (
@@ -100,7 +94,7 @@ const Catalog = () => {
         </section>
         <div
           id="filterModal"
-          className={`${classFilter} +" sticky bg-secondary-background right-[10%] left-[10%] top-30 z-10 w-[80%] rounded-2xl shadow-2xl "`}
+          className={`${classFilter} +" sticky bg-secondary-background right-[10%] left-[10%] top-30 z-10 w-[80%] rounded-2xl shadow-2xl animate-fadeIn"`}
         >
           <div className=" relative p-6  h-max min-h-[45vh]   flex flex-row gap-6 flex-wrap ">
             <button
@@ -109,7 +103,7 @@ const Catalog = () => {
                 (setFilterAuto(
                   totalAuto.filter((auto) => auto.style === "lap"),
                 ),
-                  backFilterModal());
+                  goFilterModal());
               }}
             >
               <img
@@ -135,7 +129,7 @@ const Catalog = () => {
                 (setFilterAuto(
                   totalAuto.filter((auto) => auto.style === "drag"),
                 ),
-                  backFilterModal());
+                  goFilterModal());
               }}
             >
               <img
@@ -161,7 +155,7 @@ const Catalog = () => {
                 (setFilterAuto(
                   totalAuto.filter((auto) => auto.style === "rally"),
                 ),
-                  backFilterModal());
+                  goFilterModal());
               }}
             >
               <img
@@ -184,7 +178,7 @@ const Catalog = () => {
           </div>
           <button
             className="absolute top-3 right-3.25 h-10 w-10 rounded-full hover:bg-secondary-text/20 group transition delay-100 duration-200 easy-in cursor-pointer"
-            onClick={backFilterModal}
+            onClick={goFilterModal}
           >
             <div className="relative">
               <div className="group-hover:bg-secondary-background absolute bg-secondary-text w-1 h-8 -bottom-4 right-4.5 rotate-45 transition delay-100 duration-200 easy-in cursor-pointer"></div>
@@ -193,7 +187,6 @@ const Catalog = () => {
           </button>
         </div>
         <section className="flex-1">
-          {console.log(filterAuto)}
           <CarList searchAuto={searchAuto} filterAuto={filterAuto} />
         </section>
       </div>
