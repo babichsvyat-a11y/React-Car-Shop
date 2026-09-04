@@ -4,9 +4,9 @@ import Footer from "@/widgets/Footer";
 
 const CatalogPage = () => {
   return (
-    <div className="bg-primary-background">
+    <div className="bg-primary-background min-h-screen">
       <Header />
-      <Catalog />
+      <Catalog className="flex-auto" />
       <Footer />
     </div>
   );
