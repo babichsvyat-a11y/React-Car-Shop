@@ -5,7 +5,7 @@ import TopSection from "@/widgets/MainLanding/sections/TopSection";
 
 const MainLanding = () => {
   return (
-    <main>
+    <main className="dark:bg-primary-background bg-light-simp-bg">
       <PosterSection />
       <TopSection />
       <InfoSection />

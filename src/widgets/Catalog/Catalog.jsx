@@ -16,17 +16,17 @@ const Catalog = () => {
   }
 
   return (
-    <main className="text-primary-text font-secondary bg-primary-background bg-fixed bg-no-repeat bg-cover relative min-h-dvh">
+    <main className="dark:text-primary-text text-light-accent font-secondary dark:bg-primary-background bg-light-simp-bg bg-fixed bg-no-repeat bg-cover relative min-h-dvh ">
       <div className="backdrop-blur-xs">
-        <h1 className="font-primary text-6xl font-black text-primary-text uppercase leading-none pt-22 text-center">
+        <h1 className="font-primary text-6xl font-black dark:text-primary-text text-light-accent uppercase leading-none pt-22 text-center transition delay-100 duration-200 easy-in">
           The Vault
         </h1>
         <section className="text-primary-text grid grid-cols-5 lg:grid-cols-4 px-[10%] py-10 gap-8 sticky top-5 z-10">
           <div className="content-center hidden md:block">
-            <p className="font-secondary text-primary-text uppercase tracking-tighter font-semibold lg:text-start text-center lg:text-lg text-sm">
+            <p className="font-secondary dark:text-primary-text text-light-bg uppercase tracking-tighter font-semibold lg:text-start text-center lg:text-lg text-sm transition delay-100 duration-200 easy-in">
               the roster :
-              <span className="text-brand-accent lg:text-xl text-base font-bold">
-                {" " + totalAuto.length}
+              <span className="dark:text-brand-accent text-light-accent lg:text-xl text-base font-bold transition delay-100 duration-200 easy-in">
+                {" " + (filterAuto || totalAuto).length}
               </span>
             </p>
           </div>
@@ -68,7 +68,7 @@ const Catalog = () => {
           <div className="flex xl:justify-end justify-start">
             <button
               onClick={goFilterModal}
-              className="  xl:px-6 xl:py-2 p-0 rounded-[50%] bg-brand-accent hover:bg-brand-accent-dark hover:scale-105 xl:rounded-md transition delay-100 duration-200 easy-in cursor-pointer disabled:bg-brand-accent-dark disabled:scale-105"
+              className="min-w-12 h-12 my-0.5  xl:px-6 xl:py-2 p-0 rounded-[50%] dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 xl:rounded-md transition delay-100 duration-200 easy-in cursor-pointer disabled:bg-brand-accent-dark disabled:scale-105"
               type="button"
               id="filterBtn"
               disabled={isActive}
@@ -94,11 +94,11 @@ const Catalog = () => {
         </section>
         <div
           id="filterModal"
-          className={`${classFilter} +" sticky bg-secondary-background right-[10%] left-[10%] top-30 z-10 w-[80%] rounded-2xl shadow-2xl animate-fadeIn"`}
+          className={`${classFilter} +" sticky dark:bg-secondary-background bg-light-bg right-[10%] left-[10%] top-30 z-10 w-[80%] rounded-2xl shadow-2xl animate-fadeIn"`}
         >
           <div className=" relative p-6  h-max min-h-[45vh]   flex flex-row gap-6 flex-wrap ">
             <button
-              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 hover:bg-secondary-text/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
+              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
               onClick={() => {
                 (setFilterAuto(
                   totalAuto.filter((auto) => auto.style === "lap"),
@@ -115,7 +115,8 @@ const Catalog = () => {
                 className="font-primary
                 text-3xl
                 font-black
-                text-primary-text
+                dark:text-primary-text
+                text-light-accent
                 uppercase
                 leading-none
                 text-center"
@@ -124,7 +125,7 @@ const Catalog = () => {
               </h2>
             </button>
             <button
-              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 hover:bg-secondary-text/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
+              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
               onClick={() => {
                 (setFilterAuto(
                   totalAuto.filter((auto) => auto.style === "drag"),
@@ -141,7 +142,8 @@ const Catalog = () => {
                 className="font-primary
                 text-3xl
                 font-black
-                text-primary-text
+                dark:text-primary-text
+                text-light-accent
                 uppercase
                 leading-none
                 text-center"
@@ -150,7 +152,7 @@ const Catalog = () => {
               </h2>
             </button>
             <button
-              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 hover:bg-secondary-text/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
+              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
               onClick={() => {
                 (setFilterAuto(
                   totalAuto.filter((auto) => auto.style === "rally"),
@@ -167,7 +169,8 @@ const Catalog = () => {
                 className="font-primary
                 text-3xl
                 font-black
-                text-primary-text
+                dark:text-primary-text
+                text-light-accent
                 uppercase
                 leading-none
                 text-center"

@@ -34,4 +34,8 @@
   --color-primary-text: #ffffff;
   --color-secondary-text: #a0a3ac;
   --color-border-gray: #26282e;
+  --color-light-bg: #c7b7a3;
+  --color-light-accent: #561c24;
+  --color-light-simp-accent: #6d2932;
+  --color-light-simp-bg: #e8d8c4;
 }
