@@ -5,6 +5,8 @@ const totalAuto = [
     name: "amg c 63 s",
     style: "lap",
     rating: 4.2,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.9,
     brand: "Mercedes-Benz",
     model: "AMG C 63 S E PERFORMANCE",
@@ -43,6 +45,8 @@ const totalAuto = [
     name: "srt demon 170",
     style: "drag",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 1.7,
     brand: "Dodge",
     model: "Challenger SRT Demon 170",
@@ -81,6 +85,8 @@ const totalAuto = [
     name: "r8 V10 Type 4s",
     style: "lap",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.1,
     brand: "Audi",
     model: "R8 V10 performance quattro (Type 4S)",
@@ -119,6 +125,8 @@ const totalAuto = [
     name: "chiron super sport",
     style: "drag",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.4,
     brand: "Bugatti",
     model: "Chiron Super Sport",
@@ -157,6 +165,8 @@ const totalAuto = [
     name: "911 GT3 RS",
     style: "lap",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.2,
     brand: "Porsche",
     model: "911 GT3 RS",
@@ -195,6 +205,8 @@ const totalAuto = [
     name: "BMW M5 CS",
     style: "lap",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.0,
     brand: "BMW",
     model: "M5 CS",
@@ -233,6 +245,8 @@ const totalAuto = [
     name: "GT-R Nismo",
     style: "lap",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.8,
     brand: "Nissan",
     model: "GT-R Nismo",
@@ -271,6 +285,8 @@ const totalAuto = [
     name: "Corvette Z06",
     style: "lap",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.7,
     brand: "Chevrolet",
     model: "Corvette Z06",
@@ -309,6 +325,8 @@ const totalAuto = [
     name: "Shelby GT500",
     style: "drag",
     rating: 4.6,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.5,
     brand: "Ford",
     model: "Mustang Shelby GT500",
@@ -347,6 +365,8 @@ const totalAuto = [
     name: "Huracán STO",
     style: "lap",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.0,
     brand: "Lamborghini",
     model: "Huracán STO",
@@ -385,6 +405,8 @@ const totalAuto = [
     name: "SF90 Stradale",
     style: "lap",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.5,
     brand: "Ferrari",
     model: "SF90 Stradale",
@@ -423,6 +445,8 @@ const totalAuto = [
     name: "McLaren 720S",
     style: "lap",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.9,
     brand: "McLaren",
     model: "720S",
@@ -461,6 +485,8 @@ const totalAuto = [
     name: "Model S Plaid",
     style: "drag",
     rating: 4.6,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.1,
     brand: "Tesla",
     model: "Model S Plaid",
@@ -499,6 +525,8 @@ const totalAuto = [
     name: "AMG GT Black",
     style: "lap",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.2,
     brand: "Mercedes-Benz",
     model: "AMG GT Black Series",
@@ -537,6 +565,8 @@ const totalAuto = [
     name: "DBS Superleg",
     style: "drag",
     rating: 4.5,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.4,
     brand: "Aston Martin",
     model: "DBS Superleggera",
@@ -575,6 +605,8 @@ const totalAuto = [
     name: "GR Supra 3.0",
     style: "lap",
     rating: 4.4,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.9,
     brand: "Toyota",
     model: "GR Supra",
@@ -613,6 +645,8 @@ const totalAuto = [
     name: "Lexus LFA",
     style: "lap",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.7,
     brand: "Lexus",
     model: "LFA",
@@ -651,6 +685,8 @@ const totalAuto = [
     name: "Jesko Attack",
     style: "lap",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.5,
     brand: "Koenigsegg",
     model: "Jesko",
@@ -689,6 +725,8 @@ const totalAuto = [
     name: "Huayra BC",
     style: "lap",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.8,
     brand: "Pagani",
     model: "Huayra Roadster BC",
@@ -727,6 +765,8 @@ const totalAuto = [
     name: "Rimac Nevera",
     style: "drag",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 1.8,
     brand: "Rimac",
     model: "Nevera",
@@ -765,6 +805,8 @@ const totalAuto = [
     name: "Taycan Turbo S",
     style: "lap",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.8,
     brand: "Porsche",
     model: "Taycan Turbo S",
@@ -803,6 +845,8 @@ const totalAuto = [
     name: "RS 6 Avant GT",
     style: "lap",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.3,
     brand: "Audi",
     model: "RS 6 Avant",
@@ -841,6 +885,8 @@ const totalAuto = [
     name: "BMW M3 Comp",
     style: "lap",
     rating: 4.6,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.5,
     brand: "BMW",
     model: "M3 Competition",
@@ -879,6 +925,8 @@ const totalAuto = [
     name: "G 63 Grand",
     style: "drag",
     rating: 4.5,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 4.5,
     brand: "Mercedes-Benz",
     model: "AMG G 63",
@@ -917,6 +965,8 @@ const totalAuto = [
     name: "Giulia GTAm",
     style: "lap",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.6,
     brand: "Alfa Romeo",
     model: "Giulia GTA",
@@ -955,6 +1005,8 @@ const totalAuto = [
     name: "Maserati MC20",
     style: "lap",
     rating: 4.6,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.9,
     brand: "Maserati",
     model: "MC20",
@@ -993,6 +1045,8 @@ const totalAuto = [
     name: "Ford GT",
     style: "lap",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.0,
     brand: "Ford",
     model: "GT",
@@ -1031,6 +1085,8 @@ const totalAuto = [
     name: "Camaro ZL1 1LE",
     style: "lap",
     rating: 4.6,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.5,
     brand: "Chevrolet",
     model: "Camaro ZL1",
@@ -1069,6 +1125,8 @@ const totalAuto = [
     name: "WRX STI EJ25",
     style: "rally",
     rating: 4.5,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 5.2,
     brand: "Subaru",
     model: "WRX STI",
@@ -1107,6 +1165,8 @@ const totalAuto = [
     name: "NSX Type S",
     style: "lap",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.9,
     brand: "Honda",
     model: "NSX",
@@ -1145,6 +1205,8 @@ const totalAuto = [
     name: "Evo X FQ-440",
     style: "rally",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.6,
     brand: "Mitsubishi",
     model: "Lancer Evolution X",
@@ -1183,6 +1245,8 @@ const totalAuto = [
     name: "Skyline GT-R",
     style: "lap",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 4.9,
     brand: "Nissan",
     model: "Skyline GT-R",
@@ -1221,6 +1285,8 @@ const totalAuto = [
     name: "RX-7 Spirit R",
     style: "lap",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 5.1,
     brand: "Mazda",
     model: "RX-7",
@@ -1259,6 +1325,8 @@ const totalAuto = [
     name: "F8 Tributo",
     style: "lap",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.9,
     brand: "Ferrari",
     model: "F8 Tributo",
@@ -1297,6 +1365,8 @@ const totalAuto = [
     name: "Revuelto",
     style: "drag",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.5,
     brand: "Lamborghini",
     model: "Revuelto",
@@ -1335,6 +1405,8 @@ const totalAuto = [
     name: "McLaren P1",
     style: "lap",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.8,
     brand: "McLaren",
     model: "P1",
@@ -1373,6 +1445,8 @@ const totalAuto = [
     name: "918 Spyder",
     style: "lap",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.6,
     brand: "Porsche",
     model: "918 Spyder",
@@ -1411,6 +1485,8 @@ const totalAuto = [
     name: "LaFerrari",
     style: "lap",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.6,
     brand: "Ferrari",
     model: "LaFerrari",
@@ -1449,6 +1525,8 @@ const totalAuto = [
     name: "Veyron SS",
     style: "drag",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.5,
     brand: "Bugatti",
     model: "Veyron 16.4",
@@ -1487,6 +1565,8 @@ const totalAuto = [
     name: "Agera RS",
     style: "drag",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.8,
     brand: "Koenigsegg",
     model: "Agera RS",
@@ -1525,6 +1605,8 @@ const totalAuto = [
     name: "Zonda Cinque",
     style: "lap",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.4,
     brand: "Pagani",
     model: "Zonda",
@@ -1563,6 +1645,8 @@ const totalAuto = [
     name: "Venom F5",
     style: "drag",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.6,
     brand: "Hennessey",
     model: "Venom F5",
@@ -1601,6 +1685,8 @@ const totalAuto = [
     name: "SSC Tuatara",
     style: "drag",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.6,
     brand: "SSC",
     model: "Tuatara",
@@ -1639,6 +1725,8 @@ const totalAuto = [
     name: "Lotus Evija",
     style: "drag",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.9,
     brand: "Lotus",
     model: "Evija",
@@ -1677,6 +1765,8 @@ const totalAuto = [
     name: "AM Valkyrie",
     style: "lap",
     rating: 5.0,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.5,
     brand: "Aston Martin",
     model: "Valkyrie",
@@ -1715,6 +1805,8 @@ const totalAuto = [
     name: "SLS AMG Black",
     style: "lap",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.6,
     brand: "Mercedes-Benz",
     model: "SLS AMG",
@@ -1753,6 +1845,8 @@ const totalAuto = [
     name: "Lexus LC 500",
     style: "drag",
     rating: 4.5,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 4.7,
     brand: "Lexus",
     model: "LC 500",
@@ -1791,6 +1885,8 @@ const totalAuto = [
     name: "F-Type SVR",
     style: "drag",
     rating: 4.4,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.7,
     brand: "Jaguar",
     model: "F-Type SVR",
@@ -1829,6 +1925,8 @@ const totalAuto = [
     name: "Conti GT Speed",
     style: "drag",
     rating: 4.6,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.6,
     brand: "Bentley",
     model: "Continental GT Speed",
@@ -1867,6 +1965,8 @@ const totalAuto = [
     name: "RR Spectre",
     style: "drag",
     rating: 4.7,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 4.5,
     brand: "Rolls Royce",
     model: "Spectre",
@@ -1905,6 +2005,8 @@ const totalAuto = [
     name: "BMW M4 CSL",
     style: "lap",
     rating: 4.6,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.7,
     brand: "BMW",
     model: "M4 CSL",
@@ -1943,6 +2045,8 @@ const totalAuto = [
     name: "718 GT4 RS",
     style: "lap",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.4,
     brand: "Porsche",
     model: "718 Cayman GT4 RS",
@@ -1981,6 +2085,8 @@ const totalAuto = [
     name: "Corvette ZR1",
     style: "drag",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 2.9,
     brand: "Chevrolet",
     model: "Corvette ZR1",
@@ -2019,6 +2125,8 @@ const totalAuto = [
     name: "Focus RS",
     style: "rally",
     rating: 4.5,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 4.7,
     brand: "Ford",
     model: "Focus RS",
@@ -2057,6 +2165,8 @@ const totalAuto = [
     name: "GR Yaris Rally",
     style: "rally",
     rating: 4.8,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 5.2,
     brand: "Toyota",
     model: "GR Yaris",
@@ -2095,6 +2205,8 @@ const totalAuto = [
     name: "Delta Integrale",
     style: "rally",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 5.7,
     brand: "Lancia",
     model: "Delta HF Integrale",
@@ -2133,6 +2245,8 @@ const totalAuto = [
     name: "911 Dakar",
     style: "rally",
     rating: 4.9,
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat lectus. Nam auctor sodales ante vel tincidunt. Vivamus in diam eu tortor maximus tincidunt nec eget arcu. Morbi tincidunt tempus molestie. Suspendisse potenti. Sed faucibus sed odio in euismod. Aliquam nec mollis ligula, sed bibendum odio. Nunc aliquet magna nibh. Nullam malesuada et neque nec facilisis. Duis aliquam ante justo, et tincidunt ante fermentum ac. Praesent porttitor arcu ut risus pretium ultricies. Ut ut condimentum ex, eu luctus tellus. Aliquam erat volutpat. Donec id egestas nisl. Etiam sit amet imperdiet tellus. Cras scelerisque eros orci, quis rutrum nunc mollis in. Aenean vitae velit tristique, luctus orci quis, vehicula nisl. Nulla consequat sodales viverra. Donec tempor libero congue sagittis pellentesque. Maecenas sit amet dolor in orci congue elementum.",
     acceleration0To100: 3.4,
     brand: "Porsche",
     model: "911 Dakar",
