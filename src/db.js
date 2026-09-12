@@ -6,22 +6,31 @@ const totalAuto = [
     style: "lap",
     rating: 4.2,
     acceleration0To100: 3.9,
-    brand: "Mercedes_AMG",
-    model: "C 63 S E PERFORMANCE",
-    trim: "AMG Night Package",
+    brand: "Mercedes-Benz",
+    model: "AMG C 63 S E PERFORMANCE",
     year: 2024,
-    vin: "W1K2050871F123456",
-    color: {
-      exterior: "Manufaktur Alpine Grey Solid",
-      interior: "Black Nappa Leather with Yellow Stitching",
-    },
+    color: [
+      {
+        name: "Graphite Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#414446]",
+      },
+      {
+        name: "Obsidian Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#151719]",
+      },
+      {
+        name: "Spectral Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1B2A4A]",
+      },
+      {
+        name: "Patagonia Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#7A1116]",
+      },
+    ],
     powertrain: {
       type: "Plug-in Hybrid (PHEV)",
-      engineVolume: 2.0,
-      batteryCapacity: 6.1,
       power: { totalHp: 680, totalKw: 500, torqueNm: 1020 },
       fuelConsumption: 6.9,
-      electricRange: 13,
     },
     drivetrain: {
       transmission: "9G-TRONIC AMG SPEEDSHIFT MCT",
@@ -37,20 +46,29 @@ const totalAuto = [
     acceleration0To100: 1.7,
     brand: "Dodge",
     model: "Challenger SRT Demon 170",
-    trim: "Standard",
     year: 2023,
-    vin: "2C3CDXGJ6PH123456",
-    color: {
-      exterior: "Pitch Black Clearcoat",
-      interior: "Black Alcantara/Laguna Leather",
-    },
+    color: [
+      {
+        name: "Pitch Black Clearcoat",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0D0E0E]",
+      },
+      {
+        name: "TorRed Clearcoat",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#B8191C]",
+      },
+      {
+        name: "Plum Crazy",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#4F2170]",
+      },
+      {
+        name: "F8 Green",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#3B4D3C]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 6.2,
-      batteryCapacity: null,
       power: { totalHp: 1025, totalKw: 764, torqueNm: 1281 },
       fuelConsumption: 21.4,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed TorqueFlite Automatic",
@@ -66,20 +84,29 @@ const totalAuto = [
     acceleration0To100: 3.1,
     brand: "Audi",
     model: "R8 V10 performance quattro (Type 4S)",
-    trim: "performance quattro",
     year: 2023,
-    vin: "WUACGAF20NV123456",
-    color: {
-      exterior: "Suzuka Grey Metallic",
-      interior: "Black Fine Nappa Leather with Diamond Stitching",
-    },
+    color: [
+      {
+        name: "Suzuka Grey Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D0D4D9]",
+      },
+      {
+        name: "Mythos Black Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0E]",
+      },
+      {
+        name: "Ascari Blue Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#10316B]",
+      },
+      {
+        name: "Tango Red Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#990A15]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.2,
-      batteryCapacity: null,
       power: { totalHp: 620, totalKw: 456, torqueNm: 580 },
       fuelConsumption: 13.1,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed S tronic dual-clutch",
@@ -95,20 +122,29 @@ const totalAuto = [
     acceleration0To100: 2.4,
     brand: "Bugatti",
     model: "Chiron Super Sport",
-    trim: "Super Sport",
     year: 2022,
-    vin: "ZA9CSJ2C0NM123456",
-    color: {
-      exterior: "French Racing Blue / Exposed Carbon Fiber",
-      interior: "Beluga Black / French Racing Blue Leather",
-    },
+    color: [
+      {
+        name: "French Racing Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#002F6C]",
+      },
+      {
+        name: "Nocturne Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0A0B]",
+      },
+      {
+        name: "Glacier White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#EFEFEF]",
+      },
+      {
+        name: "Italian Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#A61019]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 8.0,
-      batteryCapacity: null,
       power: { totalHp: 1600, totalKw: 1176, torqueNm: 1600 },
       fuelConsumption: 21.47,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed DSG dual-clutch",
@@ -124,20 +160,29 @@ const totalAuto = [
     acceleration0To100: 3.2,
     brand: "Porsche",
     model: "911 GT3 RS",
-    trim: "Weissach Package",
     year: 2023,
-    vin: "WP0AC2A91PS100001",
-    color: {
-      exterior: "Ice Grey Metallic",
-      interior: "Black Alcantara with GT Silver Stitching",
-    },
+    color: [
+      {
+        name: "Ice Grey Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D1D5DB]",
+      },
+      {
+        name: "Guards Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#CC0000]",
+      },
+      {
+        name: "Shark Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0055A5]",
+      },
+      {
+        name: "Python Green",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#008A3B]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 4.0,
-      batteryCapacity: null,
       power: { totalHp: 525, totalKw: 386, torqueNm: 465 },
       fuelConsumption: 13.4,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed PDK Dual-Clutch",
@@ -153,20 +198,29 @@ const totalAuto = [
     acceleration0To100: 3.0,
     brand: "BMW",
     model: "M5 CS",
-    trim: "CS Limited Edition",
     year: 2022,
-    vin: "WBS83CH040CG00002",
-    color: {
-      exterior: "Frozen Deep Green Metallic",
-      interior: "Black Leather with Mugello Red Accents",
-    },
+    color: [
+      {
+        name: "Frozen Deep Green Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#203428]",
+      },
+      {
+        name: "Frozen Brands Hatch Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#4A4D4F]",
+      },
+      {
+        name: "Brands Hatch Grey Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#5C6063]",
+      },
+      {
+        name: "M Alpine White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F5F5F5]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 4.4,
-      batteryCapacity: null,
       power: { totalHp: 635, totalKw: 467, torqueNm: 750 },
       fuelConsumption: 11.3,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed M Steptronic",
@@ -182,20 +236,29 @@ const totalAuto = [
     acceleration0To100: 2.8,
     brand: "Nissan",
     model: "GT-R Nismo",
-    trim: "Nismo Special Edition",
     year: 2024,
-    vin: "JN1AR3EF4RM000003",
-    color: {
-      exterior: "Nismo Stealth Grey",
-      interior: "Black/Red Recaro Leather with Synthetic Suede",
-    },
+    color: [
+      {
+        name: "Nismo Stealth Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#7C8285]",
+      },
+      {
+        name: "Pearl White TriCoat",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#EFEFEF]",
+      },
+      {
+        name: "Super Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0E0E0E]",
+      },
+      {
+        name: "Solid Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#A30C19]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 3.8,
-      batteryCapacity: null,
       power: { totalHp: 600, totalKw: 441, torqueNm: 652 },
       fuelConsumption: 14.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed Dual-Clutch Transmission",
@@ -211,20 +274,29 @@ const totalAuto = [
     acceleration0To100: 2.7,
     brand: "Chevrolet",
     model: "Corvette Z06",
-    trim: "3LZ Z07 Performance Package",
     year: 2023,
-    vin: "1G1YC2D34P5000004",
-    color: {
-      exterior: "Amplify Orange Tintcoat",
-      interior: "Jet Black Leather with Orange Stitching",
-    },
+    color: [
+      {
+        name: "Amplify Orange Tintcoat",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#E05206]",
+      },
+      {
+        name: "Torch Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C2111A]",
+      },
+      {
+        name: "Hypersonic Gray Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#53575A]",
+      },
+      {
+        name: "Rapid Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0082C8]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.5,
-      batteryCapacity: null,
       power: { totalHp: 670, totalKw: 500, torqueNm: 623 },
       fuelConsumption: 15.6,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed Dual-Clutch Transmission",
@@ -240,20 +312,29 @@ const totalAuto = [
     acceleration0To100: 3.5,
     brand: "Ford",
     model: "Mustang Shelby GT500",
-    trim: "Carbon Fiber Track Pack",
     year: 2022,
-    vin: "1FA6P8SJ0N5000005",
-    color: {
-      exterior: "Grabber Blue Metallic",
-      interior: "Ebony Leather with Recaro Sport Seats",
-    },
+    color: [
+      {
+        name: "Grabber Blue Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1565C0]",
+      },
+      {
+        name: "Shadow Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0C0D0E]",
+      },
+      {
+        name: "Oxford White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F2F2F2]",
+      },
+      {
+        name: "Race Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C6181E]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.2,
-      batteryCapacity: null,
       power: { totalHp: 760, totalKw: 567, torqueNm: 847 },
       fuelConsumption: 16.8,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed Dual-Clutch Transmission",
@@ -269,17 +350,29 @@ const totalAuto = [
     acceleration0To100: 3.0,
     brand: "Lamborghini",
     model: "Huracán STO",
-    trim: "STO",
     year: 2023,
-    vin: "ZHWUB4ZP4PLA00006",
-    color: { exterior: "Verde Citrea", interior: "Nero Cosmus Alcantara" },
+    color: [
+      {
+        name: "Verde Citrea",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#8DB600]",
+      },
+      {
+        name: "Blu Laufey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#2B547E]",
+      },
+      {
+        name: "Arancio Xanto",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D33D17]",
+      },
+      {
+        name: "Grigio Titanio",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#666B73]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.2,
-      batteryCapacity: null,
       power: { totalHp: 640, totalKw: 470, torqueNm: 565 },
       fuelConsumption: 13.9,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed LDF Dual-Clutch",
@@ -295,20 +388,29 @@ const totalAuto = [
     acceleration0To100: 2.5,
     brand: "Ferrari",
     model: "SF90 Stradale",
-    trim: "Assetto Fiorano",
     year: 2023,
-    vin: "ZFF92RHA2P0000007",
-    color: {
-      exterior: "Rosso Corsa",
-      interior: "Nero Carbon Fiber Racing Seats",
-    },
+    color: [
+      {
+        name: "Rosso Corsa",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D40000]",
+      },
+      {
+        name: "Giallo Modena",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFD700]",
+      },
+      {
+        name: "Nero Daytona",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#101010]",
+      },
+      {
+        name: "Blu Tour de France",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#002366]",
+      },
+    ],
     powertrain: {
       type: "Plug-in Hybrid (PHEV)",
-      engineVolume: 4.0,
-      batteryCapacity: 7.9,
       power: { totalHp: 1000, totalKw: 735, torqueNm: 800 },
       fuelConsumption: 6.1,
-      electricRange: 25,
     },
     drivetrain: {
       transmission: "8-speed Dual-Clutch Transmission",
@@ -324,20 +426,29 @@ const totalAuto = [
     acceleration0To100: 2.9,
     brand: "McLaren",
     model: "720S",
-    trim: "Performance",
     year: 2022,
-    vin: "SBM14FAA1NW000008",
-    color: {
-      exterior: "McLaren Orange",
-      interior: "Scoria Grey & Orange Leather",
-    },
+    color: [
+      {
+        name: "McLaren Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FF6600]",
+      },
+      {
+        name: "Onyx Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0F0F10]",
+      },
+      {
+        name: "Silica White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#EAEAEA]",
+      },
+      {
+        name: "Belize Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#004B87]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 4.0,
-      batteryCapacity: null,
       power: { totalHp: 720, totalKw: 530, torqueNm: 770 },
       fuelConsumption: 12.2,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed SSG Dual-Clutch",
@@ -353,20 +464,29 @@ const totalAuto = [
     acceleration0To100: 2.1,
     brand: "Tesla",
     model: "Model S Plaid",
-    trim: "Plaid Tri-Motor",
     year: 2024,
-    vin: "5YJSA1E67RF000009",
-    color: {
-      exterior: "Ultra Red",
-      interior: "Black and White Premium Interior",
-    },
+    color: [
+      {
+        name: "Ultra Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#A81018]",
+      },
+      {
+        name: "Solid Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0A0B]",
+      },
+      {
+        name: "Pearl White Multi-Coat",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F4F4F4]",
+      },
+      {
+        name: "Deep Blue Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#122A5C]",
+      },
+    ],
     powertrain: {
       type: "Battery Electric Vehicle (BEV)",
-      engineVolume: null,
-      batteryCapacity: 100.0,
       power: { totalHp: 1020, totalKw: 760, torqueNm: 1420 },
       fuelConsumption: null,
-      electricRange: 600,
     },
     drivetrain: {
       transmission: "Single-speed Direct Drive",
@@ -380,22 +500,31 @@ const totalAuto = [
     style: "lap",
     rating: 4.9,
     acceleration0To100: 3.2,
-    brand: "Mercedes_AMG",
-    model: "GT Black Series",
-    trim: "Black Series",
+    brand: "Mercedes-Benz",
+    model: "AMG GT Black Series",
     year: 2021,
-    vin: "W1K1903791A000010",
-    color: {
-      exterior: "AMG Magmabeam",
-      interior: "Exclusive Black Nappa Leather with Orange Stitching",
-    },
+    color: [
+      {
+        name: "AMG Magmabeam",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FF4D00]",
+      },
+      {
+        name: "Obsidian Black Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#111213]",
+      },
+      {
+        name: "Designo Selenite Grey Magno",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#5A5E60]",
+      },
+      {
+        name: "AMG Green Hell Magno",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#2E7D32]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 4.0,
-      batteryCapacity: null,
       power: { totalHp: 730, totalKw: 537, torqueNm: 800 },
       fuelConsumption: 12.8,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed AMG SPEEDSHIFT DCT",
@@ -411,17 +540,29 @@ const totalAuto = [
     acceleration0To100: 3.4,
     brand: "Aston Martin",
     model: "DBS Superleggera",
-    trim: "V12 Coupe",
     year: 2023,
-    vin: "SCFEDFBC3PGC00011",
-    color: { exterior: "Xenon Grey", interior: "Pure Black Caithness Leather" },
+    color: [
+      {
+        name: "Xenon Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#3A3D40]",
+      },
+      {
+        name: "Onyx Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0D0D0E]",
+      },
+      {
+        name: "Hyper Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#B30B18]",
+      },
+      {
+        name: "Aston Martin Racing Green",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#004225]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.2,
-      batteryCapacity: null,
       power: { totalHp: 725, totalKw: 533, torqueNm: 900 },
       fuelConsumption: 12.4,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed ZF Automatic",
@@ -437,17 +578,29 @@ const totalAuto = [
     acceleration0To100: 3.9,
     brand: "Toyota",
     model: "GR Supra",
-    trim: "3.0 Premium 45th Anniversary",
     year: 2024,
-    vin: "WZ1DB0C03RW000012",
-    color: { exterior: "Mikan Blast", interior: "Black Leather" },
+    color: [
+      {
+        name: "Mikan Blast",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D84B16]",
+      },
+      {
+        name: "Absolute Zero",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F7F7F7]",
+      },
+      {
+        name: "Nocturnal Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0C0D0E]",
+      },
+      {
+        name: "Renaissance Red 2.0",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#BF0A1A]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 3.0,
-      batteryCapacity: null,
       power: { totalHp: 387, totalKw: 285, torqueNm: 500 },
       fuelConsumption: 8.8,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed Intelligent Manual Transmission (iMT)",
@@ -463,20 +616,29 @@ const totalAuto = [
     acceleration0To100: 3.7,
     brand: "Lexus",
     model: "LFA",
-    trim: "Nürburgring Package",
     year: 2012,
-    vin: "JTHBJ1D13C5000013",
-    color: {
-      exterior: "Whitest White",
-      interior: "Black Alcantara with Red Carbon Fiber",
-    },
+    color: [
+      {
+        name: "Whitest White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F8F9FA]",
+      },
+      {
+        name: "Matte Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#121212]",
+      },
+      {
+        name: "Pearl Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#E65100]",
+      },
+      {
+        name: "LFA Yellow",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFD600]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 4.8,
-      batteryCapacity: null,
       power: { totalHp: 571, totalKw: 420, torqueNm: 480 },
       fuelConsumption: 16.7,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed ASG Automated Manual",
@@ -492,20 +654,29 @@ const totalAuto = [
     acceleration0To100: 2.5,
     brand: "Koenigsegg",
     model: "Jesko",
-    trim: "Attack",
     year: 2023,
-    vin: "YT9J12V10PM000014",
-    color: {
-      exterior: "Tang Orange",
-      interior: "Black Deserter Leather & Carbon Fiber",
-    },
+    color: [
+      {
+        name: "Tang Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#E65C00]",
+      },
+      {
+        name: "Crystal White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F0F2F5]",
+      },
+      {
+        name: "Kevlar Clear Carbon",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1C1D21]",
+      },
+      {
+        name: "Imperial Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B2545]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.0,
-      batteryCapacity: null,
       power: { totalHp: 1600, totalKw: 1193, torqueNm: 1500 },
       fuelConsumption: 20.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "9-speed Light Speed Transmission (LST)",
@@ -521,20 +692,29 @@ const totalAuto = [
     acceleration0To100: 2.8,
     brand: "Pagani",
     model: "Huayra Roadster BC",
-    trim: "Roadster BC",
     year: 2021,
-    vin: "ZA9H821A0MS000015",
-    color: {
-      exterior: "Exposed Matte Carbon Fiber / Grigio Montecarlo",
-      interior: "Cognac Leather & Titanium",
-    },
+    color: [
+      {
+        name: "Grigio Montecarlo",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#7B8084]",
+      },
+      {
+        name: "Exposed Matte Carbon Fiber",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1F2022]",
+      },
+      {
+        name: "Blu Francia",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0038A8]",
+      },
+      {
+        name: "Rosso Dubai",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#800020]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 6.0,
-      batteryCapacity: null,
       power: { totalHp: 802, totalKw: 590, torqueNm: 1050 },
       fuelConsumption: 15.5,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed Xtrac Sequential Manual",
@@ -550,20 +730,29 @@ const totalAuto = [
     acceleration0To100: 1.8,
     brand: "Rimac",
     model: "Nevera",
-    trim: "Time Attack Edition",
     year: 2024,
-    vin: "V39NVR4E5RS000016",
-    color: {
-      exterior: "Squadra Coronado Black with Lightning Green",
-      interior: "Black Alcantara with Green Accenting",
-    },
+    color: [
+      {
+        name: "Squadra Coronado Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0E]",
+      },
+      {
+        name: "Lightning Green",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#39FF14]",
+      },
+      {
+        name: "E-Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0066CC]",
+      },
+      {
+        name: "Predator Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#6C757D]",
+      },
+    ],
     powertrain: {
       type: "Battery Electric Vehicle (BEV)",
-      engineVolume: null,
-      batteryCapacity: 120.0,
       power: { totalHp: 1914, totalKw: 1408, torqueNm: 2360 },
       fuelConsumption: null,
-      electricRange: 490,
     },
     drivetrain: {
       transmission: "4x Single-Speed Independent Gearboxes",
@@ -579,20 +768,29 @@ const totalAuto = [
     acceleration0To100: 2.8,
     brand: "Porsche",
     model: "Taycan Turbo S",
-    trim: "Turbo S",
     year: 2024,
-    vin: "WP0AA2Y10RSA00017",
-    color: {
-      exterior: "Neptune Blue",
-      interior: "Black/Slate Grey Leather-Free",
-    },
+    color: [
+      {
+        name: "Neptune Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#2A4B7C]",
+      },
+      {
+        name: "Carrera White Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F2F4F7]",
+      },
+      {
+        name: "Jet Black Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0D0E10]",
+      },
+      {
+        name: "Carmine Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#9B111E]",
+      },
+    ],
     powertrain: {
       type: "Battery Electric Vehicle (BEV)",
-      engineVolume: null,
-      batteryCapacity: 93.4,
       power: { totalHp: 761, totalKw: 560, torqueNm: 1050 },
       fuelConsumption: null,
-      electricRange: 450,
     },
     drivetrain: {
       transmission: "2-speed Transmission on Rear Axle",
@@ -608,20 +806,29 @@ const totalAuto = [
     acceleration0To100: 3.3,
     brand: "Audi",
     model: "RS 6 Avant",
-    trim: "GT Limited Edition",
     year: 2024,
-    vin: "WAUZZZF23RN000018",
-    color: {
-      exterior: "Arkona White with Heritage Graphics",
-      interior: "Dinamica Microfiber Black/Express Red",
-    },
+    color: [
+      {
+        name: "Arkona White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#EDEFF2]",
+      },
+      {
+        name: "Nardo Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#686B6E]",
+      },
+      {
+        name: "Mythos Black Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0C0D0E]",
+      },
+      {
+        name: "Ascari Blue Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#10316B]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 4.0,
-      batteryCapacity: null,
       power: { totalHp: 630, totalKw: 463, torqueNm: 850 },
       fuelConsumption: 12.2,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed Tiptronic Automatic",
@@ -637,20 +844,29 @@ const totalAuto = [
     acceleration0To100: 3.5,
     brand: "BMW",
     model: "M3 Competition",
-    trim: "M xDrive",
     year: 2024,
-    vin: "WBS33AY080FP00019",
-    color: {
-      exterior: "Isle of Man Green Metallic",
-      interior: "Kyalami Orange/Black Full Merino Leather",
-    },
+    color: [
+      {
+        name: "Isle of Man Green Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#004B32]",
+      },
+      {
+        name: "Toronto Red Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C21807]",
+      },
+      {
+        name: "Sao Paulo Yellow",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D4E157]",
+      },
+      {
+        name: "Brooklyn Grey Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#B0B7BC]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 3.0,
-      batteryCapacity: null,
       power: { totalHp: 510, totalKw: 375, torqueNm: 650 },
       fuelConsumption: 10.1,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed M Steptronic",
@@ -664,22 +880,31 @@ const totalAuto = [
     style: "drag",
     rating: 4.5,
     acceleration0To100: 4.5,
-    brand: "Mercedes_AMG",
-    model: "G 63",
-    trim: "Grand Edition",
+    brand: "Mercedes-Benz",
+    model: "AMG G 63",
     year: 2024,
-    vin: "W4N4632761X000020",
-    color: {
-      exterior: "MANUFAKTUR Night Black Magno",
-      interior: "Black Nappa Leather with Gold Stitching",
-    },
+    color: [
+      {
+        name: "MANUFAKTUR Night Black Magno",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#141415]",
+      },
+      {
+        name: "G Manufaktur Platinum Magno",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#72767A]",
+      },
+      {
+        name: "Polar White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F2F3F5]",
+      },
+      {
+        name: "Emerald Green Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0F382C]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 4.0,
-      batteryCapacity: null,
       power: { totalHp: 585, totalKw: 430, torqueNm: 850 },
       fuelConsumption: 16.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "9G-TRONIC AMG SPEEDSHIFT TCT",
@@ -693,22 +918,31 @@ const totalAuto = [
     style: "lap",
     rating: 4.7,
     acceleration0To100: 3.6,
-    brand: "Alfa_Romeo",
+    brand: "Alfa Romeo",
     model: "Giulia GTA",
-    trim: "GTAm",
     year: 2021,
-    vin: "ZARFAEV09M7000021",
-    color: {
-      exterior: "Montreal Green",
-      interior: "Black Alcantara with Green/White Stitching",
-    },
+    color: [
+      {
+        name: "Montreal Green",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#005F33]",
+      },
+      {
+        name: "Rosso GTA",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#BA0C2F]",
+      },
+      {
+        name: "Bianco Trofeo",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#EFEFEF]",
+      },
+      {
+        name: "Nero Vulcano",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#121314]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 2.9,
-      batteryCapacity: null,
       power: { totalHp: 540, totalKw: 397, torqueNm: 600 },
       fuelConsumption: 10.8,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed Automatic",
@@ -724,20 +958,29 @@ const totalAuto = [
     acceleration0To100: 2.9,
     brand: "Maserati",
     model: "MC20",
-    trim: "Cielo Spider",
     year: 2023,
-    vin: "ZAM82REA0P0000022",
-    color: {
-      exterior: "Acqua Marina",
-      interior: "Ice Grey Leather & Alcantara",
-    },
+    color: [
+      {
+        name: "Acqua Marina",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#7BB2C9]",
+      },
+      {
+        name: "Bianco Audace",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#EAEAEA]",
+      },
+      {
+        name: "Giallo Genio",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFC72C]",
+      },
+      {
+        name: "Nero Enigma",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0D0D0E]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 3.0,
-      batteryCapacity: null,
       power: { totalHp: 630, totalKw: 463, torqueNm: 730 },
       fuelConsumption: 11.5,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed Dual-Clutch Transmission",
@@ -753,20 +996,29 @@ const totalAuto = [
     acceleration0To100: 3.0,
     brand: "Ford",
     model: "GT",
-    trim: "Liquid Carbon Edition",
     year: 2020,
-    vin: "2FMPK1J90LBA00023",
-    color: {
-      exterior: "Exposed Carbon Fiber Clearcoat",
-      interior: "Dark Energy Interior",
-    },
+    color: [
+      {
+        name: "Exposed Carbon Fiber Clearcoat",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1E2022]",
+      },
+      {
+        name: "Liquid Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0D3B66]",
+      },
+      {
+        name: "Frozen White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F0F2F5]",
+      },
+      {
+        name: "Shadow Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0A0B]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 3.5,
-      batteryCapacity: null,
       power: { totalHp: 660, totalKw: 492, torqueNm: 746 },
       fuelConsumption: 14.7,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed Dual-Clutch Transmission",
@@ -782,17 +1034,29 @@ const totalAuto = [
     acceleration0To100: 3.5,
     brand: "Chevrolet",
     model: "Camaro ZL1",
-    trim: "1LE Track Performance Package",
     year: 2023,
-    vin: "1G1FJ1R65P0000024",
-    color: { exterior: "Rapid Blue", interior: "Jet Black with Red Accents" },
+    color: [
+      {
+        name: "Rapid Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0082C8]",
+      },
+      {
+        name: "Vivid Orange Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#E65100]",
+      },
+      {
+        name: "Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0B0C]",
+      },
+      {
+        name: "Summit White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F5F5F5]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 6.2,
-      batteryCapacity: null,
       power: { totalHp: 650, totalKw: 485, torqueNm: 881 },
       fuelConsumption: 15.6,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed Manual with Active Rev Match",
@@ -808,20 +1072,29 @@ const totalAuto = [
     acceleration0To100: 5.2,
     brand: "Subaru",
     model: "WRX STI",
-    trim: "EJ25 Final Edition",
     year: 2020,
-    vin: "JF1VA2U60LG000025",
-    color: {
-      exterior: "WR Blue Pearl",
-      interior: "Black/Red Ultrasuede Recaro Seats",
-    },
+    color: [
+      {
+        name: "WR Blue Pearl",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0033A0]",
+      },
+      {
+        name: "Crystal Black Silica",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0C0D0E]",
+      },
+      {
+        name: "Crystal White Pearl",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F2F4F7]",
+      },
+      {
+        name: "Pure Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D32F2F]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 2.5,
-      batteryCapacity: null,
       power: { totalHp: 310, totalKw: 228, torqueNm: 393 },
       fuelConsumption: 10.9,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed Close-Ratio Manual",
@@ -837,20 +1110,29 @@ const totalAuto = [
     acceleration0To100: 2.9,
     brand: "Honda",
     model: "NSX",
-    trim: "Type S",
     year: 2022,
-    vin: "18HN11A11NS000026",
-    color: {
-      exterior: "Gotham Gray Matte",
-      interior: "Orchid Leather & Alcantara",
-    },
+    color: [
+      {
+        name: "Gotham Gray Matte",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#4A4D52]",
+      },
+      {
+        name: "Valencia Red Pearl",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#B71C1C]",
+      },
+      {
+        name: "130R White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F5F5F5]",
+      },
+      {
+        name: "Berlina Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0A0B]",
+      },
+    ],
     powertrain: {
       type: "Hybrid (HEV)",
-      engineVolume: 3.5,
-      batteryCapacity: 1.3,
       power: { totalHp: 608, totalKw: 447, torqueNm: 667 },
       fuelConsumption: 10.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "9-speed Dual-Clutch Transmission",
@@ -866,17 +1148,29 @@ const totalAuto = [
     acceleration0To100: 3.6,
     brand: "Mitsubishi",
     model: "Lancer Evolution X",
-    trim: "FQ-440 MR Special Edition",
     year: 2015,
-    vin: "JMBSNCZ4AEU000027",
-    color: { exterior: "Frost White", interior: "Black Recaro Bucket Seats" },
+    color: [
+      {
+        name: "Frost White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F0F2F5]",
+      },
+      {
+        name: "Phantom Black Pearl",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0E0F10]",
+      },
+      {
+        name: "Orient Red Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C62828]",
+      },
+      {
+        name: "Titanium Grey Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#545B62]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 2.0,
-      batteryCapacity: null,
       power: { totalHp: 440, totalKw: 328, torqueNm: 559 },
       fuelConsumption: 10.5,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed SST Twin-Clutch Automated Manual",
@@ -892,20 +1186,29 @@ const totalAuto = [
     acceleration0To100: 4.9,
     brand: "Nissan",
     model: "Skyline GT-R",
-    trim: "V-Spec II (R34)",
     year: 2002,
-    vin: "BNR34-400028",
-    color: {
-      exterior: "Bayside Blue",
-      interior: "Grey Fabric Sport Bucket Seats",
-    },
+    color: [
+      {
+        name: "Bayside Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#002D72]",
+      },
+      {
+        name: "Black Pearl",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0E]",
+      },
+      {
+        name: "White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F4F4F4]",
+      },
+      {
+        name: "Millennium Jade",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#8A9A86]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 2.6,
-      batteryCapacity: null,
       power: { totalHp: 280, totalKw: 206, torqueNm: 392 },
       fuelConsumption: 12.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed Getrag Manual",
@@ -921,20 +1224,29 @@ const totalAuto = [
     acceleration0To100: 5.1,
     brand: "Mazda",
     model: "RX-7",
-    trim: "Spirit R Type A (FD3S)",
     year: 2002,
-    vin: "FD3S-600029",
-    color: {
-      exterior: "Titanium Grey Metallic",
-      interior: "Red Recaro Kevlar Bucket Seats",
-    },
+    color: [
+      {
+        name: "Titanium Grey Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#585C61]",
+      },
+      {
+        name: "Innocent Blue Mica",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#003B70]",
+      },
+      {
+        name: "Pure White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F7F7F7]",
+      },
+      {
+        name: "Brilliant Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0A0B]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 1.3,
-      batteryCapacity: null,
       power: { totalHp: 280, totalKw: 206, torqueNm: 314 },
       fuelConsumption: 11.2,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "5-speed Manual",
@@ -950,20 +1262,29 @@ const totalAuto = [
     acceleration0To100: 2.9,
     brand: "Ferrari",
     model: "F8 Tributo",
-    trim: "V8 Coupe",
     year: 2022,
-    vin: "ZFF83RHA0N0000030",
-    color: {
-      exterior: "Giallo Modena",
-      interior: "Nero Leather with Yellow Stitching",
-    },
+    color: [
+      {
+        name: "Giallo Modena",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFD700]",
+      },
+      {
+        name: "Rosso Corsa",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D40000]",
+      },
+      {
+        name: "Nero Daytona",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#101010]",
+      },
+      {
+        name: "Rosso Scuderia",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FF2800]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 3.9,
-      batteryCapacity: null,
       power: { totalHp: 720, totalKw: 530, torqueNm: 770 },
       fuelConsumption: 12.9,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed F1 Dual-Clutch",
@@ -979,20 +1300,29 @@ const totalAuto = [
     acceleration0To100: 2.5,
     brand: "Lamborghini",
     model: "Revuelto",
-    trim: "V12 HPEV",
     year: 2024,
-    vin: "ZHWUC1ZP0R0000031",
-    color: {
-      exterior: "Arancio Apodis",
-      interior: "Nero Ade / Arancio Dryope Alcantara",
-    },
+    color: [
+      {
+        name: "Arancio Apodis",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#E64A19]",
+      },
+      {
+        name: "Verde Shock",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#76FF03]",
+      },
+      {
+        name: "Grigio Nimbus",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#9E9E9E]",
+      },
+      {
+        name: "Nero Noctis",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0D]",
+      },
+    ],
     powertrain: {
       type: "Plug-in Hybrid (PHEV)",
-      engineVolume: 6.5,
-      batteryCapacity: 3.8,
       power: { totalHp: 1015, totalKw: 746, torqueNm: 1062 },
       fuelConsumption: 11.8,
-      electricRange: 10,
     },
     drivetrain: {
       transmission: "8-speed Dual-Clutch Transmission",
@@ -1008,20 +1338,29 @@ const totalAuto = [
     acceleration0To100: 2.8,
     brand: "McLaren",
     model: "P1",
-    trim: "Hybrid Hypercar",
     year: 2015,
-    vin: "SBM11FAA8FW000032",
-    color: {
-      exterior: "Volcano Yellow",
-      interior: "Black Leather and Carbon Fiber",
-    },
+    color: [
+      {
+        name: "Volcano Yellow",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFCC00]",
+      },
+      {
+        name: "Volcano Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FF3300]",
+      },
+      {
+        name: "Supernova Silver",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C0C0C0]",
+      },
+      {
+        name: "Fire Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#121214]",
+      },
+    ],
     powertrain: {
       type: "Plug-in Hybrid (PHEV)",
-      engineVolume: 3.8,
-      batteryCapacity: 4.7,
       power: { totalHp: 916, totalKw: 673, torqueNm: 900 },
       fuelConsumption: 8.3,
-      electricRange: 11,
     },
     drivetrain: {
       transmission: "7-speed Dual-Clutch Transmission",
@@ -1037,20 +1376,29 @@ const totalAuto = [
     acceleration0To100: 2.6,
     brand: "Porsche",
     model: "918 Spyder",
-    trim: "Weissach Package",
     year: 2015,
-    vin: "WP0CA2A90FS000033",
-    color: {
-      exterior: "Liquid Metal Silver",
-      interior: "Onyx Black Leather with Acid Green Piping",
-    },
+    color: [
+      {
+        name: "Liquid Metal Silver",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#A6ACAF]",
+      },
+      {
+        name: "Liquid Metal Chrome Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1B4D3E]",
+      },
+      {
+        name: "Basalt Black Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#111213]",
+      },
+      {
+        name: "White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFFFFF]",
+      },
+    ],
     powertrain: {
       type: "Plug-in Hybrid (PHEV)",
-      engineVolume: 4.6,
-      batteryCapacity: 6.8,
       power: { totalHp: 887, totalKw: 652, torqueNm: 1280 },
       fuelConsumption: 3.1,
-      electricRange: 19,
     },
     drivetrain: {
       transmission: "7-speed PDK Dual-Clutch",
@@ -1066,20 +1414,29 @@ const totalAuto = [
     acceleration0To100: 2.6,
     brand: "Ferrari",
     model: "LaFerrari",
-    trim: "Coupe",
     year: 2014,
-    vin: "ZFF70RHA0E0000034",
-    color: {
-      exterior: "Rosso Corsa",
-      interior: "Black Leather with Red Piping",
-    },
+    color: [
+      {
+        name: "Rosso Corsa",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D40000]",
+      },
+      {
+        name: "Giallo Modena",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFD700]",
+      },
+      {
+        name: "Nero DS",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0A0B]",
+      },
+      {
+        name: "Argento Nürburgring",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C0C0C0]",
+      },
+    ],
     powertrain: {
       type: "Hybrid (HEV)",
-      engineVolume: 6.3,
-      batteryCapacity: 2.2,
       power: { totalHp: 963, totalKw: 708, torqueNm: 900 },
       fuelConsumption: 14.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed Dual-Clutch Transmission",
@@ -1095,20 +1452,29 @@ const totalAuto = [
     acceleration0To100: 2.5,
     brand: "Bugatti",
     model: "Veyron 16.4",
-    trim: "Super Sport",
     year: 2011,
-    vin: "ZA9CS31B0B0000035",
-    color: {
-      exterior: "Black Exposed Carbon & Orange",
-      interior: "Tangerine / Black Leather",
-    },
+    color: [
+      {
+        name: "Black Exposed Carbon & Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FF5500]",
+      },
+      {
+        name: "Dark Blue Carbon",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#001133]",
+      },
+      {
+        name: "Nocturne Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0A0B]",
+      },
+      {
+        name: "Pearl White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#EAEAEA]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 8.0,
-      batteryCapacity: null,
       power: { totalHp: 1200, totalKw: 882, torqueNm: 1500 },
       fuelConsumption: 23.1,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed DSG Dual-Clutch",
@@ -1124,20 +1490,29 @@ const totalAuto = [
     acceleration0To100: 2.8,
     brand: "Koenigsegg",
     model: "Agera RS",
-    trim: "RS",
     year: 2017,
-    vin: "YT9A12V10HM000036",
-    color: {
-      exterior: "Clear Carbon with Gold Leaf Accents",
-      interior: "Black Alcantara with Gold Stitching",
-    },
+    color: [
+      {
+        name: "Clear Carbon with Gold Leaf Accents",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D4AF37]",
+      },
+      {
+        name: "Pearl White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F0F2F5]",
+      },
+      {
+        name: "Apple Red Carbon",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#8B0000]",
+      },
+      {
+        name: "Blue Diamond",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0F2C59]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.0,
-      batteryCapacity: null,
       power: { totalHp: 1160, totalKw: 865, torqueNm: 1280 },
       fuelConsumption: 18.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed Dual-Clutch with Paddle Shift",
@@ -1153,20 +1528,29 @@ const totalAuto = [
     acceleration0To100: 3.4,
     brand: "Pagani",
     model: "Zonda",
-    trim: "Cinque Coupe",
     year: 2009,
-    vin: "ZA9Z100009S000037",
-    color: {
-      exterior: "Bianco Benny with Carbon & Red Stripe",
-      interior: "Black Leather with Red Stitching",
-    },
+    color: [
+      {
+        name: "Bianco Benny",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F5F5F5]",
+      },
+      {
+        name: "Exposed Carbon Fiber",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1C1C1E]",
+      },
+      {
+        name: "Rosso Corsa Stripe",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D40000]",
+      },
+      {
+        name: "Giallo Modena Accent",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFD700]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 7.3,
-      batteryCapacity: null,
       power: { totalHp: 678, totalKw: 499, torqueNm: 780 },
       fuelConsumption: 16.5,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed CIMA Robotized Sequential",
@@ -1182,20 +1566,29 @@ const totalAuto = [
     acceleration0To100: 2.6,
     brand: "Hennessey",
     model: "Venom F5",
-    trim: "Revolution Roadster",
     year: 2023,
-    vin: "1H9VF5C20PB000038",
-    color: {
-      exterior: "Citrus Orange",
-      interior: "Bare Carbon Fiber & Black Leather",
-    },
+    color: [
+      {
+        name: "Citrus Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FF5500]",
+      },
+      {
+        name: "Glacier Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#41B6E6]",
+      },
+      {
+        name: "Monza Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C8102E]",
+      },
+      {
+        name: "Bare Carbon Fiber",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#151618]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 6.6,
-      batteryCapacity: null,
       power: { totalHp: 1817, totalKw: 1355, torqueNm: 1617 },
       fuelConsumption: 22.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed Single-Clutch Automated Manual",
@@ -1211,20 +1604,29 @@ const totalAuto = [
     acceleration0To100: 2.6,
     brand: "SSC",
     model: "Tuatara",
-    trim: "Striker",
     year: 2022,
-    vin: "1S9TT2C00NB000039",
-    color: {
-      exterior: "Metallic Black with Green Highlights",
-      interior: "Black Alcantara with Green Carbon Trim",
-    },
+    color: [
+      {
+        name: "Metallic Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0E]",
+      },
+      {
+        name: "Highlighter Green",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#39FF14]",
+      },
+      {
+        name: "Glacier White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F2F4F7]",
+      },
+      {
+        name: "Striker Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FF3300]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.9,
-      batteryCapacity: null,
       power: { totalHp: 1750, totalKw: 1305, torqueNm: 1735 },
       fuelConsumption: 20.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed CIMA Automated Manual",
@@ -1240,20 +1642,29 @@ const totalAuto = [
     acceleration0To100: 2.9,
     brand: "Lotus",
     model: "Evija",
-    trim: "Fittipaldi Edition",
     year: 2023,
-    vin: "SCC0EV1A0PH000040",
-    color: {
-      exterior: "Black and Gold Heritage Livery",
-      interior: "Black Leather with Gold Anodised Accents",
-    },
+    color: [
+      {
+        name: "Black and Gold Heritage Livery",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0F0F10]",
+      },
+      {
+        name: "Solaris Yellow",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFCC00]",
+      },
+      {
+        name: "Surge Gray",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#5A6065]",
+      },
+      {
+        name: "Atomic Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D00000]",
+      },
+    ],
     powertrain: {
       type: "Battery Electric Vehicle (BEV)",
-      engineVolume: null,
-      batteryCapacity: 93.0,
       power: { totalHp: 2011, totalKw: 1479, torqueNm: 1704 },
       fuelConsumption: null,
-      electricRange: 400,
     },
     drivetrain: {
       transmission: "4x Single-Speed Independent Gearboxes",
@@ -1269,20 +1680,29 @@ const totalAuto = [
     acceleration0To100: 2.5,
     brand: "Aston Martin",
     model: "Valkyrie",
-    trim: "V12 Hypercar",
     year: 2022,
-    vin: "SCFV12A10NC000041",
-    color: {
-      exterior: "AMR Lime Essence",
-      interior: "Black Alcantara Racing Buckets",
-    },
+    color: [
+      {
+        name: "AMR Lime Essence",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D4E157]",
+      },
+      {
+        name: "Stirling Green",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1B4D3E]",
+      },
+      {
+        name: "Lunar White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#EAEAEA]",
+      },
+      {
+        name: "Ultramarine Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0D12]",
+      },
+    ],
     powertrain: {
       type: "Hybrid (HEV)",
-      engineVolume: 6.5,
-      batteryCapacity: 1.3,
       power: { totalHp: 1155, totalKw: 849, torqueNm: 900 },
       fuelConsumption: 15.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed Single-Clutch Paddle Shift",
@@ -1298,20 +1718,29 @@ const totalAuto = [
     acceleration0To100: 3.6,
     brand: "Mercedes-Benz",
     model: "SLS AMG",
-    trim: "Coupé Black Series",
     year: 2014,
-    vin: "WDD1973771A000042",
-    color: {
-      exterior: "Solarbeam Yellow",
-      interior: "Black Designo Leather with Red Stitching",
-    },
+    color: [
+      {
+        name: "Solarbeam Yellow",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFC400]",
+      },
+      {
+        name: "Obsidian Black Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0E0F10]",
+      },
+      {
+        name: "Designo Magno Alanite Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#8A8D8F]",
+      },
+      {
+        name: "Iridium Silver Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C5C7C9]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 6.2,
-      batteryCapacity: null,
       power: { totalHp: 631, totalKw: 464, torqueNm: 635 },
       fuelConsumption: 13.7,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed AMG SPEEDSHIFT DCT",
@@ -1327,20 +1756,29 @@ const totalAuto = [
     acceleration0To100: 4.7,
     brand: "Lexus",
     model: "LC 500",
-    trim: "Inspiration Series",
     year: 2024,
-    vin: "JTH591000R5000043",
-    color: {
-      exterior: "Polar Surge Satin",
-      interior: "Deep Blue Leather with Contrast Stitching",
-    },
+    color: [
+      {
+        name: "Polar Surge Satin",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#E0E5EA]",
+      },
+      {
+        name: "Infrared",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#9B111E]",
+      },
+      {
+        name: "Ultrasonic Blue Mica 2.0",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#002FA7]",
+      },
+      {
+        name: "Caviar Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0E]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.0,
-      batteryCapacity: null,
       power: { totalHp: 477, totalKw: 351, torqueNm: 540 },
       fuelConsumption: 11.6,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "10-speed Direct-Shift Automatic",
@@ -1356,20 +1794,29 @@ const totalAuto = [
     acceleration0To100: 3.7,
     brand: "Jaguar",
     model: "F-Type SVR",
-    trim: "SVR AWD Coupe",
     year: 2020,
-    vin: "SAJWA1840LC000044",
-    color: {
-      exterior: "Velocity Blue",
-      interior: "Jet Black Quilted Leather with Reims Blue Stitching",
-    },
+    color: [
+      {
+        name: "Velocity Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0047AB]",
+      },
+      {
+        name: "Santorini Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0B0C]",
+      },
+      {
+        name: "Firesand Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#E65100]",
+      },
+      {
+        name: "Yulong White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F0F2F5]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 5.0,
-      batteryCapacity: null,
       power: { totalHp: 575, totalKw: 423, torqueNm: 700 },
       fuelConsumption: 11.3,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed Quickshift Automatic",
@@ -1385,20 +1832,29 @@ const totalAuto = [
     acceleration0To100: 3.6,
     brand: "Bentley",
     model: "Continental GT Speed",
-    trim: "Speed W12",
     year: 2023,
-    vin: "SCBCB6390PC000045",
-    color: {
-      exterior: "Cumbrian Green",
-      interior: "Saddle / Cumbrian Green Hide",
-    },
+    color: [
+      {
+        name: "Cumbrian Green",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#1B362A]",
+      },
+      {
+        name: "Beluga Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#090A0B]",
+      },
+      {
+        name: "Glacier White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F5F5F5]",
+      },
+      {
+        name: "St. James Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#A61018]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 6.0,
-      batteryCapacity: null,
       power: { totalHp: 659, totalKw: 485, torqueNm: 900 },
       fuelConsumption: 13.7,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed Dual-Clutch Transmission",
@@ -1412,22 +1868,31 @@ const totalAuto = [
     style: "drag",
     rating: 4.7,
     acceleration0To100: 4.5,
-    brand: "Rolls_Royce",
+    brand: "Rolls Royce",
     model: "Spectre",
-    trim: "Ultra-Luxury Coupe",
     year: 2024,
-    vin: "SCA664S00RU000046",
-    color: {
-      exterior: "Chartreuse & Black Diamond",
-      interior: "Grace White Leather with Peony Pink Accents",
-    },
+    color: [
+      {
+        name: "Chartreuse",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#DFFF00]",
+      },
+      {
+        name: "Black Diamond",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0E]",
+      },
+      {
+        name: "English White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F7F9FA]",
+      },
+      {
+        name: "Salamanca Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0C2340]",
+      },
+    ],
     powertrain: {
       type: "Battery Electric Vehicle (BEV)",
-      engineVolume: null,
-      batteryCapacity: 102.0,
       power: { totalHp: 584, totalKw: 430, torqueNm: 900 },
       fuelConsumption: null,
-      electricRange: 520,
     },
     drivetrain: {
       transmission: "Single-Speed Automatic",
@@ -1443,20 +1908,29 @@ const totalAuto = [
     acceleration0To100: 3.7,
     brand: "BMW",
     model: "M4 CSL",
-    trim: "CSL Limited Edition",
     year: 2023,
-    vin: "WBS43AZ000FK00047",
-    color: {
-      exterior: "Frozen Brooklyn Grey Metallic",
-      interior: "Black Full Merino Leather with M Carbon Bucket Seats",
-    },
+    color: [
+      {
+        name: "Frozen Brooklyn Grey Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#9AA0A6]",
+      },
+      {
+        name: "Black Sapphire Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0E]",
+      },
+      {
+        name: "Alpine White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F8F9FA]",
+      },
+      {
+        name: "Toronto Red Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C21807]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 3.0,
-      batteryCapacity: null,
       power: { totalHp: 550, totalKw: 405, torqueNm: 650 },
       fuelConsumption: 10.1,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed M Steptronic",
@@ -1472,20 +1946,29 @@ const totalAuto = [
     acceleration0To100: 3.4,
     brand: "Porsche",
     model: "718 Cayman GT4 RS",
-    trim: "GT4 RS",
     year: 2023,
-    vin: "WP0AC2A80PS000048",
-    color: {
-      exterior: "Arctic Grey",
-      interior: "Black Leather and Race-Tex with Deep Sea Blue Stitching",
-    },
+    color: [
+      {
+        name: "Arctic Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#8C9297]",
+      },
+      {
+        name: "Guards Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#CC0000]",
+      },
+      {
+        name: "Racing Yellow",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFD700]",
+      },
+      {
+        name: "Gentian Blue Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0F2A4A]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 4.0,
-      batteryCapacity: null,
       power: { totalHp: 500, totalKw: 368, torqueNm: 450 },
       fuelConsumption: 13.2,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed PDK Dual-Clutch",
@@ -1501,20 +1984,29 @@ const totalAuto = [
     acceleration0To100: 2.9,
     brand: "Chevrolet",
     model: "Corvette ZR1",
-    trim: "C7 ZR1 3ZR",
     year: 2019,
-    vin: "1G1YZ2D90K5000049",
-    color: {
-      exterior: "Sebring Orange Tintcoat",
-      interior: "Jet Black Nappa Leather with Orange Microfiber",
-    },
+    color: [
+      {
+        name: "Sebring Orange Tintcoat",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#E65100]",
+      },
+      {
+        name: "Torch Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C2111A]",
+      },
+      {
+        name: "Corvette Racing Yellow",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFD600]",
+      },
+      {
+        name: "Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0B0C]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 6.2,
-      batteryCapacity: null,
       power: { totalHp: 755, totalKw: 563, torqueNm: 969 },
       fuelConsumption: 16.0,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "7-speed Manual with Active Rev Match",
@@ -1530,17 +2022,29 @@ const totalAuto = [
     acceleration0To100: 4.7,
     brand: "Ford",
     model: "Focus RS",
-    trim: "Heritage Edition (Mk3)",
     year: 2018,
-    vin: "WF0DP3TH0J4000050",
-    color: { exterior: "Deep Orange", interior: "Black Recaro Shell Seats" },
+    color: [
+      {
+        name: "Deep Orange",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FF3300]",
+      },
+      {
+        name: "Nitrous Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0077C8]",
+      },
+      {
+        name: "Stealth Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#6C757D]",
+      },
+      {
+        name: "Shadow Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0A0A0B]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 2.3,
-      batteryCapacity: null,
       power: { totalHp: 375, totalKw: 276, torqueNm: 510 },
       fuelConsumption: 8.9,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed Manual",
@@ -1556,20 +2060,29 @@ const totalAuto = [
     acceleration0To100: 5.2,
     brand: "Toyota",
     model: "GR Yaris",
-    trim: "Circuit Pack / Morizo Selection",
     year: 2024,
-    vin: "JTJAR10C00M000055",
-    color: {
-      exterior: "Precious Metal Grey",
-      interior: "Black Ultrasuede with Red Stitching",
-    },
+    color: [
+      {
+        name: "Precious Metal Grey",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#555A60]",
+      },
+      {
+        name: "Emotional Red II",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C2111A]",
+      },
+      {
+        name: "Super White II",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F8F9FA]",
+      },
+      {
+        name: "Precious Black",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0B0C0E]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 1.6,
-      batteryCapacity: null,
       power: { totalHp: 280, totalKw: 206, torqueNm: 390 },
       fuelConsumption: 8.2,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "6-speed Manual",
@@ -1585,20 +2098,29 @@ const totalAuto = [
     acceleration0To100: 5.7,
     brand: "Lancia",
     model: "Delta HF Integrale",
-    trim: "Evoluzione II",
     year: 1993,
-    vin: "ZLA831AB00000056",
-    color: {
-      exterior: "Monza Red",
-      interior: "Beige Alcantara Highback Recaro Seats",
-    },
+    color: [
+      {
+        name: "Monza Red",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#C8102E]",
+      },
+      {
+        name: "Giallo Ginestra",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFD700]",
+      },
+      {
+        name: "Lord Blue",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#002366]",
+      },
+      {
+        name: "Bianco Pearl",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#F0F2F5]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 2.0,
-      batteryCapacity: null,
       power: { totalHp: 215, totalKw: 158, torqueNm: 314 },
       fuelConsumption: 10.5,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "5-speed Manual",
@@ -1614,20 +2136,29 @@ const totalAuto = [
     acceleration0To100: 3.4,
     brand: "Porsche",
     model: "911 Dakar",
-    trim: "Rallye Design Package",
     year: 2023,
-    vin: "WP0AC2A95PS000057",
-    color: {
-      exterior: "White / Gentian Blue Metallic Heritage Livery",
-      interior: "Black Race-Tex with Shade Green Stitching",
-    },
+    color: [
+      {
+        name: "Gentian Blue Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#0F2A4A]",
+      },
+      {
+        name: "Shade Green Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#5B7065]",
+      },
+      {
+        name: "White",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#FFFFFF]",
+      },
+      {
+        name: "Ice Grey Metallic",
+        value: "w-12.5 h-12.5 lg:w-18.75 lg:h-18.75  bg-[#D1D5DB]",
+      },
+    ],
     powertrain: {
       type: "Internal Combustion Engine (ICE)",
-      engineVolume: 3.0,
-      batteryCapacity: null,
       power: { totalHp: 480, totalKw: 353, torqueNm: 570 },
       fuelConsumption: 11.3,
-      electricRange: 0,
     },
     drivetrain: {
       transmission: "8-speed PDK Dual-Clutch",
