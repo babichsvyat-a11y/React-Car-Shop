@@ -48,7 +48,7 @@ const Cart = () => {
               </div>
               <div>
                 <button
-                  onClick={btnDeleteCartItem()}
+                  onClick={btnDeleteCartItem(auto)}
                   className="w-10 h-10 border-2 relative dark:border-brand-accent dark:hover:border-brand-accent-dark border-light-simp-accent hover:border-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer"
                 >
                   <svg

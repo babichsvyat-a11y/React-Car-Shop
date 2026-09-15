@@ -39,6 +39,10 @@ export function useCartReducer() {
       type: "added",
       ...el,
     });
+    // const storageData = localStorage.getItem("cartData");
+    // const cartDataArr = storageData ? JSON.parse(storageData) : [];
+    // cartDataArr.push(el);
+    // localStorage.setItem("cartData", JSON.stringify(cartDataArr));
   }
 
   function btnDeleteCartItem(elId) {
