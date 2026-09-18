@@ -1,8 +1,9 @@
 import { useState } from "react";
-import totalAuto from "@/db";
 import CarList from "@/features/CarList";
+import useTotalAuto from "@/shared/hooks/useTotalAuto";
 
 const Catalog = () => {
+  const { totalAuto } = useTotalAuto();
   const [filterAuto, setFilterAuto] = useState(totalAuto);
   const [searchAuto, setSearchAuto] = useState("");
   const [classFilter, setFilterClass] = useState("hidden");

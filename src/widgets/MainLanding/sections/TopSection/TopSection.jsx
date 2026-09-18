@@ -1,7 +1,9 @@
 import CarCard from "@/enteties/CarCard";
-import totalAuto from "@/db";
+import useTotalAuto from "@/shared/hooks/useTotalAuto";
 
 const TopSection = () => {
+  const { totalAuto } = useTotalAuto();
+
   return (
     <section className="dark:text-primary-text text-light-accent font-secondary">
       <h2 className="px-[10%] py-10 uppercase text-3xl font-semibold text-center">

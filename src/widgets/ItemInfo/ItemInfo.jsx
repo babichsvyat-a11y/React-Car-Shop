@@ -1,8 +1,9 @@
-import totalAuto from "@/db";
 import { useContext } from "react";
 import { CartContext } from "@/enteties/Context/CartContext/CartContext";
+import useTotalAuto from "@/shared/hooks/useTotalAuto";
 
 const ItemInfo = () => {
+  const { totalAuto } = useTotalAuto();
   const { btnAddToCart } = useContext(CartContext);
   const auto = totalAuto[5];
 
