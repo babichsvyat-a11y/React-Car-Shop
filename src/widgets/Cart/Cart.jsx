@@ -18,7 +18,10 @@ const Cart = () => {
       <div className="flex flex-row gap-4 justify-between lg:pl-[10%]">
         <ul className="flex flex-col gap-4 flex-3 max-w-200">
           {cartList.map((auto) => (
-            <li className="flex flex-row border border-secondary-text p-4 gap-4 justify-between">
+            <li
+              className="flex flex-row border border-secondary-text p-4 gap-4 justify-between"
+              key={auto.id}
+            >
               <div className="flex flex-row gap-4">
                 <div className="max-h-50 flex">
                   <img
@@ -48,7 +51,7 @@ const Cart = () => {
               </div>
               <div>
                 <button
-                  onClick={btnDeleteCartItem(auto)}
+                  onClick={() => btnDeleteCartItem(auto)}
                   className="w-10 h-10 border-2 relative dark:border-brand-accent dark:hover:border-brand-accent-dark border-light-simp-accent hover:border-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer"
                 >
                   <svg
@@ -78,7 +81,7 @@ const Cart = () => {
             </div>
             <ul className=" w-full list-disc pl-10 font-secondary dark:text-primary-text text-light-accent tracking-tighter font-semibold text-left lg:text-xl text-lg transition delay-100 duration-200 easy-in">
               {cartList.map((auto) => (
-                <li className="">
+                <li className="" key={auto.id}>
                   {auto.model}
                   <span className="font-normal">({auto.color[1].name})</span>
                 </li>
