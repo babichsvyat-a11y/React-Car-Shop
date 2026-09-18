@@ -2,16 +2,18 @@ import ShopPage from "@/pages/ShopPage";
 import CatalogPage from "@/pages/CatalogPage/CatalogPage";
 import ItemPage from "@/pages/ItemPage/ItemPage";
 import CartPage from "@/pages/CartPage/CartPage";
-import { CartProvider } from "@/enteties/Context/CartContext/CartProvider";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      {/* <ShopPage /> */}
-      {/* <CatalogPage /> */}
-      {/* <ItemPage /> */}
-      <CartPage />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ShopPage />} />
+        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/item" element={<ItemPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
