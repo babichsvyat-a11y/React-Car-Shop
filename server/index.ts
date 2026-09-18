@@ -1,12 +1,51 @@
 import express from "express";
 import type { Request, Response } from "express";
 import cors from "cors";
+import mongoose from "mongoose";
 
 const app = express();
 const PORT = 5000;
 
 app.use(cors());
 app.use(express.json());
+
+mongoose
+  .connect("mongodb:127.0.0.1:27017/reactcarshop")
+  .then(() => console.log("Succsesful conection with MongoDB!"))
+  .catch((err) => console.error("Failed conection with MongoDB", err));
+
+const autoSchema = new mongoose.Schema({
+  image: { type: String, required: true },
+  name: { type: String, required: true },
+  style: { type: String, required: true },
+  rating: { type: Number, required: true },
+  about: { type: String, required: true },
+  acceleration0To100: { type: Number, required: true },
+  brand: { type: String, required: true },
+  model: { type: String, required: true },
+  year: { type: Number, required: true },
+  color: [
+    {
+      name: { type: String, required: true },
+      value: { type: String, required: true },
+    },
+  ],
+  powertrain: {
+    type: { type: String, required: true },
+    power: {
+      totalHP: { type: Number, required: true },
+      totalKw: { type: Number, required: true },
+      torque: { type: Number, required: true },
+    },
+    fuelConsumption: { type: Number, required: true },
+  },
+  drivetrain: {
+    transmission: { type: Number, required: true },
+    driveType: { type: Number, required: true },
+  },
+});
+
+const Auto = mongoose.model("Auto", autoSchema);
 
 const totalAuto = [
   {
@@ -451,18 +490,23 @@ const totalAuto = [
   },
 ];
 
-app.get("/api/cars", (req: Request, res: Response) => {
-  res.json(totalAuto);
+app.get("/api/cars", async (req, res) => {
+  try {
+    const totalAuto = await Auto.find();
+    res.json(totalAuto);
+  } catch (err) {
+    res.status(500).json({ error: "Server fail" });
+  }
 });
 
-app.get("/api/cars/:id", (req: Request, res: Response) => {
-  const carId = Number(req.params.id);
-  const car = totalAuto.find((auto) => auto.id === carId);
-
-  if (!car) {
-    return res.status(404).json({ error: "This car not founded" });
+app.get("/api/cars/:id", async (req, res) => {
+  try {
+    const auto = await Auto.findById(req.params.id);
+    if (!auto) return res.status(404).json({ error: "This car not founded" });
+    res.json(auto);
+  } catch (err) {
+    res.status(500).json({ error: "Incorect ID" });
   }
-  res.json(car);
 });
 
 app.post("/api/cars", (req: Request, res: Response) => {
