@@ -176,7 +176,7 @@ const ItemInfo = () => {
           </ul>
           <div className="flex flex-row gap-8 justify-stretch">
             <button
-              onClick={""}
+              onClick={() => btnAddToCart(auto)}
               className="w-full font-primary text-primary-text uppercase tracking-tighter font-bold  text-sm/4 md:text-lg/4 xl:text-2xl px-2 py-2 dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-110 rounded-md transition delay-100 duration-200 easy-in cursor-pointer"
               type="button"
             >
