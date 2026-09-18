@@ -451,14 +451,127 @@ const totalAuto = [
   },
 ];
 
-app.get("/api/hello", (req: Request, res: Response) => {
-  res.json({ message: "Hello, my little boy!" });
-});
-
 app.get("/api/cars", (req: Request, res: Response) => {
   res.json(totalAuto);
 });
 
+app.get("/api/cars/:id", (req: Request, res: Response) => {
+  const carId = Number(req.params.id);
+  const car = totalAuto.find((auto) => auto.id === carId);
+
+  if (!car) {
+    return res.status(404).json({ error: "This car not founded" });
+  }
+  res.json(car);
+});
+
+app.post("/api/cars", (req: Request, res: Response) => {
+  const {
+    image,
+    name,
+    style,
+    rating,
+    about,
+    acceleration0To100,
+    brand,
+    model,
+    year,
+    color,
+    powertrain,
+    drivetrain,
+  } = req.body;
+
+  if (
+    !image ||
+    !name ||
+    !style ||
+    !rating ||
+    !about ||
+    !acceleration0To100 ||
+    !brand ||
+    !model ||
+    !year ||
+    !color ||
+    !powertrain ||
+    !drivetrain
+  ) {
+    return res.status(400).json({ error: "Please take a corect data!" });
+  }
+  const newCar = {
+    id: totalAuto.length > 0 ? totalAuto[totalAuto.length - 1].id + 1 : 1,
+    image,
+    name,
+    style,
+    rating,
+    about,
+    acceleration0To100,
+    brand,
+    model,
+    year,
+    color,
+    powertrain,
+    drivetrain,
+  };
+  totalAuto.push(newCar);
+  res.status(201).json(newCar);
+});
+
+app.put("/api/cars/:id", (req: Request, res: Response) => {
+  const carId = Number(req.params.id);
+  const {
+    image,
+    name,
+    style,
+    rating,
+    about,
+    acceleration0To100,
+    brand,
+    model,
+    year,
+    color,
+    powertrain,
+    drivetrain,
+  } = req.body;
+
+  const carIndex = totalAuto.findIndex((auto) => auto.id === carId);
+
+  if (carIndex === -1) {
+    return res.status(404).json({ error: "This car not founded" });
+  }
+
+  totalAuto[carIndex] = {
+    ...totalAuto[carIndex],
+    image: image ?? totalAuto[carIndex].image,
+    name: name ?? totalAuto[carIndex].name,
+    style: style ?? totalAuto[carIndex].style,
+    rating: rating !== undefined ? Number(rating) : totalAuto[carIndex].rating,
+    about: about ?? totalAuto[carIndex].about,
+    acceleration0To100:
+      acceleration0To100 !== undefined
+        ? Number(acceleration0To100)
+        : totalAuto[carIndex].acceleration0To100,
+    brand: brand ?? totalAuto[carIndex].brand,
+    model: model ?? totalAuto[carIndex].model,
+    year: year !== undefined ? Number(year) : totalAuto[carIndex].year,
+    color: color ?? totalAuto[carIndex].color,
+    powertrain: powertrain ?? totalAuto[carIndex].powertrain,
+    drivetrain: drivetrain ?? totalAuto[carIndex].drivetrain,
+  };
+
+  res.json(totalAuto[carIndex]);
+});
+
+app.delete("/api/cars/:id", (req: Request, res: Response) => {
+  const carId = Number(req.params.id);
+  const carIndex = totalAuto.findIndex((auto) => auto.id === carId);
+
+  if (carIndex === -1) {
+    return res.status(404).json({ error: "This car not founded" });
+  }
+  const deletedCar = totalAuto.splice(carIndex, 1);
+  res.json({ message: "The car has been deleted!", car: deletedCar[0] });
+});
+
 app.listen(PORT, () => {
-  console.log(`Server is Done!: http://localhost:${PORT}`);
+  console.log(`Server is Done!: http://localhost:${PORT}/api/cars`);
 });

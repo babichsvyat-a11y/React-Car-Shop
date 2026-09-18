@@ -42,7 +42,7 @@ export default function CarCard(auto) {
         className="w-full font-secondary text-primary-text uppercase tracking-tighter font-medium text-[12px] px-3.5 py-2 dark:bg-brand-accent dark:group-hover:bg-brand-accent-dark bg-light-simp-accent group-hover:bg-light-accent transition delay-100 duration-200 easy-in cursor-pointer"
         type="button"
       >
-        <Link to="/item">details</Link>
+        <Link to={`/item/${auto.id}`}>details</Link>
       </button>
     </li>
   );

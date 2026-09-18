@@ -1,5 +1,7 @@
 import { useTheme } from "@/shared/hooks/useTheme";
 import { Link } from "react-router-dom";
+import light from "../../shared/assets/icons/light_theme.svg";
+import dark from "../../shared/assets/icons/dark_theme.svg";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -48,14 +50,14 @@ const Header = () => {
             onClick={toggleTheme}
           >
             <img
-              src="src\shared\assets\icons\dark_theme.svg"
+              src={dark}
               className="min-h-8 min-w-8 dark:hidden block"
               alt="dark theme img"
               width={32}
               height={32}
             />
             <img
-              src="src\shared\assets\icons\light_theme.svg"
+              src={light}
               className="min-h-8 min-w-8 hidden dark:block"
               alt="dark theme img"
               width={32}
