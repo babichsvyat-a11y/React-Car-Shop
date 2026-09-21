@@ -1,14 +1,15 @@
 import { useState } from "react";
 import CarList from "@/features/CarList";
 import useTotalAuto from "@/shared/hooks/useTotalAuto";
+import type { ITotalAuto } from "@/shared/interface/totalAuto.interface";
 
 const Catalog = () => {
   const { totalAuto, loading } = useTotalAuto();
-  const [filterAuto, setFilterAuto] = useState(totalAuto);
-  const [searchAuto, setSearchAuto] = useState("");
-  const [classFilter, setFilterClass] = useState("hidden");
-  const [classFilterBtn, setFilterClassBtn] = useState("hidden");
-  const [isActive, setIsActive] = useState(false);
+  const [filterAuto, setFilterAuto] = useState<ITotalAuto[]>(totalAuto);
+  const [searchAuto, setSearchAuto] = useState<string>("");
+  const [classFilter, setFilterClass] = useState<string | null>("hidden");
+  const [classFilterBtn, setFilterClassBtn] = useState<string | null>("hidden");
+  const [isActive, setIsActive] = useState<boolean>(false);
 
   function goFilterModal() {
     setFilterClass((prev) => (prev === "hidden" ? "" : "hidden"));
@@ -23,7 +24,7 @@ const Catalog = () => {
           Downloading server data...
         </div>
       ) : (
-        <main className="dark:text-primary-text text-light-accent font-secondary dark:bg-primary-background bg-light-simp-bg bg-fixed bg-no-repeat bg-cover relative min-h-dvh ">
+        <main className="flex-auto dark:text-primary-text text-light-accent font-secondary dark:bg-primary-background bg-light-simp-bg bg-fixed bg-no-repeat bg-cover relative min-h-dvh ">
           <div className="backdrop-blur-xs">
             <h1 className="font-primary text-6xl font-black dark:text-primary-text text-light-accent uppercase leading-none pt-22 text-center transition delay-100 duration-200 easy-in">
               The Vault
@@ -62,13 +63,6 @@ const Catalog = () => {
                         setSearchAuto(e.target.value);
                       }}
                     />
-                    {/* <button
-                  className="group-focus:scale-101 transition delay-100 duration-200 easy-in absolute top-0 right-0 text-base py-3 px-5 border-2 border-transparent hover:bg-brand-accent/10 rounded-r-4xl disabled:hover:bg-brand-accent-dark "
-                  type="submit"
-                  disabled={isActive}
-                >
-                  Search
-                </button> */}
                   </div>
                 </form>
               </div>

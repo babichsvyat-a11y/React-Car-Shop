@@ -20,9 +20,9 @@ const autoSchema = new mongoose.Schema({
   powertrain: {
     type: { type: String, required: true },
     power: {
-      totalHP: { type: Number },
-      totalKw: { type: Number },
-      torque: { type: Number },
+      totalHp: { type: Number, required: true },
+      totalKw: { type: Number, required: true },
+      torqueNm: { type: Number, required: true },
     },
     fuelConsumption: { type: Number, required: true },
   },

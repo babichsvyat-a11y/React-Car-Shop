@@ -8,10 +8,8 @@ export const store = configureStore({
 });
 
 const sendToLocalStorage = () => {
-  const value = JSON.stringify(store.getState().cart);
+  const value: string = JSON.stringify(store.getState().cart);
   window.localStorage.setItem("cart", value);
 };
 
 store.subscribe(sendToLocalStorage);
-
-console.log(store.getState());

@@ -1,16 +1,18 @@
-import { useContext } from "react";
-import { CartContext } from "@/enteties/Context/CartContext/CartContext";
 import useTotalAuto from "@/shared/hooks/useTotalAuto";
 import { useParams } from "react-router-dom";
 import engine from "@/shared/assets/img/engine.svg";
+import { useCartContext } from "@/shared/hooks/useCartContext";
+import type { ITotalAuto } from "@/shared/interface/totalAuto.interface";
 
 const ItemInfo = () => {
   const { totalAuto, loading } = useTotalAuto();
-  const { btnAddToCart } = useContext(CartContext);
+  const { btnAddToCart } = useCartContext();
 
   const itemId = useParams().id;
 
-  const auto = totalAuto.find((el) => el.id === Number(itemId));
+  const auto: ITotalAuto | undefined = totalAuto.find(
+    (el) => el.id === Number(itemId),
+  );
 
   return (
     <>
@@ -20,25 +22,25 @@ const ItemInfo = () => {
         </div>
       ) : (
         <main className="flex flex-col gap-20 p-[10%] bg-light-simp-bg dark:bg-primary-background">
-          <div className="flex md:flex-row flex-col-reverse justify-between gap-8 md:gap-auto">
+          <div className="flex md:flex-row flex-col-reverse justify-between gap-8 md:gap-auto?">
             <div className="md:w-4/9 w-full">
               <img
                 className="max-w-full w-full max-h-120 object-cover object-[70%_70%]"
-                src={`/${auto.image}`}
-                alt={auto.name}
+                src={`/${auto?.image}`}
+                alt={auto?.name}
               />
             </div>
 
             <div className="md:w-4/9 w-full bg-light-bg dark:bg-primary-background p-8 flex flex-col gap-4">
               <div className="flex flex-col gap-4 items-start">
                 <h1 className="font-primary text-2xl lg:text-4xl font-black dark:text-primary-text text-light-accent uppercase leading-none transition delay-100 duration-200 easy-in">
-                  {auto.model}
+                  {auto?.model}
                 </h1>
                 <p className="font-primary text-lg md:text-2xl font-black dark:text-primary-text text-light-accent uppercase leading-none transition delay-100 duration-200 easy-in">
-                  {auto.rating} / 5.0
+                  {auto?.rating} / 5.0
                 </p>
                 <div className="flex flex-row gap-1.5">
-                  {auto.rating >= 1 ? (
+                  {(auto?.rating ?? 0) >= 1 ? (
                     <svg
                       width="40"
                       height="40"
@@ -63,7 +65,7 @@ const ItemInfo = () => {
                       <path d="M16.7425 0.784275C16.8355 0.552692 16.9957 0.35424 17.2024 0.214467C17.4092 0.0746944 17.653 0 17.9025 0C18.1521 0 18.3959 0.0746944 18.6027 0.214467C18.8094 0.35424 18.9696 0.552692 19.0625 0.784275L22.6425 9.73427C22.7221 9.93388 22.8518 10.1096 23.0191 10.2445C23.1864 10.3794 23.3856 10.4688 23.5975 10.5043L34.7625 12.3643C35.0099 12.4059 35.239 12.521 35.4201 12.6946C35.6012 12.8682 35.7258 13.0922 35.7779 13.3376C35.8299 13.583 35.8069 13.8383 35.7119 14.0705C35.6169 14.3026 35.4542 14.5008 35.245 14.6393L26.9275 20.1243C26.7201 20.2611 26.5582 20.4567 26.4625 20.6861C26.3667 20.9154 26.3415 21.1681 26.39 21.4118L28.505 32.0968C28.5544 32.3466 28.5263 32.6055 28.4245 32.8389C28.3227 33.0723 28.1521 33.269 27.9354 33.4028C27.7187 33.5366 27.4663 33.601 27.2121 33.5874C26.9578 33.5738 26.7137 33.4829 26.5125 33.3268L18.67 27.2343C18.4506 27.0636 18.1805 26.9709 17.9025 26.9709C17.6245 26.9709 17.3545 27.0636 17.135 27.2343L9.29755 33.3293C9.09642 33.4863 8.85205 33.578 8.59729 33.5921C8.34252 33.6061 8.08955 33.5419 7.87235 33.408C7.65516 33.2741 7.48414 33.0769 7.38229 32.8429C7.28043 32.609 7.2526 32.3495 7.30255 32.0993L9.41755 21.4143C9.46609 21.1705 9.44088 20.9179 9.34514 20.6886C9.2494 20.4592 9.08747 20.2636 8.88004 20.1268L0.560046 14.6368C0.350877 14.4983 0.188203 14.3001 0.0931735 14.068C-0.00185571 13.8358 -0.0248433 13.5805 0.0271996 13.3351C0.0792425 13.0897 0.203908 12.8657 0.384988 12.6921C0.566067 12.5185 0.795183 12.4034 1.04255 12.3618L12.2075 10.5018C12.4199 10.4667 12.6197 10.3774 12.7874 10.2425C12.9552 10.1076 13.0853 9.9317 13.165 9.73177L16.7425 0.784275Z" />
                     </svg>
                   )}
-                  {auto.rating >= 2 ? (
+                  {(auto?.rating ?? 0) >= 2 ? (
                     <svg
                       width="40"
                       height="40"
@@ -88,7 +90,7 @@ const ItemInfo = () => {
                       <path d="M16.7425 0.784275C16.8355 0.552692 16.9957 0.35424 17.2024 0.214467C17.4092 0.0746944 17.653 0 17.9025 0C18.1521 0 18.3959 0.0746944 18.6027 0.214467C18.8094 0.35424 18.9696 0.552692 19.0625 0.784275L22.6425 9.73427C22.7221 9.93388 22.8518 10.1096 23.0191 10.2445C23.1864 10.3794 23.3856 10.4688 23.5975 10.5043L34.7625 12.3643C35.0099 12.4059 35.239 12.521 35.4201 12.6946C35.6012 12.8682 35.7258 13.0922 35.7779 13.3376C35.8299 13.583 35.8069 13.8383 35.7119 14.0705C35.6169 14.3026 35.4542 14.5008 35.245 14.6393L26.9275 20.1243C26.7201 20.2611 26.5582 20.4567 26.4625 20.6861C26.3667 20.9154 26.3415 21.1681 26.39 21.4118L28.505 32.0968C28.5544 32.3466 28.5263 32.6055 28.4245 32.8389C28.3227 33.0723 28.1521 33.269 27.9354 33.4028C27.7187 33.5366 27.4663 33.601 27.2121 33.5874C26.9578 33.5738 26.7137 33.4829 26.5125 33.3268L18.67 27.2343C18.4506 27.0636 18.1805 26.9709 17.9025 26.9709C17.6245 26.9709 17.3545 27.0636 17.135 27.2343L9.29755 33.3293C9.09642 33.4863 8.85205 33.578 8.59729 33.5921C8.34252 33.6061 8.08955 33.5419 7.87235 33.408C7.65516 33.2741 7.48414 33.0769 7.38229 32.8429C7.28043 32.609 7.2526 32.3495 7.30255 32.0993L9.41755 21.4143C9.46609 21.1705 9.44088 20.9179 9.34514 20.6886C9.2494 20.4592 9.08747 20.2636 8.88004 20.1268L0.560046 14.6368C0.350877 14.4983 0.188203 14.3001 0.0931735 14.068C-0.00185571 13.8358 -0.0248433 13.5805 0.0271996 13.3351C0.0792425 13.0897 0.203908 12.8657 0.384988 12.6921C0.566067 12.5185 0.795183 12.4034 1.04255 12.3618L12.2075 10.5018C12.4199 10.4667 12.6197 10.3774 12.7874 10.2425C12.9552 10.1076 13.0853 9.9317 13.165 9.73177L16.7425 0.784275Z" />
                     </svg>
                   )}
-                  {auto.rating >= 3 ? (
+                  {(auto?.rating ?? 0) >= 3 ? (
                     <svg
                       width="40"
                       height="40"
@@ -113,7 +115,7 @@ const ItemInfo = () => {
                       <path d="M16.7425 0.784275C16.8355 0.552692 16.9957 0.35424 17.2024 0.214467C17.4092 0.0746944 17.653 0 17.9025 0C18.1521 0 18.3959 0.0746944 18.6027 0.214467C18.8094 0.35424 18.9696 0.552692 19.0625 0.784275L22.6425 9.73427C22.7221 9.93388 22.8518 10.1096 23.0191 10.2445C23.1864 10.3794 23.3856 10.4688 23.5975 10.5043L34.7625 12.3643C35.0099 12.4059 35.239 12.521 35.4201 12.6946C35.6012 12.8682 35.7258 13.0922 35.7779 13.3376C35.8299 13.583 35.8069 13.8383 35.7119 14.0705C35.6169 14.3026 35.4542 14.5008 35.245 14.6393L26.9275 20.1243C26.7201 20.2611 26.5582 20.4567 26.4625 20.6861C26.3667 20.9154 26.3415 21.1681 26.39 21.4118L28.505 32.0968C28.5544 32.3466 28.5263 32.6055 28.4245 32.8389C28.3227 33.0723 28.1521 33.269 27.9354 33.4028C27.7187 33.5366 27.4663 33.601 27.2121 33.5874C26.9578 33.5738 26.7137 33.4829 26.5125 33.3268L18.67 27.2343C18.4506 27.0636 18.1805 26.9709 17.9025 26.9709C17.6245 26.9709 17.3545 27.0636 17.135 27.2343L9.29755 33.3293C9.09642 33.4863 8.85205 33.578 8.59729 33.5921C8.34252 33.6061 8.08955 33.5419 7.87235 33.408C7.65516 33.2741 7.48414 33.0769 7.38229 32.8429C7.28043 32.609 7.2526 32.3495 7.30255 32.0993L9.41755 21.4143C9.46609 21.1705 9.44088 20.9179 9.34514 20.6886C9.2494 20.4592 9.08747 20.2636 8.88004 20.1268L0.560046 14.6368C0.350877 14.4983 0.188203 14.3001 0.0931735 14.068C-0.00185571 13.8358 -0.0248433 13.5805 0.0271996 13.3351C0.0792425 13.0897 0.203908 12.8657 0.384988 12.6921C0.566067 12.5185 0.795183 12.4034 1.04255 12.3618L12.2075 10.5018C12.4199 10.4667 12.6197 10.3774 12.7874 10.2425C12.9552 10.1076 13.0853 9.9317 13.165 9.73177L16.7425 0.784275Z" />
                     </svg>
                   )}
-                  {auto.rating >= 4 ? (
+                  {(auto?.rating ?? 0) >= 4 ? (
                     <svg
                       width="40"
                       height="40"
@@ -138,7 +140,7 @@ const ItemInfo = () => {
                       <path d="M16.7425 0.784275C16.8355 0.552692 16.9957 0.35424 17.2024 0.214467C17.4092 0.0746944 17.653 0 17.9025 0C18.1521 0 18.3959 0.0746944 18.6027 0.214467C18.8094 0.35424 18.9696 0.552692 19.0625 0.784275L22.6425 9.73427C22.7221 9.93388 22.8518 10.1096 23.0191 10.2445C23.1864 10.3794 23.3856 10.4688 23.5975 10.5043L34.7625 12.3643C35.0099 12.4059 35.239 12.521 35.4201 12.6946C35.6012 12.8682 35.7258 13.0922 35.7779 13.3376C35.8299 13.583 35.8069 13.8383 35.7119 14.0705C35.6169 14.3026 35.4542 14.5008 35.245 14.6393L26.9275 20.1243C26.7201 20.2611 26.5582 20.4567 26.4625 20.6861C26.3667 20.9154 26.3415 21.1681 26.39 21.4118L28.505 32.0968C28.5544 32.3466 28.5263 32.6055 28.4245 32.8389C28.3227 33.0723 28.1521 33.269 27.9354 33.4028C27.7187 33.5366 27.4663 33.601 27.2121 33.5874C26.9578 33.5738 26.7137 33.4829 26.5125 33.3268L18.67 27.2343C18.4506 27.0636 18.1805 26.9709 17.9025 26.9709C17.6245 26.9709 17.3545 27.0636 17.135 27.2343L9.29755 33.3293C9.09642 33.4863 8.85205 33.578 8.59729 33.5921C8.34252 33.6061 8.08955 33.5419 7.87235 33.408C7.65516 33.2741 7.48414 33.0769 7.38229 32.8429C7.28043 32.609 7.2526 32.3495 7.30255 32.0993L9.41755 21.4143C9.46609 21.1705 9.44088 20.9179 9.34514 20.6886C9.2494 20.4592 9.08747 20.2636 8.88004 20.1268L0.560046 14.6368C0.350877 14.4983 0.188203 14.3001 0.0931735 14.068C-0.00185571 13.8358 -0.0248433 13.5805 0.0271996 13.3351C0.0792425 13.0897 0.203908 12.8657 0.384988 12.6921C0.566067 12.5185 0.795183 12.4034 1.04255 12.3618L12.2075 10.5018C12.4199 10.4667 12.6197 10.3774 12.7874 10.2425C12.9552 10.1076 13.0853 9.9317 13.165 9.73177L16.7425 0.784275Z" />
                     </svg>
                   )}
-                  {auto.rating >= 5 ? (
+                  {(auto?.rating ?? 0) >= 5 ? (
                     <svg
                       width="40"
                       height="40"
@@ -165,14 +167,14 @@ const ItemInfo = () => {
                   )}
                 </div>
                 <p className="font-primary text-lg md:text-2xl font-black dark:text-primary-text text-light-accent  leading-none transition delay-100 duration-200 easy-in">
-                  Brand : {auto.brand}
+                  Brand : {auto?.brand}
                 </p>
                 <p className="font-primary text-lg md:text-2xl font-black dark:text-primary-text text-light-accent leading-none transition delay-100 duration-200 easy-in">
-                  Year : {auto.year}
+                  Year : {auto?.year}
                 </p>
               </div>
               <ul className="flex flex-row gap-4">
-                {auto.color.map((color) => {
+                {auto?.color.map((color) => {
                   return (
                     <li
                       key={color.name}
@@ -207,39 +209,39 @@ const ItemInfo = () => {
 
           <div className="flex flex-col gap-4">
             <h2 className="font-primary text-2xl lg:text-4xl font-black dark:text-primary-text text-light-accent text-center leading-none transition delay-100 duration-200 easy-in">
-              About {auto.model}
+              About {auto?.model}
             </h2>
             <p className="font-primary text-lg md:text-2xl text-justify font-medium dark:text-primary-text text-light-accent leading-none transition delay-100 duration-200 easy-in">
-              {auto.about}
+              {auto?.about}
             </p>
           </div>
           <ul className="flex flex-row font-secondary text-center text-lg md:text-2xl font-medium dark:text-primary-text text-light-accent leading-none transition delay-100 duration-200 easy-in">
             <li className="flex flex-col gap-2 w-full py-6 border-x border-light-accent dark:border-primary-text">
               <p>Acceleration:</p>
               <span className="text-xl md:text-3xl font-black">
-                {auto.acceleration0To100} s
+                {auto?.acceleration0To100} s
               </span>
             </li>
             <li className="flex flex-col gap-2 w-full py-6 border-r border-light-accent dark:border-primary-text">
               <p>Power, HP:</p>
               <span className="text-xl md:text-3xl font-black">
-                {auto.powertrain.power.totalHp} HP
+                {auto?.powertrain.power.totalHp} HP
               </span>
             </li>
             <li className="flex flex-col gap-2 w-full py-6 border-r border-light-accent dark:border-primary-text">
               <p>Power, kH:</p>
               <span className="text-xl md:text-3xl font-black">
-                {auto.powertrain.power.totalKw} Kw
+                {auto?.powertrain.power.totalKw} Kw
               </span>
             </li>
             <li className="flex flex-col gap-2 w-full py-6 border-r border-light-accent dark:border-primary-text">
               <p>Torque, Nm:</p>
               <span className="text-xl md:text-3xl font-black">
-                {auto.powertrain.power.torqueNm} Nm
+                {auto?.powertrain.power.torqueNm} Nm
               </span>
             </li>
           </ul>
-          <div className="flex md:flex-row flex-col-reverse justify-between gap-8 md:gap-auto">
+          <div className="flex md:flex-row flex-col-reverse justify-between gap-8 md:gap-auto?">
             <div className="md:w-4/9 w-full">
               <img
                 className="max-w-full w-full max-h-120 object-cover object-[70%_70%]"
@@ -255,27 +257,27 @@ const ItemInfo = () => {
                 </h2>
                 <p className="font-primary text-lg md:text-2xl font-black dark:text-primary-text text-light-accent  leading-none transition delay-100 duration-200 easy-in">
                   Engine type :
-                  <span className="font-medium"> {auto.powertrain.type}</span>
+                  <span className="font-medium"> {auto?.powertrain.type}</span>
                 </p>
                 <p className="font-primary text-lg md:text-2xl font-black dark:text-primary-text text-light-accent leading-none transition delay-100 duration-200 easy-in">
                   Fuel consumption :
                   <span className="font-medium">
                     {" "}
-                    {auto.powertrain.fuelConsumption} L/100 km
+                    {auto?.powertrain.fuelConsumption} L/100 km
                   </span>
                 </p>
                 <p className="font-primary text-lg md:text-2xl font-black dark:text-primary-text text-light-accent leading-none transition delay-100 duration-200 easy-in">
                   Transmission :
                   <span className="font-medium">
                     {" "}
-                    {auto.drivetrain.transmission}
+                    {auto?.drivetrain.transmission}
                   </span>
                 </p>
                 <p className="font-primary text-lg md:text-2xl font-black dark:text-primary-text text-light-accent leading-none transition delay-100 duration-200 easy-in">
                   Transmission type :
                   <span className="font-medium">
                     {" "}
-                    {auto.drivetrain.driveType}
+                    {auto?.drivetrain.driveType}
                   </span>
                 </p>
               </div>

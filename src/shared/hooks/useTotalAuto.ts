@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import type { ITotalAuto } from "@/shared/interface/totalAuto.interface";
 
 export default function useTotalAuto() {
-  const [totalAuto, setTotalAuto] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [totalAuto, setTotalAuto] = useState<ITotalAuto[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch("http://localhost:5000/api/cars")
