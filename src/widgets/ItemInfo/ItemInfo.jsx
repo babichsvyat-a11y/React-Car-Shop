@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "@/enteties/Context/CartContext/CartContext";
 import useTotalAuto from "@/shared/hooks/useTotalAuto";
 import { useParams } from "react-router-dom";
-import engine from "../../shared/assets/img/engine.svg";
+import engine from "@/shared/assets/img/engine.svg";
 
 const ItemInfo = () => {
   const { totalAuto, loading } = useTotalAuto();

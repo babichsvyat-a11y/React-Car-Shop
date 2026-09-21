@@ -1,6 +1,6 @@
 import "dotenv/config";
 import mongoose from "mongoose";
-import { Auto } from "./models/Auto.js";
+import { Auto } from "./models/Auto.ts";
 import { initialCars } from "./initialCars.js";
 
 const MONGO_URL =

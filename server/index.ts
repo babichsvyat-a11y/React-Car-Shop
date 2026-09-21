@@ -3,7 +3,7 @@ import express from "express";
 import type { Request, Response } from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import { Auto } from "./models/Auto.js";
+import { Auto } from "./models/Auto.ts";
 
 const app = express();
 const PORT = 5000;
