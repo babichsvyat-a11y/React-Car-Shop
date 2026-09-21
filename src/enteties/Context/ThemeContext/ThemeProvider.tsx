@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { useEffect, useState, type ReactNode } from "react";
+import {
+  ThemeContext,
+  type ThemeType,
+} from "@/enteties/Context/ThemeContext/ThemeContext";
 
-export function ThemeProvider({ children }) {
+export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState(
-    () => localStorage.getItem("theme") || "dark",
+    () => (localStorage.getItem("theme") as ThemeType) || "dark",
   );
 
   useEffect(() => {

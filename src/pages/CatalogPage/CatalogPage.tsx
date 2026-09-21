@@ -1,15 +1,15 @@
 import Header from "@/widgets/Header";
-import ItemInfo from "@/widgets/ItemInfo";
+import Catalog from "@/widgets/Catalog";
 import Footer from "@/widgets/Footer";
 
-const ItemPage = () => {
+const CatalogPage = () => {
   return (
     <div className="dark:bg-primary-background bg-light-bg min-h-screen ">
       <Header />
-      <ItemInfo className="flex-auto" />
+      <Catalog />
       <Footer />
     </div>
   );
 };
 
-export default ItemPage;
+export default CatalogPage;

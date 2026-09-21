@@ -1,11 +1,10 @@
 import { useTheme } from "@/shared/hooks/useTheme";
 import { Link } from "react-router-dom";
-import light from "../../shared/assets/icons/light_theme.svg";
-import dark from "../../shared/assets/icons/dark_theme.svg";
+import light from "@/shared/assets/icons/light_theme.svg";
+import dark from "@/shared/assets/icons/dark_theme.svg";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
-
   return (
     <header className="border border-transparent dark:border-b-border-gray fixed z-20 dark:bg-primary-background w-full h-12 bg-light-bg">
       <div className="flex flex-row px-[5%] justify-between h-full">
@@ -24,7 +23,7 @@ const Header = () => {
           <nav className="flex">
             <ul className="flex flex-row gap-2 dark:text-primary-text text-light-accent font-semibold text-sm font-secondary">
               <li className="flex block-full">
-                <Link to="/catalog" className="block content-center" href="#">
+                <Link to="/catalog" className="block content-center">
                   <button
                     className="block-full px-4 hover:bg-border-gray/20 uppercase hover:text-brand-accent-dark transition delay-100 duration-200 easy-in cursor-pointer"
                     type="button"
@@ -34,7 +33,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="flex block-full">
-                <Link to="/cart" className="block content-center" href="#">
+                <Link to="/cart" className="block content-center">
                   <button
                     className="block-full px-4 hover:bg-border-gray/20 uppercase hover:text-brand-accent-dark transition delay-100 duration-200 easy-in cursor-pointer"
                     type="button"

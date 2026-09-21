@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import type { ITotalAuto } from "@/shared/interface/totalAuto.interface";
 
-export default function CarCard(auto) {
+export default function CarCard(auto: ITotalAuto) {
   return (
     <li
       key={auto.id}

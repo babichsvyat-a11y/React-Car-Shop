@@ -1,7 +1,13 @@
-import { useDebounce } from "@/shared/hooks/useDebounce.js";
+import { useDebounce } from "@/shared/hooks/useDebounce";
 import CarCard from "@/enteties/CarCard";
+import type { ITotalAuto } from "@/shared/interface/totalAuto.interface";
 
-const CarList = ({ searchAuto, filterAuto }) => {
+interface Props {
+  searchAuto: string;
+  filterAuto: ITotalAuto[];
+}
+
+const CarList = ({ searchAuto, filterAuto }: Props) => {
   const debouncedSearch = useDebounce(searchAuto, 600);
 
   const autoList = filterAuto.filter(

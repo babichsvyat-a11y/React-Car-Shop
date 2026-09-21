@@ -1,13 +1,14 @@
 import { lazy, Suspense, useContext } from "react";
 import { CartContext } from "@/enteties/Context/CartContext/CartContext";
+import { useCartContext } from "@/shared/hooks/useCartContext";
 
-const LazyCompList = lazy(() => import("@/features/CompList/CompList.jsx"));
+const LazyCompList = lazy(() => import("@/features/CompList"));
 
 const Cart = () => {
-  const { cartList, btnDeleteCartItem } = useContext(CartContext);
+  const { cartList, btnDeleteCartItem } = useCartContext();
 
   return (
-    <main className="pt-22 bg-light-simp-bg dark:bg-primary-background px-[10%] flex flex-col gap-10">
+    <main className="flex-auto pt-22 bg-light-simp-bg dark:bg-primary-background px-[10%] flex flex-col gap-10">
       <div className="flex flex-col gap-2 ">
         <h1 className="font-primary text-4xl font-black dark:text-primary-text text-light-accent uppercase leading-none text-left transition delay-100 duration-200 easy-in">
           Your dream cart
@@ -44,7 +45,6 @@ const Cart = () => {
                   </div>
                   <button
                     type="button"
-                    onClick={""}
                     className="min-w-12 px-6 py-1 rounded-lg dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer font-secondary text-second-text text-md w-max text-primary-text uppercase tracking-tighter font-semibold text-normal"
                   >
                     add to comparison

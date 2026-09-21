@@ -6,7 +6,7 @@ const CartPage = () => {
   return (
     <div className="dark:bg-primary-background bg-light-bg min-h-screen ">
       <Header />
-      <Cart className="flex-auto" />
+      <Cart />
       <Footer />
     </div>
   );

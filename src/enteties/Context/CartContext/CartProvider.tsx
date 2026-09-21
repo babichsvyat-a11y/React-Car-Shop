@@ -1,10 +1,8 @@
 import { useCartReducer } from "@/shared/hooks/useCartReducer";
-import { CartContext } from "./CartContext";
-import { useMemo } from "react";
+import { CartContext } from "@/enteties/Context/CartContext/CartContext";
+import { useMemo, type ReactNode } from "react";
 
-export const CartProvider = (props) => {
-  const { children } = props;
-
+export const CartProvider = ({ children }: { children: ReactNode }) => {
   const { cartList, btnAddToCart, btnDeleteCartItem } = useCartReducer();
 
   const value = useMemo(
