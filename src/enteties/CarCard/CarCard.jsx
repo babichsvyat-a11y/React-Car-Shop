@@ -4,22 +4,24 @@ export default function CarCard(auto) {
   return (
     <li
       key={auto.id}
-      className="text-primary-text bg-secondary-background flex flex-col h-150 md:h-87.5 sm:h-150 md:brightness-80 group md:hover:brightness-100 md:hover:scale-105 transition delay-100 duration-200 easy-in"
+      className=" aspect-3/4 text-primary-text bg-secondary-background flex flex-col  md:brightness-80 group md:hover:brightness-100 md:hover:scale-105 transition delay-100 duration-200 easy-in"
     >
-      <div
-        className={`py-2 px-3 flex flex-col justify-between bg-no-repeat bg-cover bg-center flex-2`}
-        style={{ backgroundImage: `url(${auto.image})` }}
-      >
+      <div className="py-2 px-3 flex flex-col justify-between flex-2 relative w-full">
+        <img
+          className="absolute top-0 left-0 aspect-3/4 w-full object-cover"
+          src={auto.image}
+          alt="auto image"
+        />
         <div
           className={
             auto.id % 2
-              ? "after:bg-simply-accent after:block after:w-[25%] after:h-1"
-              : "after:block after:w-[25%] after:h-1 after:bg-brand-accent"
+              ? "after:bg-simply-accent after:block after:w-[25%] after:h-1 z-10"
+              : "after:block after:w-[25%] after:h-1 after:bg-brand-accent z-10"
           }
         >
           <h3 className="uppercase text-2xl font-semibold">{auto.name}</h3>
         </div>
-        <div className="grid grid-cols-2 gap-2 px-[10%] backdrop-brightness-50">
+        <div className="grid grid-cols-2 gap-2 px-[10%] backdrop-brightness-50 z-10">
           <div className="flex flex-col">
             <h4 className="uppercase text-2xl font-semibold text-center">
               {auto.powertrain.power.totalHp}
@@ -39,7 +41,7 @@ export default function CarCard(auto) {
       </div>
 
       <button
-        className="w-full font-secondary text-primary-text uppercase tracking-tighter font-medium text-[12px] px-3.5 py-2 dark:bg-brand-accent dark:group-hover:bg-brand-accent-dark bg-light-simp-accent group-hover:bg-light-accent transition delay-100 duration-200 easy-in cursor-pointer"
+        className="z-10 w-full font-secondary text-primary-text uppercase tracking-tighter font-medium text-[12px] px-3.5 py-2 dark:bg-brand-accent dark:group-hover:bg-brand-accent-dark bg-light-simp-accent group-hover:bg-light-accent transition delay-100 duration-200 easy-in cursor-pointer"
         type="button"
       >
         <Link to={`/item/${auto.id}`}>details</Link>

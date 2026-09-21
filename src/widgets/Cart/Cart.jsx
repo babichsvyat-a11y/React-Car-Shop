@@ -1,5 +1,7 @@
-import { useContext } from "react";
+import { lazy, Suspense, useContext } from "react";
 import { CartContext } from "@/enteties/Context/CartContext/CartContext";
+
+const LazyCompList = lazy(() => import("@/features/CompList/CompList.jsx"));
 
 const Cart = () => {
   const { cartList, btnDeleteCartItem } = useContext(CartContext);
@@ -93,14 +95,16 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div>
-        <h2 className="font-secondary dark:text-primary-text text-light-accent tracking-normal font-black text-left lg:text-3xl text-2xl transition delay-100 duration-200 easy-in">
-          Comparsion{" "}
-          <span className="dark:text-brand-accent text-light-simp-accent">
-            {/* ({compList.length}/3) */}
-          </span>
-        </h2>
-      </div>
+
+      <Suspense
+        fallback={
+          <div className="dark:text-primary-text text-light-accent">
+            Loading...
+          </div>
+        }
+      >
+        <LazyCompList />
+      </Suspense>
     </main>
   );
 };
