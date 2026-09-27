@@ -4,6 +4,7 @@ import type { Request, Response } from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import { Auto } from "./models/Auto.ts";
+import { logger } from "./utils/log.ts";
 
 const app = express();
 const PORT = 5000;
@@ -17,8 +18,8 @@ const MONGO_URL =
 
 mongoose
   .connect(MONGO_URL)
-  .then(() => console.log("Succsesful conection with MongoDB!"))
-  .catch((err) => console.error("Failed conection with MongoDB", err));
+  .then(() => logger.info("Succsesful conection with MongoDB!"))
+  .catch((err) => logger.error("Failed conection with MongoDB", err));
 
 app.get("/api/cars", async (req, res) => {
   try {
@@ -26,6 +27,7 @@ app.get("/api/cars", async (req, res) => {
     res.json(totalAuto);
   } catch (err) {
     res.status(500).json({ error: "Server fail" });
+    logger.error("Server fail", err);
   }
 });
 
@@ -36,6 +38,7 @@ app.get("/api/cars/:id", async (req, res) => {
     res.json(auto);
   } catch (err) {
     res.status(500).json({ error: "Incorect ID" });
+    logger.error("Incorect ID", err);
   }
 });
 
@@ -147,5 +150,5 @@ app.get("/api/cars/:id", async (req, res) => {
 // });
 
 app.listen(PORT, () => {
-  console.log(`Server is Done!: http://localhost:${PORT}/api/cars`);
+  logger.info(`Server is Done!: http://localhost:${PORT}/api/cars`);
 });
