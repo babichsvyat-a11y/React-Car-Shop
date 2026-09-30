@@ -1,0 +1,32 @@
+car_id: Primary Key
+style:
+rating: DECIMAL
+about:
+acceleration: DECIMAL
+brand:
+model:
+year:
+hour_cost: DECIMAL
+full_cost: DECIMAL
+powertrain_type:
+total_hp:
+total_kw:
+torque_nm:
+fuel_consumption: DECIMAL
+transmission:
+drive_type:
+is_available: BOOLEAN DEFAULT true
+
+car_id: Primary Key Foreign Key
+color_id: Primary Key Foreign Key
+
+
+image_id: Primary Key
+image_url: 
+car: Foreign Key
+color: Foreign Key
+is_main: BOOLEAN
+
+color_id: Primary Key
+color_name:
+color_hex:
