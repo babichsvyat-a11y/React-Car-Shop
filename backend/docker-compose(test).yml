@@ -1,0 +1,35 @@
+version: "3"
+services:
+  server:
+    build: server/
+    command: npm run server.ts
+    ports:
+      - 1234:1234
+
+  authService:
+    build: authService/
+    command: npm run auth.ts
+    network_mode: host
+    depends_on:
+      - server
+
+  catalogService:
+    build: catalogService/
+    command: npm run catalog.ts
+    network_mode: host
+    depends_on:
+      - server
+
+  feedbackService:
+    build: feedbackService/
+    command: npm run feedback.ts
+    network_mode: host
+    depends_on:
+      - server
+
+  paymentService:
+    build: paymentService/
+    command: npm run payment.ts
+    network_mode: host
+    depends_on:
+      - server
