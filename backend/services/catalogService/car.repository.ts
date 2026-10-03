@@ -11,10 +11,13 @@ const carInclude = {
 };
 
 class CarRepository {
-  async getAll() {
+  async getAll(page: number = 1, limit: number = 20) {
+    const skip = (page - 1) * limit;
     return await prisma.car.findMany({
       where: { is_available: true },
       include: carInclude,
+      skip: skip,
+      take: limit,
     });
   }
 

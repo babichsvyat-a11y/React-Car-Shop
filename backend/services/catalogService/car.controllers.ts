@@ -3,7 +3,7 @@ import CarRepository from "./car.repository";
 import { Prisma } from "@prisma/client";
 
 class CarController {
-  async getAllCars(req: Request, res: Response) {
+  getAllCars = async (req: Request, res: Response) => {
     try {
       const cars = await CarRepository.getAll();
       return res.status(200).json(cars);
@@ -11,25 +11,23 @@ class CarController {
       console.error("Error in getAllCars:", err);
       return res.status(500).json({ error: "Failed conection with DB!" });
     }
-  }
+  };
 
-  async getOneCar(req: Request, res: Response) {
+  getOneCar = async (req: Request, res: Response) => {
     try {
       const { id } = req.params;
       const car = await CarRepository.getOneById(String(id));
       if (!car) {
-        if (!car) {
-          return res.status(404).json({ error: "Car not found" });
-        }
+        return res.status(404).json({ error: "Car not found" });
       }
       return res.status(200).json(car);
     } catch (err) {
       console.error("Error in getOneCar:", err);
       return res.status(500).json({ error: "Internal server error" });
     }
-  }
+  };
 
-  async createCar(req: Request, res: Response) {
+  createCar = async (req: Request, res: Response) => {
     try {
       const data: Prisma.CarCreateInput = req.body;
       const car = await CarRepository.create(data);
@@ -38,9 +36,9 @@ class CarController {
       console.error(err);
       return res.status(500).json({ error: "Failed conection with DB!" });
     }
-  }
+  };
 
-  async updateCar(req: Request, res: Response) {
+  updateCar = async (req: Request, res: Response) => {
     try {
       const { id } = req.params;
       const data: Prisma.CarUpdateInput = req.body;
@@ -50,9 +48,9 @@ class CarController {
       console.error("Error in updateCar:", err);
       return res.status(500).json({ error: "Failed to update car" });
     }
-  }
+  };
 
-  async deleteCar(req: Request, res: Response) {
+  deleteCar = async (req: Request, res: Response) => {
     try {
       const { id } = req.params;
       await CarRepository.delete(String(id));
@@ -61,7 +59,7 @@ class CarController {
       console.error("Error in deleteCar:", err);
       return res.status(500).json({ error: "Failed to delete car" });
     }
-  }
+  };
 }
 
 export default new CarController();
