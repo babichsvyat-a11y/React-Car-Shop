@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native"]
+}
+datasource db {
+provider = "postgresql"
+url = env("DATABASE_URL")
+}
+
+model Car {
+id               String   @id @default(uuid()) @db.Uuid
+style            String
+rating           Decimal  @db.Decimal(3, 2)
+about            String
+acceleration     Decimal  @db.Decimal(4, 2)
+brand            String
+model            String
+year             Int
+hour_cost        Decimal  @db.Decimal(8, 2)
+full_cost        Decimal  @db.Decimal(10, 2)
+powertrain_type  String
+total_hp         Int
+total_kw         Int
+torque_nm        Int
+fuel_consumption Decimal  @db.Decimal(4, 1)
+transmission     String
+drive_type       String
+is_available     Boolean  @default(true)
+created_at       DateTime @default(now())
+colors           CarColor[]
+images           CarImage[]
+
+@@map("cars")
+}
+
+model CarColor {
+car_id           String   @db.Uuid
+color_id         Int
+car              Car      @relation(fields: [car_id], references:[id], onDelete: Cascade)
+color            Color    @relation(fields: [color_id], references: [id], onDelete: Cascade)
+
+@@id([car_id, color_id])
+@@map("car_colors")
+}
+
+model Color {
+id               Int      @id @default(autoincrement())
+name             String   @unique
+hex              String   @unique
+cars             CarColor[]
+images           CarImage[]
+
+@@map("colors")
+}
+
+model CarImage {
+id               String   @id @default(uuid()) @db.Uuid
+url              String
+car              Car      @relation(fields: [car_id], references: [id], onDelete: Cascade)
+car_id           String   @db.Uuid
+color            Color?   @relation(fields: [color_id], references: [id], onDelete: SetNull)
+color_id         Int?
+is_main          Boolean  @default(false)
+
+@@map("car_images")
+}
