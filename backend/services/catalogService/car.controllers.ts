@@ -1,65 +1,42 @@
 import { Request, Response } from "express";
 import CarRepository from "./car.repository";
 import { Prisma } from "@prisma/client";
+import asyncHandler from "./middlewares/asyncError.middleware";
+import ErrorApp from "./utils/errorApp";
 
 class CarController {
-  getAllCars = async (req: Request, res: Response) => {
-    try {
-      const cars = await CarRepository.getAll();
-      return res.status(200).json(cars);
-    } catch (err) {
-      console.error("Error in getAllCars:", err);
-      return res.status(500).json({ error: "Failed conection with DB!" });
-    }
-  };
+  getAllCars = asyncHandler(async (req: Request, res: Response) => {
+    const cars = await CarRepository.getAll();
+    return res.status(200).json(cars);
+  });
 
-  getOneCar = async (req: Request, res: Response) => {
-    try {
-      const { id } = req.params;
-      const car = await CarRepository.getOneById(String(id));
-      if (!car) {
-        return res.status(404).json({ error: "Car not found" });
-      }
-      return res.status(200).json(car);
-    } catch (err) {
-      console.error("Error in getOneCar:", err);
-      return res.status(500).json({ error: "Internal server error" });
+  getOneCar = asyncHandler(async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const car = await CarRepository.getOneById(String(id));
+    if (!car) {
+      throw ErrorApp.notFound("Car not found");
     }
-  };
+    return res.status(200).json(car);
+  });
 
-  createCar = async (req: Request, res: Response) => {
-    try {
-      const data: Prisma.CarCreateInput = req.body;
-      const car = await CarRepository.create(data);
-      return res.status(201).json(car);
-    } catch (err) {
-      console.error(err);
-      return res.status(500).json({ error: "Failed conection with DB!" });
-    }
-  };
+  createCar = asyncHandler(async (req: Request, res: Response) => {
+    const data: Prisma.CarCreateInput = req.body;
+    const car = await CarRepository.create(data);
+    return res.status(201).json(car);
+  });
 
-  updateCar = async (req: Request, res: Response) => {
-    try {
-      const { id } = req.params;
-      const data: Prisma.CarUpdateInput = req.body;
-      const car = await CarRepository.update(String(id), data);
-      return res.status(200).json(car);
-    } catch (err) {
-      console.error("Error in updateCar:", err);
-      return res.status(500).json({ error: "Failed to update car" });
-    }
-  };
+  updateCar = asyncHandler(async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const data: Prisma.CarUpdateInput = req.body;
+    const car = await CarRepository.update(String(id), data);
+    return res.status(200).json(car);
+  });
 
-  deleteCar = async (req: Request, res: Response) => {
-    try {
-      const { id } = req.params;
-      await CarRepository.delete(String(id));
-      return res.status(200).json({ message: "Car deleted successfully" });
-    } catch (err) {
-      console.error("Error in deleteCar:", err);
-      return res.status(500).json({ error: "Failed to delete car" });
-    }
-  };
+  deleteCar = asyncHandler(async (req: Request, res: Response) => {
+    const { id } = req.params;
+    await CarRepository.delete(String(id));
+    return res.status(200).json({ message: "Car deleted successfully" });
+  });
 }
 
 export default new CarController();
