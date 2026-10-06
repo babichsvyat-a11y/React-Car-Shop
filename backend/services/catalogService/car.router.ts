@@ -1,6 +1,6 @@
 import { Router } from "express";
 import CarControllers from "./car.controllers";
-import { validate } from "./validate.middleware";
+import { validate } from "./middlewares/validate.middleware";
 import { createCarSchema, updateCarSchema } from "./schems/car.schema";
 
 const carRouter = Router();
