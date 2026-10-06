@@ -3,9 +3,12 @@ import carRouter from "./car.router";
 import prisma from "../../prisma/prismaClient";
 import globalErrorHandler from "./middlewares/globalError.middleware";
 import { logger } from "./utils/logger";
+import httpMorgan from "./middlewares/morgan.middlewar";
 
 const app = express();
 app.use(express.json());
+
+app.use(httpMorgan);
 
 app.use("/api/v1/catalog", carRouter);
 
