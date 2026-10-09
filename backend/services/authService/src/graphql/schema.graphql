@@ -1,0 +1,16 @@
+scalar DateTime
+
+enum Role {
+  USER
+  ADMIN
+}
+
+type User {
+  id: ID!
+  email: String!
+  first_name: String
+  last_name: String!
+  role: Role!
+  created_at: DateTime!
+  updated_at: DateTime!
+}

@@ -1,6 +1,7 @@
-import morgan, { StreamOptions } from "morgan";
+import type { StreamOptions } from "morgan";
 import { logger } from "../utils/logger";
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
+import morgan from "morgan";
 
 const stream: StreamOptions = {
   write: (message) => logger.http(message.trim()),

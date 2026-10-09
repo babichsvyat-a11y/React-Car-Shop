@@ -1,6 +1,5 @@
 import { Prisma } from "@prisma/client";
-import prisma from "../../prisma/prismaClient";
-import { connect } from "react-redux";
+import prisma from "../prisma/prismaClient";
 
 const carInclude = {
   images: true,

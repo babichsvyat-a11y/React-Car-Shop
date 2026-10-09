@@ -1,6 +1,4 @@
 import { z } from "zod";
-import { createImageSchema } from "./image.schema";
-import { createCarSchema } from "./car.schema";
 
 export const createColorSchema = z.object({
   id: z.number().optional(),

@@ -1,10 +1,10 @@
-import { Request, Response } from "express";
 import CarRepository from "./car.repository";
 import { Prisma } from "@prisma/client";
 import asyncHandler from "./middlewares/asyncError.middleware";
 import ErrorApp from "./utils/errorApp";
 import redisClient from "./redisClient";
 import { logger } from "./utils/logger";
+import type { Request, Response } from "express";
 
 const CACHE_KEY_ALL = "cars:all";
 const CACHE_TTL = 3600;
