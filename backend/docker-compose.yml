@@ -1,26 +1,70 @@
+version: "3.8"
+
 services:
-  postgres:
+  catalog_db:
     image: postgres:16-alpine
-    container_name: react_car_postgres
+    container_name: catalog_postgres
     restart: always
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: rootpassword
-      POSTGRES_DB: react_car_db
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${CATALOG_DB_NAME}
     ports:
-      - "5432:5432"
+      - "${CATALOG_DB_PORT}:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - catalog_postgres_data:/var/lib/postgresql/data
+
+  user_db:
+    image: postgres:16-alpine
+    container_name: user_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${USER_DB_NAME}
+    ports:
+      - "${USER_DB_PORT}:5432"
+    volumes:
+      - users_postgres_data:/var/lib/postgresql/data
+
   redis:
     image: redis:7-alpine
     container_name: react_car_redis
     restart: always
     command: redis-server --save 60 1 --loglevel notice
     ports:
-      - "6379:6379"
+      - "${REDIS_PORT}:6379"
     volumes:
       - redis_data:/data
 
+  catalog_service:
+    build:
+      context: .
+      dockerfile: services/catalogService/Dockerfile.dev
+    container_name: catalog_service
+    ports:
+      - "${CATALOG_SERVICE_PORT}:${CATALOG_SERVICE_PORT}"
+    environment:
+      DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@catalog_db:5432/${CATALOG_DB_NAME}?schema=public"
+      REDIS_URL: "redis://${REDIS_HOST}:${REDIS_PORT}"
+      PORT: ${CATALOG_SERVICE_PORT}
+    depends_on:
+      - catalog_db
+      - redis
+
+  auth_service:
+    build:
+      context: .
+      dockerfile: services/authService/Dockerfile.dev
+    container_name: auth_service
+    ports:
+      - "${USER_SERVICE_PORT}:${USER_SERVICE_PORT}"
+    environment:
+      DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@user_db:5432/${USER_DB_NAME}?schema=public"
+      PORT: ${USER_SERVICE_PORT}
+    depends_on:
+      - user_db
 volumes:
-  postgres_data:
+  catalog_postgres_data:
+  users_postgres_data:
   redis_data:

@@ -1,10 +1,10 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import { logger } from "./utils/logger";
-import { connectRedis } from "./redisClient";
-import prisma from "../../prisma/prismaClient";
-import app from "./app";
+import { logger } from "./src/utils/logger";
+import { connectRedis } from "./src/redisClient";
+import prisma from "./prisma/prismaClient";
+import app from "./src/app";
 
 const PORT = process.env.PORT || 5080;
 

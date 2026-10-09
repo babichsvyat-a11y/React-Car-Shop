@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from "express";
+import type { NextFunction, Request, Response } from "express";
 import ErrorApp from "../utils/errorApp";
 import { logger } from "../utils/logger";
 
