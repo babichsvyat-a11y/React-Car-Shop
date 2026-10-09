@@ -1,0 +1,34 @@
+### 1. Отримати всі авто (Перший запит - CACHE MISS з БД)
+GET http://localhost:5080/api/v1/catalog
+Content-Type: application/json
+
+### 2. Отримати всі авто повторно (Другий запит - CACHE HIT з Redis ⚡)
+GET http://localhost:5080/api/v1/catalog
+Content-Type: application/json
+
+### 3. Створити нове авто (Валідація через Zod + інвалідація кешу)
+POST http://localhost:5080/api/v1/catalog
+Content-Type: application/json
+
+{
+  "brand": "Porsche",
+  "model": "911 GT3 RS",
+  "year": 2024,
+  "price": 240000
+}
+
+### 4. Отримати одне авто за ID
+GET http://localhost:5080/api/v1/catalog/SOME_CAR_ID_HERE
+Content-Type: application/json
+
+### 5. Перевірка 404 помилки (Неіснуючий ID -> обробка через ErrorApp)
+GET http://localhost:5080/api/v1/catalog/non-existing-id-123
+Content-Type: application/json
+
+### 6. Перевірка 400 помилки (Bad Request / Помилка Zod валідації)
+POST http://localhost:5080/api/v1/catalog
+Content-Type: application/json
+
+{
+  "brand": "P"
+}

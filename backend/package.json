@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
-  "scripts": {},
+  "scripts": {
+    "dev": "tsx watch services/catalogService/server.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
     "@prisma/client": "^6.19.0",
+    "axios": "^1.20.0",
     "cors": "^2.8.6",
     "dotenv": "^18.0.5",
     "express": "^5.2.1",
     "morgan": "^1.12.1",
+    "redis": "^6.3.0",
     "winston": "^3.19.0",
     "zod": "^4.6.5"
   },
@@ -22,6 +26,8 @@
     "@types/express": "^5.0.6",
     "@types/morgan": "^1.9.10",
     "@types/node": "^26.6.4",
+    "@types/redis": "^4.0.10",
+    "@types/axios": "^0.9.36",
     "prisma": "^6.19.0",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3"
