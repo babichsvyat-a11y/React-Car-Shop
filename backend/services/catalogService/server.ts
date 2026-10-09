@@ -6,7 +6,7 @@ import { connectRedis } from "./redisClient";
 import prisma from "../../prisma/prismaClient";
 import app from "./app";
 
-const PORT = process.env || 5080;
+const PORT = process.env.PORT || 5080;
 
 const startServer = async () => {
   try {

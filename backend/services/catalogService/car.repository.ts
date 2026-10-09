@@ -1,5 +1,6 @@
 import { Prisma } from "@prisma/client";
 import prisma from "../../prisma/prismaClient";
+import { connect } from "react-redux";
 
 const carInclude = {
   images: true,
@@ -28,9 +29,39 @@ class CarRepository {
     });
   }
 
-  async create(data: Prisma.CarCreateInput) {
+  async create(data: any) {
+    const { colors, images, ...carData } = data;
+
     return await prisma.car.create({
-      data,
+      data: {
+        ...carData,
+        ...(images &&
+          images.length > 0 && {
+            images: {
+              create: images.map((img: any) => ({
+                ...(img.id && { id: img.id }),
+                url: img.url,
+              })),
+            },
+          }),
+        ...(colors &&
+          colors.length > 0 && {
+            colors: {
+              create: colors.map((c: any) => ({
+                color: {
+                  ...(c.id
+                    ? { connect: { id: c.id } }
+                    : {
+                        connectOrCreate: {
+                          where: { name: c.name },
+                          create: { name: c.name, hex: c.hex },
+                        },
+                      }),
+                },
+              })),
+            },
+          }),
+      },
       include: carInclude,
     });
   }

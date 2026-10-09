@@ -19,8 +19,8 @@ export const createCarSchema = z.object({
   fuel_consumption: z.number().nonnegative(),
   transmission: z.string().min(1, "transmission is required"),
   drive_type: z.string().min(1, "driveType is required"),
-  colors: z.array(createColorSchema).nonempty(),
-  images: z.array(createImageSchema).nonempty(),
+  colors: z.array(createColorSchema).optional(),
+  images: z.array(createImageSchema).optional(),
 });
 
 export const updateCarSchema = createCarSchema.partial();
