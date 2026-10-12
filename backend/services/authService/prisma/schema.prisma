@@ -38,3 +38,4 @@ model RefreshToken{
   @@index([user_id])
   @@map("refresh_tokens")
 }
+
