@@ -24,7 +24,7 @@ const setRefreshTokenCookie = (res: any, token: string) => {
   });
 };
 
-export const registerResolver = {
+const resolvers = {
   Mutation: {
     register: async (
       _parent: unknown,
@@ -107,5 +107,14 @@ export const registerResolver = {
       }
     },
   },
-  Query: {},
+  Query: {
+    me: async (_parent: unknown, _args: unknown, context: any) => {
+      if (!context.user) {
+        throw new Error("Not authenticated");
+      }
+      return context.user;
+    },
+  },
 };
+
+export default resolvers;

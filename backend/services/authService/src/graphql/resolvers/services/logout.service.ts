@@ -2,7 +2,7 @@ import prisma from "../../../../prisma/prismaClient";
 
 const logoutUser = async (curentToken: string) => {
   if (curentToken) {
-    await prisma.refresh_tokens.deleteMany({
+    await prisma.refreshToken.deleteMany({
       where: {
         token: curentToken,
       },

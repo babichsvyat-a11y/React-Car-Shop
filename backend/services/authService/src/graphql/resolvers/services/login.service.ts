@@ -5,7 +5,7 @@ import createJwt from "src/utils/createJWT";
 import type { TLoginInput } from "src/schems/loginInput.schema";
 
 const loginUser = async (input: TLoginInput) => {
-  const existingUser = await prisma.users.findUnique({
+  const existingUser = await prisma.user.findUnique({
     where: {
       email: input.email,
     },
@@ -23,7 +23,7 @@ const loginUser = async (input: TLoginInput) => {
   const refreshToken = crypto.randomBytes(40).toString("hex");
   const liveTime = Number(process.env.LIVE_TIME) || 2592000000;
   const timeMark = new Date(Date.now() + liveTime);
-  await prisma.refresh_tokens.create({
+  await prisma.refreshToken.create({
     data: {
       token: refreshToken,
       user_id: existingUser.id,

@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   catalog_db:
     image: postgres:16-alpine
@@ -10,7 +8,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${CATALOG_DB_NAME}
     ports:
-      - "${CATALOG_DB_PORT}:5432"
+      - ${CATALOG_DB_PORT}:5432
     volumes:
       - catalog_postgres_data:/var/lib/postgresql/data
 
@@ -23,7 +21,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${USER_DB_NAME}
     ports:
-      - "${USER_DB_PORT}:5432"
+      - ${USER_DB_PORT}:5432
     volumes:
       - users_postgres_data:/var/lib/postgresql/data
 
@@ -33,17 +31,17 @@ services:
     restart: always
     command: redis-server --save 60 1 --loglevel notice
     ports:
-      - "${REDIS_PORT}:6379"
+      - ${REDIS_PORT}:6379
     volumes:
       - redis_data:/data
 
   catalog_service:
     build:
-      context: .
-      dockerfile: services/catalogService/Dockerfile.dev
+      context: ./services/catalogService
+      dockerfile: Dockerfile.dev
     container_name: catalog_service
     ports:
-      - "${CATALOG_SERVICE_PORT}:${CATALOG_SERVICE_PORT}"
+      - ${CATALOG_SERVICE_PORT}:${CATALOG_SERVICE_PORT}
     environment:
       DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@catalog_db:5432/${CATALOG_DB_NAME}?schema=public"
       REDIS_URL: "redis://${REDIS_HOST}:${REDIS_PORT}"
@@ -54,11 +52,11 @@ services:
 
   auth_service:
     build:
-      context: .
-      dockerfile: services/authService/Dockerfile.dev
+      context: ./services/authService
+      dockerfile: Dockerfile.dev
     container_name: auth_service
     ports:
-      - "${USER_SERVICE_PORT}:${USER_SERVICE_PORT}"
+      - ${USER_SERVICE_PORT}:${USER_SERVICE_PORT}
     environment:
       DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@user_db:5432/${USER_DB_NAME}?schema=public"
       PORT: ${USER_SERVICE_PORT}

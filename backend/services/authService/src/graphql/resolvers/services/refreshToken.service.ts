@@ -7,7 +7,7 @@ const refreshTokenUser = async (curentToken: string) => {
     throw new Error("Unauthorized");
   }
 
-  const tokenRecord = await prisma.refresh_tokens.findUnique({
+  const tokenRecord = await prisma.refreshToken.findUnique({
     where: {
       token: curentToken,
     },
@@ -19,13 +19,13 @@ const refreshTokenUser = async (curentToken: string) => {
   }
 
   if (tokenRecord.expires_at < new Date()) {
-    await prisma.refresh_tokens.delete({
+    await prisma.refreshToken.delete({
       where: { id: tokenRecord.id },
     });
     throw new Error("Refresh token expired");
   }
 
-  await prisma.refresh_tokens.delete({
+  await prisma.refreshToken.delete({
     where: { id: tokenRecord.id },
   });
 
@@ -33,7 +33,7 @@ const refreshTokenUser = async (curentToken: string) => {
   const liveTime = Number(process.env.LIVE_TIME) || 2592000000;
   const timeMark = new Date(Date.now() + liveTime);
 
-  await prisma.refresh_tokens.create({
+  await prisma.refreshToken.create({
     data: {
       token: newRefreshToken,
       user_id: tokenRecord.user.id,
