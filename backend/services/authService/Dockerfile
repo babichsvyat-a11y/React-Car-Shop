@@ -10,7 +10,7 @@ RUN npm ci
 
 # Копіюємо схему Prisma та генеруємо клієнт
 COPY ./prisma ./prisma
-RUN npx prisma generate --schema=./prisma/schema.prisma
+RUN npx prisma generate
 
 # Копіюємо код та збираємо TypeScript
 COPY . ./
