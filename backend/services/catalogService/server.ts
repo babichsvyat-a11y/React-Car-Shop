@@ -7,13 +7,14 @@ import prisma from "./prisma/prismaClient";
 import app from "./src/app";
 
 const PORT = process.env.PORT || 5080;
+const HOST = process.env.HOST || "0.0.0.0";
 
 const startServer = async () => {
   try {
     await connectRedis();
 
-    const server = app.listen(PORT, () => {
-      logger.info(`Server is running on http://localhost:${PORT}`);
+    const server = app.listen(Number(PORT), HOST, () => {
+      logger.info(`Server is running on http://${HOST}:${PORT}`);
     });
 
     const shutdown = async (signal: string) => {
