@@ -12,12 +12,12 @@ import loginUser from "./services/login.service";
 import refreshTokenUser from "./services/refreshToken.service";
 import logoutUser from "./services/logout.service";
 
-const setRefreshTokenCookie = (res: any, token: string) => {
-  res.cookie("refreshToken", token, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
-  });
+const setRefreshTokenCookie = (context: any, token: string) => {
+  const isProd = process.env.NODE_ENV === "production";
+  context.res.setHeader(
+    "Set-Cookie",
+    `refreshToken=${token}; HttpOnly; Path=/; SameSite=Strict${isProd ? "; Secure" : ""}`,
+  );
 };
 
 const resolvers = {
@@ -32,7 +32,7 @@ const resolvers = {
         const { accessToken, refreshToken, user } =
           await registerUser(validatedData);
 
-        setRefreshTokenCookie(context.res, refreshToken);
+        setRefreshTokenCookie(context, refreshToken);
         return {
           access_token: accessToken,
           user,
@@ -52,7 +52,7 @@ const resolvers = {
         const { accessToken, refreshToken, user } =
           await loginUser(validatedData);
 
-        setRefreshTokenCookie(context.res, refreshToken);
+        setRefreshTokenCookie(context, refreshToken);
         return {
           access_token: accessToken,
           user,
@@ -64,16 +64,21 @@ const resolvers = {
     },
     refreshToken: async (_parent: unknown, _args: unknown, context: any) => {
       try {
-        const curentToken = context.req.cookies.refreshToken;
+        const cookieHeader = context.req.headers.cookie || "";
+        const targetCookie = cookieHeader
+          .split("; ")
+          .find((row: string) => row.startsWith("refreshToken="));
+        const curentToken = targetCookie
+          ? targetCookie.split("=")[1]
+          : undefined;
+        if (!curentToken) {
+          throw new Error("Refresh token missing");
+        }
 
         const { accessToken, newRefreshToken, user } =
           await refreshTokenUser(curentToken);
 
-        context.res.cookie("refreshToken", newRefreshToken, {
-          httpOnly: true,
-          secure: process.env.NODE_ENV === "production",
-          sameSite: "strict",
-        });
+        setRefreshTokenCookie(context, newRefreshToken);
 
         return {
           access_token: accessToken,
@@ -86,15 +91,24 @@ const resolvers = {
     },
     logout: async (_parent: unknown, _args: unknown, context: any) => {
       try {
-        const curentToken = context.req.cookies.refreshToken;
+        const cookieHeader = context.req.headers.cookie || "";
+        const targetCookie = cookieHeader
+          .split("; ")
+          .find((row: string) => row.startsWith("refreshToken="));
 
-        await logoutUser(curentToken);
+        const curentToken = targetCookie
+          ? targetCookie.split("=")[1]
+          : undefined;
 
-        context.res.clearCookie("refreshToken", {
-          httpOnly: true,
-          secure: process.env.NODE_ENV === "production",
-          sameSite: "strict",
-        });
+        if (curentToken) {
+          await logoutUser(curentToken);
+        }
+
+        const isProd = process.env.NODE_ENV === "production";
+        context.res.setHeader(
+          "Set-Cookie",
+          `refreshToken=; Max-Age=0; HttpOnly; Path=/; SameSite=Strict${isProd ? "; Secure" : ""}`,
+        );
 
         return true;
       } catch (err) {

@@ -16,7 +16,15 @@ const typeDefs = loadSchemaSync("./src/graphql/schema.graphql", {
 
 const schema = makeExecutableSchema({ typeDefs, resolvers });
 
-const yoga = createYoga({ schema, context: createContext });
+const yoga = createYoga({
+  schema,
+  context: createContext,
+  cors: {
+    origin: process.env.FRONTEND_HOST,
+    credentials: true,
+    methods: ["POST", "GET", "OPTIONS"],
+  },
+});
 
 const server = createServer(yoga);
 
