@@ -7,6 +7,9 @@ import resolvers from "./src/graphql/resolvers/auth.resolvers";
 import { logger } from "./src/utils/logger";
 import { createContext } from "./src/graphql/auth.context";
 
+const PORT = process.env.PORT || 5081;
+const HOST = process.env.HOST || "0.0.0.0";
+
 const typeDefs = loadSchemaSync("./src/graphql/schema.graphql", {
   loaders: [new GraphQLFileLoader()],
 });
@@ -17,6 +20,6 @@ const yoga = createYoga({ schema, context: createContext });
 
 const server = createServer(yoga);
 
-server.listen(5081, () => {
-  logger.info("Server is running on http://localhost:5081/graphql");
+server.listen(Number(PORT), HOST, () => {
+  logger.info(`Server is running on http://localhost:${PORT}/graphql`);
 });

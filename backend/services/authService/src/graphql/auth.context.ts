@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { logger } from "../../../catalogService/src/utils/logger";
+import { logger } from "../utils/logger";
 import jwt from "jsonwebtoken";
 import prisma from "prisma/prismaClient";
 

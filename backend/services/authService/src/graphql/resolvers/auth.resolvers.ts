@@ -2,11 +2,7 @@ import {
   RegisterInputSchema,
   type TRegisterInput,
 } from "src/schems/registerInput.schema";
-import prisma from "../../../prisma/prismaClient";
 import { logger } from "src/utils/logger";
-import argon2 from "argon2";
-import createJwt from "src/utils/createJWT";
-import crypto from "node:crypto";
 import {
   LoginInputSchema,
   type TLoginInput,
