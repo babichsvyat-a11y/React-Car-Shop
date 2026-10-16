@@ -14,7 +14,7 @@ COPY . ./
 COPY shared ./shared
 RUN npx tsc --project tsconfig.json
 
-FROM node:24-alpine AS runner
+FROM node:22-alpine AS runner
 
 WORKDIR /app
 

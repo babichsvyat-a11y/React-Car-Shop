@@ -1,0 +1,37 @@
+generator client{
+  provider = "prisma-client-js"
+}
+
+datasource db{
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+
+enum PaymentStatus{
+  PENDING
+  SUCCESS
+  FAILED
+  REFUNDED
+}
+
+model Payment{
+  id                String          @id @default(uuid())
+  user_id           String
+  amount            Decimal         @db.Decimal(10,2)
+  comment           String?
+  currency          String          @default("USD")
+  status            PaymentStatus   @default(PENDING)
+  provider          String          
+  provider_tx_id    String?         @unique
+  created_at        DateTime        @default(now())
+  updated_at        DateTime        @updatedAt
+
+  @@index([user_id])
+  @@index([status])
+}
+
+model IdempotencyKey{
+  key               String          @id
+  response          Json
+  created_at        DateTime        @default(now())
+}
