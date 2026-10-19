@@ -73,7 +73,7 @@ services:
 
   catalog_service:
     build:
-      context: ./services/catalogService
+      context: ./backend/services/catalogService
       dockerfile: Dockerfile.dev
     container_name: catalog_service
     ports:
@@ -88,7 +88,7 @@ services:
 
   auth_service:
     build:
-      context: ./services/authService
+      context: ./backend/services/authService
       dockerfile: Dockerfile.dev
     container_name: auth_service
     ports:
@@ -101,7 +101,7 @@ services:
 
   payment_service:
     build:
-      context: ./services/paymentService
+      context: ./backend/services/paymentService
       dockerfile: Dockerfile.dev
     container_name: payment_service
     ports:
@@ -114,7 +114,7 @@ services:
 
   feedback_service:
     build:
-      context: ./services/feedbackService
+      context: ./backend/services/feedbackService
       dockerfile: Dockerfile.dev
     container_name: feedback_service
     ports:
