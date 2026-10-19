@@ -1,0 +1,42 @@
+generator client{
+  provider = "prisma-client-js"
+}
+
+datasource db{
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+
+enum CallbackStatus{
+  PENDING
+  IN_PROGRESS
+  RESOLVED
+}
+
+enum ChannelType{
+  SMS
+  EMAIL
+}
+
+enum NotifyStatus{
+  SENT
+  FAILED
+}
+
+model CallbackTask{
+  id                String          @id @default(uuid())
+  phone             String
+  comment           String?
+  status            CallbackStatus  @default(PENDING)
+  created_at        DateTime        @default(now())
+  updated_at        DateTime        @updatedAt
+}
+
+model NotificationLog{
+  id                String          @id @default(uuid())
+  user_id           String
+  channel           ChannelType
+  status            NotifyStatus
+  payload           Json
+  created_at        DateTime        @default(now())
+}
