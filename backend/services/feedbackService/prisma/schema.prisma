@@ -25,6 +25,7 @@ enum NotifyStatus{
 
 model CallbackTask{
   id                String          @id @default(uuid())
+  name              String
   phone             String
   comment           String?
   status            CallbackStatus  @default(PENDING)
@@ -34,7 +35,7 @@ model CallbackTask{
 
 model NotificationLog{
   id                String          @id @default(uuid())
-  user_id           String
+  email             String
   channel           ChannelType
   status            NotifyStatus
   payload           Json
