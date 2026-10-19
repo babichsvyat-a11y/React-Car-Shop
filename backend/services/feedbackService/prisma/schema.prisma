@@ -35,7 +35,8 @@ model CallbackTask{
 
 model NotificationLog{
   id                String          @id @default(uuid())
-  email             String
+  email             String?
+  phone             String?
   channel           ChannelType
   status            NotifyStatus
   payload           Json

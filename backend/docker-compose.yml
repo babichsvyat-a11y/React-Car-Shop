@@ -123,6 +123,7 @@ services:
       DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@feedback_db:5432/${FEEDBACK_DB_NAME}?schema=public"
       REDIS_URL: "redis://${FEEDBACK_REDIS_HOST}:${FEEDBACK_REDIS_PORT}"
       PORT: ${FEEDBACK_SERVICE_PORT}
+      TURBOSMS_TOKEN: ${TURBOSMS_TOKEN}
     depends_on:
       - feedback_db
       - feedback_redis
