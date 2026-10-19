@@ -65,9 +65,9 @@ services:
     image: redis:7-alpine
     container_name: feedback_redis
     restart: always
-    command: redis-server --save 60 1 --loglevel notice
+    command: redis-server --save 60 1 --loglevel notice --port 6380
     ports:
-      - ${FEEDBACK_REDIS_PORT}:6379
+      - ${FEEDBACK_REDIS_PORT}:6380
     volumes:
       - feedback_redis_data:/data
 
