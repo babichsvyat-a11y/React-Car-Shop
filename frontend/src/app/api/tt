@@ -1,0 +1,47 @@
+import React from "react";
+import { useCars, useCreateCar, useDeleteCar } from "../hooks/useCatalog";
+
+export const CarManagementPage: React.FC = () => {
+  const { data: cars, isLoading, isError, error } = useCars();
+  const createCarMutation = useCreateCar();
+  const deleteCarMutation = useDeleteCar();
+
+  if (isLoading) return <div>Завантаження каталогу через API Gateway...</div>;
+  if (isError) return <div>Помилка: {(error as Error).message}</div>;
+
+  const handleAddTestCar = () => {
+    createCarMutation.mutate({
+      brand: "Audi",
+      model: "R8 V10",
+      price: 180000,
+      year: 2023,
+    });
+  };
+
+  return (
+    <div>
+      <h2>Керування каталогом автомобілів (Адмінка)</h2>
+      
+      <button 
+        onClick={handleAddTestCar} 
+        disabled={createCarMutation.isPending}
+      >
+        {createCarMutation.isPending ? "Додавання..." : "Додати тестове авто"}
+      </button>
+
+      <ul>
+        {cars?.map((car) => (
+          <li key={car.id} style={{ marginBottom: "10px" }}>
+            {car.brand} {car.model} — ${car.price} 
+            <button 
+              onClick={() => deleteCarMutation.mutate(car.id)}
+              style={{ marginLeft: "10px", color: "red" }}
+            >
+              Видалити
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
