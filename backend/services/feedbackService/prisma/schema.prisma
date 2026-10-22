@@ -31,6 +31,8 @@ model CallbackTask{
   status            CallbackStatus  @default(PENDING)
   created_at        DateTime        @default(now())
   updated_at        DateTime        @updatedAt
+
+  @@map("callback")
 }
 
 model NotificationLog{
@@ -41,4 +43,6 @@ model NotificationLog{
   status            NotifyStatus
   payload           Json
   created_at        DateTime        @default(now())
+
+  @@map("notify")
 }

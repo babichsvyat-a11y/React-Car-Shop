@@ -1,5 +1,5 @@
-import { ICar } from "./Car.interface";
-import { IImage } from "./image.interface";
+import { type ICar } from "./car.interface";
+import { type IImage } from "./image.interface";
 
 export interface IColor {
   id: Number;

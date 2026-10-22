@@ -4,6 +4,7 @@ import type { Request, Response } from "express";
 import { paymentSchema } from "./schems/payment.schema";
 import { z } from "zod";
 import prisma from "prisma/prismaClient";
+import { getStatus } from "./payment.repository";
 
 class PaymentController {
   createPayment = asyncHandler(async (req: Request, res: Response) => {
@@ -90,6 +91,15 @@ class PaymentController {
       `Payment ${updatedPayment.id} status updated to ${mappedStatus} via webhook`,
     );
     res.status(200).json({ received: true });
+  });
+
+  getStatus = asyncHandler(async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const payment = await getStatus(String(id));
+    if (!payment) {
+      throw new Error(`Payment with ID:${id} not found`);
+    }
+    return res.status(200).json(payment);
   });
 }
 
