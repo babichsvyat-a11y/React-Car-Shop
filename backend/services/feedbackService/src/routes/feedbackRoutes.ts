@@ -7,55 +7,43 @@ import { phoneSchema } from "src/schems/phone.schema";
 import { z } from "zod";
 
 const feedbackRoutes: FastifyPluginAsync = async (fastify, options) => {
-  fastify.get(
-    "/api/v1/feedback/callbacks",
-    {
-      preHandler: [requireInternalService("frontend")],
-    },
-    async (request, reply) => {
-      const result = await prisma.callbackTask.findMany();
-      if (!result) {
-        return reply.status(400).send({
-          error: "DB feedback failed!",
-        });
-      }
-
-      return reply.status(201).send({
-        message: "Callback list is done",
-        data: result,
+  fastify.get("/api/v1/feedback/callbacks", async (request, reply) => {
+    const result = await prisma.callbackTask.findMany();
+    if (!result) {
+      return reply.status(400).send({
+        error: "DB feedback failed!",
       });
-    },
-  );
+    }
 
-  fastify.post(
-    "/api/v1/feedback/callback",
-    {
-      preHandler: [requireInternalService("frontend")],
-    },
-    async (request, reply) => {
-      const result = phoneSchema.safeParse(request.body);
+    return reply.status(201).send({
+      message: "Callback list is done",
+      data: result,
+    });
+  });
 
-      if (!result.success) {
-        return reply.status(400).send({
-          error: "Validation failed",
-          details: z.flattenError(result.error),
-        });
-      }
+  fastify.post("/api/v1/feedback/callback", async (request, reply) => {
+    const result = phoneSchema.safeParse(request.body);
 
-      const job = await feedbackQueue.add("create-callback", result.data);
-
-      return reply.status(201).send({
-        message: "Callback task queued successfully",
-        jobId: job.id,
-        data: job.data,
+    if (!result.success) {
+      return reply.status(400).send({
+        error: "Validation failed",
+        details: z.flattenError(result.error),
       });
-    },
-  );
+    }
+
+    const job = await feedbackQueue.add("create-callback", result.data);
+
+    return reply.status(201).send({
+      message: "Callback task queued successfully",
+      jobId: job.id,
+      data: job.data,
+    });
+  });
 
   fastify.post(
     "/api/v1/feedback/notify",
     {
-      preHandler: [requireInternalService(["frontend", "payment-service"])],
+      preHandler: [requireInternalService(["payment-service"])],
     },
     async (request, reply) => {
       const result = emailSchema.safeParse(request.body);
