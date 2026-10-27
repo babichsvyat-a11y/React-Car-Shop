@@ -5,6 +5,7 @@ import { paymentSchema } from "./schems/payment.schema";
 import { z } from "zod";
 import prisma from "prisma/prismaClient";
 import { getStatus } from "./payment.repository";
+import { handleSuccessfulPayment } from "./middlewares/handleSuccessfulPayment.middleware";
 
 class PaymentController {
   createPayment = asyncHandler(async (req: Request, res: Response) => {
@@ -18,7 +19,7 @@ class PaymentController {
       return;
     }
 
-    const { user_id, amount, comment, provider, provider_tx_id } =
+    const { user_id, car_id, amount, comment, provider, provider_tx_id } =
       validationResult.data;
 
     const payment = await prisma.payment.upsert({
@@ -30,6 +31,7 @@ class PaymentController {
       },
       create: {
         user_id,
+        car_id,
         amount,
         comment,
         provider,
@@ -85,6 +87,21 @@ class PaymentController {
       );
       res.status(200).json({ received: true, warning: "Payment not found" });
       return;
+    }
+
+    if (mappedStatus === "SUCCESS") {
+      try {
+        await handleSuccessfulPayment(
+          updatedPayment.id,
+          updatedPayment.car_id,
+          updatedPayment.user_id,
+        );
+        logger.info("[Payment Service]: Payment validated. Car status updated");
+      } catch (err) {
+        logger.error(
+          "[Payment Service]: CRITICAL ERROR: Payment validated, but car status is not updated!!",
+        );
+      }
     }
 
     logger.info(

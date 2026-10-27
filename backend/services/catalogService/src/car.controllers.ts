@@ -10,6 +10,15 @@ const CACHE_KEY_ALL = "cars:all";
 const CACHE_TTL = 3600;
 class CarController {
   getAllCars = asyncHandler(async (req: Request, res: Response) => {
+    const internalService = req.headers["x-internal-service"];
+
+    if (internalService !== "frontend") {
+      logger.warn(
+        `[Catalog Service]: Unauthorized attempt from: ${internalService || "unknown"} `,
+      );
+      return res.status(403).json({ error: "Forbidden" });
+    }
+
     const cachedCars = await redisClient.get(CACHE_KEY_ALL);
 
     if (cachedCars) {
@@ -27,6 +36,15 @@ class CarController {
   });
 
   getOneCar = asyncHandler(async (req: Request, res: Response) => {
+    const internalService = req.headers["x-internal-service"];
+
+    if (internalService !== "frontend") {
+      logger.warn(
+        `[Catalog Service]: Unauthorized attempt from: ${internalService || "unknown"} `,
+      );
+      return res.status(403).json({ error: "Forbidden" });
+    }
+
     const { id } = req.params;
     const cacheKey = `car:${id}`;
 
@@ -46,6 +64,15 @@ class CarController {
   });
 
   createCar = asyncHandler(async (req: Request, res: Response) => {
+    const internalService = req.headers["x-internal-service"];
+
+    if (internalService !== "frontend") {
+      logger.warn(
+        `[Catalog Service]: Unauthorized attempt from: ${internalService || "unknown"} `,
+      );
+      return res.status(403).json({ error: "Forbidden" });
+    }
+
     const data: Prisma.CarCreateInput = req.body;
     const car = await CarRepository.create(data);
 
@@ -56,6 +83,18 @@ class CarController {
   });
 
   updateCar = asyncHandler(async (req: Request, res: Response) => {
+    const internalService = req.headers["x-internal-service"];
+
+    if (
+      internalService !== "payment-service" &&
+      internalService !== "frontend"
+    ) {
+      logger.warn(
+        `[Catalog Service]: Unauthorized attempt from: ${internalService || "unknown"} `,
+      );
+      return res.status(403).json({ error: "Forbidden" });
+    }
+
     const { id } = req.params;
     const data: Prisma.CarUpdateInput = req.body;
 
@@ -67,6 +106,15 @@ class CarController {
   });
 
   deleteCar = asyncHandler(async (req: Request, res: Response) => {
+    const internalService = req.headers["x-internal-service"];
+
+    if (internalService !== "frontend") {
+      logger.warn(
+        `[Catalog Service]: Unauthorized attempt from: ${internalService || "unknown"} `,
+      );
+      return res.status(403).json({ error: "Forbidden" });
+    }
+
     const { id } = req.params;
 
     await CarRepository.delete(String(id));

@@ -21,6 +21,7 @@ export const createCarSchema = z.object({
   drive_type: z.string().min(1, "driveType is required"),
   colors: z.array(createColorSchema).optional(),
   images: z.array(createImageSchema).optional(),
+  is_aviable: z.boolean().default(true),
 });
 
 export const updateCarSchema = createCarSchema.partial();

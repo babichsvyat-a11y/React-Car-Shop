@@ -17,6 +17,7 @@ enum PaymentStatus{
 model Payment{
   id                String          @id @default(uuid())
   user_id           String
+  car_id            String
   amount            Decimal         @db.Decimal(10,2)
   comment           String?
   currency          String          @default("USD")
