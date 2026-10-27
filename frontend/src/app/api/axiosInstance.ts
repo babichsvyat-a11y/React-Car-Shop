@@ -6,7 +6,6 @@ export const publicApi = axios.create({
   baseURL: BASE_URL,
   headers: {
     "Content-Type": "application/json",
-    "X-Internal-Service": "frontend",
   },
 });
 
@@ -14,7 +13,6 @@ export const privateApi = axios.create({
   baseURL: BASE_URL,
   headers: {
     "Content-Type": "application/json",
-    "X-Internal-Service": "frontend",
   },
 });
 

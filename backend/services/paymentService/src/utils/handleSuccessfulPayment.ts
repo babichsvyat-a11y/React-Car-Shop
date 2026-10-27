@@ -50,7 +50,6 @@ export async function handleSuccessfulPayment(
       {
         headers: {
           "X-Internal-Service": "payment-service",
-          "X-User-Id": userId,
         },
       },
     );
