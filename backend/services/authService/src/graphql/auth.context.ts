@@ -1,4 +1,3 @@
-import type { Request, Response } from "express";
 import { logger } from "../utils/logger";
 import jwt from "jsonwebtoken";
 import prisma from "prisma/prismaClient";
@@ -12,6 +11,7 @@ export interface IContext {
 
 export const createContext = async ({ req, res, request }: IContext) => {
   const authHeader = request.headers.get("authorization");
+  const internalService = request.headers.get("x-internal-service");
 
   let curentUser = null;
 
@@ -30,5 +30,6 @@ export const createContext = async ({ req, res, request }: IContext) => {
     req,
     res,
     user: curentUser,
+    internalService,
   };
 };

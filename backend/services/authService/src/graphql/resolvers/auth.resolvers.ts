@@ -11,6 +11,7 @@ import registerUser from "./services/register.service";
 import loginUser from "./services/login.service";
 import refreshTokenUser from "./services/refreshToken.service";
 import logoutUser from "./services/logout.service";
+import prisma from "prisma/prismaClient";
 
 const setRefreshTokenCookie = (context: any, token: string) => {
   const isProd = process.env.NODE_ENV === "production";
@@ -28,6 +29,9 @@ const resolvers = {
       context: any,
     ) => {
       try {
+        if (context.internalService !== "frontend") {
+          throw new Error("Access Denied: Internal service only");
+        }
         const validatedData = RegisterInputSchema.parse(input);
         const { accessToken, refreshToken, user } =
           await registerUser(validatedData);
@@ -48,6 +52,9 @@ const resolvers = {
       context: any,
     ) => {
       try {
+        if (context.internalService !== "frontend") {
+          throw new Error("Access Denied: Internal service only");
+        }
         const validatedData = LoginInputSchema.parse(input);
         const { accessToken, refreshToken, user } =
           await loginUser(validatedData);
@@ -64,6 +71,9 @@ const resolvers = {
     },
     refreshToken: async (_parent: unknown, _args: unknown, context: any) => {
       try {
+        if (context.internalService !== "frontend") {
+          throw new Error("Access Denied: Internal service only");
+        }
         const cookieHeader = context.req.headers.cookie || "";
         const targetCookie = cookieHeader
           .split("; ")
@@ -91,6 +101,10 @@ const resolvers = {
     },
     logout: async (_parent: unknown, _args: unknown, context: any) => {
       try {
+        if (context.internalService !== "frontend") {
+          throw new Error("Access Denied: Internal service only");
+        }
+
         const cookieHeader = context.req.headers.cookie || "";
         const targetCookie = cookieHeader
           .split("; ")
@@ -119,10 +133,23 @@ const resolvers = {
   },
   Query: {
     me: async (_parent: unknown, _args: unknown, context: any) => {
+      if (context.internalService !== "frontend") {
+        throw new Error("Access Denied: Internal service only");
+      }
+
       if (!context.user) {
         throw new Error("Not authenticated");
       }
       return context.user;
+    },
+
+    user: async (_parent: unknown, { id }: { id: string }, context: any) => {
+      if (context.internalService !== "payment-service") {
+        throw new Error("Access Denied: Internal service only");
+      }
+      const user = await prisma.user.findUnique({ where: { id } });
+      if (!user) throw new Error("User not found");
+      return user;
     },
   },
 };

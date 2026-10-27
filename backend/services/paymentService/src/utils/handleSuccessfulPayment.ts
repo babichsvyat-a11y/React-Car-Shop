@@ -19,7 +19,7 @@ axiosRetry(catalogClient, {
   },
   onRetry: (retryCount, err) => {
     logger.warn(
-      `[Payment Service]: Retry #${retryCount} due to error: ${err.message}`,
+      `[Payment Service -> Catalog Service]: Retry #${retryCount} due to error: ${err.message}`,
     );
   },
 });

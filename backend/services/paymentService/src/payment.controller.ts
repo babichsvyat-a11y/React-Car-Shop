@@ -5,7 +5,9 @@ import { paymentSchema } from "./schems/payment.schema";
 import { z } from "zod";
 import prisma from "prisma/prismaClient";
 import { getStatus } from "./payment.repository";
-import { handleSuccessfulPayment } from "./middlewares/handleSuccessfulPayment.middleware";
+import { handleSuccessfulPayment } from "./utils/handleSuccessfulPayment";
+import { handlePaymentFeedback } from "./utils/handlePaymentFeedback";
+import { getUserContactData } from "./utils/getUserData";
 
 class PaymentController {
   createPayment = asyncHandler(async (req: Request, res: Response) => {
@@ -97,9 +99,30 @@ class PaymentController {
           updatedPayment.user_id,
         );
         logger.info("[Payment Service]: Payment validated. Car status updated");
-      } catch (err) {
+      } catch (err: any) {
         logger.error(
           "[Payment Service]: CRITICAL ERROR: Payment validated, but car status is not updated!!",
+        );
+      }
+
+      try {
+        const user = await getUserContactData(updatedPayment.user_id);
+
+        if (!user) {
+          logger.error(
+            `[Payment Service]: Feedback error, because user with id:${updatedPayment.user_id}, is not founds`,
+          );
+          throw new Error(`User with ID:${updatedPayment.user_id} not found`);
+        }
+        await handlePaymentFeedback(
+          updatedPayment.id,
+          user.email,
+          user.phone,
+          "EMAIL",
+        );
+      } catch (err: any) {
+        logger.error(
+          "[Payment Service]: CRITICAL ERROR: Payment validated, but feedback is not order!!",
         );
       }
     }
