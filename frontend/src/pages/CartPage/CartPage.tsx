@@ -4,10 +4,8 @@ import Footer from "@/widgets/Footer";
 
 const CartPage = () => {
   return (
-    <div className="dark:bg-primary-background bg-light-bg min-h-screen ">
-      <Header />
+    <div>
       <Cart />
-      <Footer />
     </div>
   );
 };

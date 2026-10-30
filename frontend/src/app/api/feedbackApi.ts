@@ -1,8 +1,5 @@
 import type { ICallback } from "@/shared/interface/feedback/callback.interface";
-import type {
-  ICallbackResponse,
-  INotifyResponse,
-} from "@/shared/interface/feedback/response.interface";
+import type { ICallbackResponse } from "@/shared/interface/feedback/response.interface";
 import { privateApi, publicApi } from "@/app/api/axiosInstance";
 import type { INotifycationRequest } from "@/shared/interface/feedback/notification.interface";
 
