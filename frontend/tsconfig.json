@@ -21,5 +21,13 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "../frontend_next/src/shared/types/totalAuto.interface.ts",
+    "../frontend_next/src/hooks/useCartReducer.ts",
+    "../frontend_next/src/store/store.ts",
+    "../frontend_next/src/store/cartSlice.ts",
+    "../frontend_next/src/components/CompList.tsx",
+    "../frontend_next/src/components/CarList.tsx"
+  ]
 }

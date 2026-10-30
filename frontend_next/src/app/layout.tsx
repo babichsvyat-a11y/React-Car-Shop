@@ -1,7 +1,6 @@
 import { Inter, Rajdhani } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
-
 const rajdhaniSans = Rajdhani({
   subsets: ["latin"],
   weight: ["400", "500", "700"],

@@ -1,3 +1,6 @@
 {
-  "/(public)/cart/page": "app/(public)/cart/page.js"
+  "/(public)/cart/page": "app/(public)/cart/page.js",
+  "/(public)/catalog/page": "app/(public)/catalog/page.js",
+  "/(public)/page": "app/(public)/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }
