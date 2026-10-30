@@ -1,0 +1,988 @@
+module.exports = [
+(()=>{"use strict";return[
+"[project]/src/app/(public)/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Home
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ContactSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ContactSection.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$InfoSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/InfoSection.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PosterSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/PosterSection.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TopSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/TopSection.tsx [app-rsc] (ecmascript)");
+;
+;
+;
+;
+;
+function Home() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "dark:bg-primary-background bg-light-simp-bg",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PosterSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/(public)/page.tsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TopSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/(public)/page.tsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$InfoSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/(public)/page.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ContactSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/(public)/page.tsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/(public)/page.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/assets/gif/main.gif.mjs { IMAGE => \"[project]/src/assets/gif/main.gif (static in ecmascript, tag client)\" } [app-rsc] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$gif$2f$main$2e$gif__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/gif/main.gif (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$gif$2f$main$2e$gif__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 480,
+    height: 270,
+    blurWidth: 0,
+    blurHeight: 0
+};
+}),
+"[project]/src/components/ContactSection.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+;
+const ContactSection = ()=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "dark:text-primary-text text-light-accent font-secondary pb-10 flex flex-col items-center-safe",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: " py-10 uppercase text-3xl font-semibold text-center",
+                children: "book a test drive"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ContactSection.tsx",
+                lineNumber: 4,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-row gap-10 px-[5%] py-10 mx- dark:bg-secondary-background bg-light-bg dark:shadow-none inset-shadow-lg justify-center flex-wrap",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "uppercase text-xl font-semibold text-center",
+                                children: "the best environment for your emotions"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/ContactSection.tsx",
+                                lineNumber: 9,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                className: "text-sm dark:text-secondary-text text-light-accent/30 font-medium flex flex-col gap-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "flex flex-row gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                width: "20",
+                                                height: "20",
+                                                viewBox: "0 0 20 20",
+                                                fill: "none",
+                                                xmlns: "http://www.w3.org/2000/svg",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                                                        clipPath: "url(#clip0_2002_110)",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z",
+                                                                fill: "#191919"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 22,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.0001 19.4446C15.2161 19.4446 19.4446 15.2161 19.4446 10.0001C19.4446 4.78409 15.2161 0.555664 10.0001 0.555664C4.78409 0.555664 0.555664 4.78409 0.555664 10.0001C0.555664 15.2161 4.78409 19.4446 10.0001 19.4446Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 26,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.0001 17.2218C13.9888 17.2218 17.2223 13.9883 17.2223 9.99957C17.2223 6.01084 13.9888 2.77734 10.0001 2.77734C6.01133 2.77734 2.77783 6.01084 2.77783 9.99957C2.77783 13.9883 6.01133 17.2218 10.0001 17.2218Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 30,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99978 16.1109C13.3749 16.1109 16.1109 13.3749 16.1109 9.99978C16.1109 6.62471 13.3749 3.88867 9.99978 3.88867C6.62471 3.88867 3.88867 6.62471 3.88867 9.99978C3.88867 13.3749 6.62471 16.1109 9.99978 16.1109Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 34,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z",
+                                                                fill: "#787878"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 38,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99984 13.3337C11.8408 13.3337 13.3332 11.8413 13.3332 10.0003C13.3332 8.15938 11.8408 6.66699 9.99984 6.66699C8.15889 6.66699 6.6665 8.15938 6.6665 10.0003C6.6665 11.8413 8.15889 13.3337 9.99984 13.3337Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 42,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99978 11.1109C10.6134 11.1109 11.1109 10.6134 11.1109 9.99978C11.1109 9.38613 10.6134 8.88867 9.99978 8.88867C9.38613 8.88867 8.88867 9.38613 8.88867 9.99978C8.88867 10.6134 9.38613 11.1109 9.99978 11.1109Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 46,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99989 10.5554C10.3067 10.5554 10.5554 10.3067 10.5554 9.99989C10.5554 9.69307 10.3067 9.44434 9.99989 9.44434C9.69307 9.44434 9.44434 9.69307 9.44434 9.99989C9.44434 10.3067 9.69307 10.5554 9.99989 10.5554Z",
+                                                                fill: "#E1E1E1"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 50,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.8168 12.0775C10.5201 11.5525 9.73792 11.4286 9.33014 11.8925C8.51292 13.0036 7.80181 14.1786 7.24236 15.4459C7.33385 15.4929 7.42681 15.5377 7.52125 15.5803C8.16514 14.9997 8.74625 14.3681 9.29348 13.7047H10.7074C11.2551 14.3675 11.8357 14.9981 12.479 15.5792C12.5735 15.5366 12.6666 15.4916 12.7585 15.4442C12.2313 14.2492 11.5546 13.1542 10.8168 12.0775ZM16.0779 9.36474C16.0674 9.26197 16.0468 9.16141 16.0313 9.0603C14.6535 9.20086 13.3168 9.51419 12.0074 9.94808C11.4396 10.1925 11.3168 10.9747 11.7235 11.4186C12.5196 12.4536 13.3529 13.4364 14.3285 14.3086C14.4018 14.2347 14.469 14.1547 14.5385 14.0775C14.1851 13.2875 13.7651 12.542 13.3046 11.8175L13.7424 10.4731C14.5418 10.157 15.3268 9.79808 16.0779 9.36474ZM4.56681 7.21586C5.69736 7.87308 6.88847 8.36141 8.11792 8.79863C8.65681 9.05197 9.37959 8.68252 9.42903 8.07474C9.43736 6.69586 9.32181 5.32697 9.02959 3.97363C8.92625 3.9903 8.82292 4.00419 8.72125 4.02586C8.59896 4.61816 8.51011 5.21689 8.45514 5.81919C8.42847 6.06808 8.40736 6.32697 8.3907 6.58863L7.24681 7.41752C6.4157 7.20363 5.57681 7.0353 4.71681 6.94308C4.66459 7.03234 4.61459 7.12326 4.56681 7.21586ZM11.6546 8.86197C12.969 8.44363 14.2357 7.91086 15.4329 7.21419C15.3848 7.12092 15.334 7.02903 15.2807 6.93863C14.6751 7.00308 14.0835 7.1103 13.499 7.23919C13.254 7.2903 13.0013 7.3503 12.7474 7.4153L11.6051 6.58363C11.5518 5.7253 11.4524 4.87363 11.2729 4.02474C11.1729 4.00363 11.0701 3.98974 10.9685 3.97363C10.6929 5.25141 10.5963 6.53474 10.5607 7.83919C10.4863 8.42919 11.0613 9.00252 11.6546 8.86197ZM5.67125 14.3086C6.64681 13.4364 7.47959 12.4536 8.27625 11.4186C8.68347 10.9742 8.55959 10.1925 7.99292 9.94808C6.68403 9.51419 5.34681 9.20086 3.96903 9.06086C3.95347 9.16252 3.93292 9.26252 3.92236 9.3653C4.67347 9.79863 5.45847 10.1575 6.25792 10.4731L6.6957 11.8175C6.23514 12.542 5.8157 13.2875 5.46181 14.0775C5.53125 14.1547 5.59792 14.2347 5.67125 14.3086Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 54,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M12.4833 10.6484C13.1226 10.4366 13.7572 10.2106 14.3866 9.97062C14.9528 9.7564 15.5122 9.52443 16.0638 9.27507C16.0583 9.22618 16.0488 9.17895 16.0416 9.13062C14.7184 9.41013 13.4125 9.7661 12.1305 10.1967C11.756 10.3401 11.641 10.8973 11.901 11.1923C11.9288 11.2334 12.0121 11.3373 12.0405 11.3801C12.7777 12.3701 13.5471 13.3378 14.376 14.2556C14.411 14.2195 14.4433 14.1812 14.4771 14.1445C13.8194 13.004 13.0821 11.9128 12.326 10.839C12.2594 10.7184 12.3899 10.6784 12.4833 10.6484ZM5.52215 14.1451C5.55603 14.1817 5.58826 14.2206 5.62326 14.2562C6.45159 13.3384 7.22159 12.3706 7.95881 11.3806C7.9877 11.339 8.07104 11.2334 8.09826 11.1928C8.35937 10.8978 8.2427 10.3406 7.86937 10.1973C6.58736 9.76665 5.28146 9.41069 3.95826 9.13118C3.95159 9.17951 3.94215 9.22673 3.93604 9.27562C4.48992 9.5234 5.0477 9.75951 5.61381 9.97118C6.24323 10.211 6.87783 10.437 7.51715 10.649C7.61048 10.6784 7.74048 10.719 7.67381 10.8395C6.9177 11.9134 6.17992 13.0045 5.52215 14.1451ZM10.6821 12.3678C10.6516 12.3273 10.5771 12.2156 10.5466 12.1773C10.3466 11.8378 9.78048 11.7762 9.52881 12.0873C8.72322 13.1732 7.98124 14.3049 7.30659 15.4767C7.35029 15.4986 7.39437 15.5199 7.43881 15.5406C7.84573 15.0936 8.23852 14.6339 8.61659 14.1623C9.03916 13.6377 9.45019 13.1038 9.84937 12.5612C9.90604 12.4817 9.98492 12.3701 10.0788 12.4712C10.8677 13.5228 11.6777 14.5623 12.5599 15.5406C12.6051 15.5195 12.6499 15.4978 12.6944 15.4756C12.0783 14.4051 11.3955 13.3745 10.6821 12.3678ZM4.59715 7.15173C5.72659 7.65673 6.88604 8.09007 8.05604 8.48507C8.32937 8.58784 8.62215 8.6784 8.89659 8.48118C9.16937 8.28173 9.17326 7.97451 9.15992 7.68284C9.14659 6.4484 9.0927 5.21284 8.96103 3.9834C8.91215 3.99173 8.8627 3.99618 8.81437 4.00618C8.67881 5.28007 8.62715 6.55951 8.61604 7.8384C8.61715 7.93618 8.61881 8.07284 8.48326 8.04618C7.22604 7.6584 5.95881 7.29395 4.66937 7.02062L4.59715 7.15173ZM10.8399 7.6834C10.841 7.73395 10.8355 7.8684 10.8377 7.91729C10.7999 8.30951 11.2216 8.69173 11.6083 8.5884C12.8994 8.18288 14.166 7.70282 15.4016 7.15062L15.331 7.02229C14.7382 7.14487 14.1494 7.28605 13.5655 7.44562C12.9153 7.62163 12.269 7.81186 11.6271 8.01618C11.5344 8.04729 11.4049 8.09118 11.3883 7.95395C11.3683 6.63784 11.3233 5.3184 11.1844 4.00673C11.1366 3.99729 11.0866 3.99284 11.0383 3.98451C10.9083 5.21395 10.8544 6.44895 10.8399 7.6834Z",
+                                                                fill: "#E1E1E1"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 58,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                                        lineNumber: 21,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("clipPath", {
+                                                            id: "clip0_2002_110",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                                                width: "20",
+                                                                height: "20",
+                                                                fill: "white"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 65,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ContactSection.tsx",
+                                                            lineNumber: 64,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                                        lineNumber: 63,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                lineNumber: 14,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            "The fastest cars on the market available in stock"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                        lineNumber: 13,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "flex flex-row gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                width: "20",
+                                                height: "20",
+                                                viewBox: "0 0 20 20",
+                                                fill: "none",
+                                                xmlns: "http://www.w3.org/2000/svg",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                                                        clipPath: "url(#clip0_2002_110)",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z",
+                                                                fill: "#191919"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 80,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.0001 19.4446C15.2161 19.4446 19.4446 15.2161 19.4446 10.0001C19.4446 4.78409 15.2161 0.555664 10.0001 0.555664C4.78409 0.555664 0.555664 4.78409 0.555664 10.0001C0.555664 15.2161 4.78409 19.4446 10.0001 19.4446Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 84,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.0001 17.2218C13.9888 17.2218 17.2223 13.9883 17.2223 9.99957C17.2223 6.01084 13.9888 2.77734 10.0001 2.77734C6.01133 2.77734 2.77783 6.01084 2.77783 9.99957C2.77783 13.9883 6.01133 17.2218 10.0001 17.2218Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 88,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99978 16.1109C13.3749 16.1109 16.1109 13.3749 16.1109 9.99978C16.1109 6.62471 13.3749 3.88867 9.99978 3.88867C6.62471 3.88867 3.88867 6.62471 3.88867 9.99978C3.88867 13.3749 6.62471 16.1109 9.99978 16.1109Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 92,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z",
+                                                                fill: "#787878"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 96,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99984 13.3337C11.8408 13.3337 13.3332 11.8413 13.3332 10.0003C13.3332 8.15938 11.8408 6.66699 9.99984 6.66699C8.15889 6.66699 6.6665 8.15938 6.6665 10.0003C6.6665 11.8413 8.15889 13.3337 9.99984 13.3337Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 100,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99978 11.1109C10.6134 11.1109 11.1109 10.6134 11.1109 9.99978C11.1109 9.38613 10.6134 8.88867 9.99978 8.88867C9.38613 8.88867 8.88867 9.38613 8.88867 9.99978C8.88867 10.6134 9.38613 11.1109 9.99978 11.1109Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 104,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99989 10.5554C10.3067 10.5554 10.5554 10.3067 10.5554 9.99989C10.5554 9.69307 10.3067 9.44434 9.99989 9.44434C9.69307 9.44434 9.44434 9.69307 9.44434 9.99989C9.44434 10.3067 9.69307 10.5554 9.99989 10.5554Z",
+                                                                fill: "#E1E1E1"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 108,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.8168 12.0775C10.5201 11.5525 9.73792 11.4286 9.33014 11.8925C8.51292 13.0036 7.80181 14.1786 7.24236 15.4459C7.33385 15.4929 7.42681 15.5377 7.52125 15.5803C8.16514 14.9997 8.74625 14.3681 9.29348 13.7047H10.7074C11.2551 14.3675 11.8357 14.9981 12.479 15.5792C12.5735 15.5366 12.6666 15.4916 12.7585 15.4442C12.2313 14.2492 11.5546 13.1542 10.8168 12.0775ZM16.0779 9.36474C16.0674 9.26197 16.0468 9.16141 16.0313 9.0603C14.6535 9.20086 13.3168 9.51419 12.0074 9.94808C11.4396 10.1925 11.3168 10.9747 11.7235 11.4186C12.5196 12.4536 13.3529 13.4364 14.3285 14.3086C14.4018 14.2347 14.469 14.1547 14.5385 14.0775C14.1851 13.2875 13.7651 12.542 13.3046 11.8175L13.7424 10.4731C14.5418 10.157 15.3268 9.79808 16.0779 9.36474ZM4.56681 7.21586C5.69736 7.87308 6.88847 8.36141 8.11792 8.79863C8.65681 9.05197 9.37959 8.68252 9.42903 8.07474C9.43736 6.69586 9.32181 5.32697 9.02959 3.97363C8.92625 3.9903 8.82292 4.00419 8.72125 4.02586C8.59896 4.61816 8.51011 5.21689 8.45514 5.81919C8.42847 6.06808 8.40736 6.32697 8.3907 6.58863L7.24681 7.41752C6.4157 7.20363 5.57681 7.0353 4.71681 6.94308C4.66459 7.03234 4.61459 7.12326 4.56681 7.21586ZM11.6546 8.86197C12.969 8.44363 14.2357 7.91086 15.4329 7.21419C15.3848 7.12092 15.334 7.02903 15.2807 6.93863C14.6751 7.00308 14.0835 7.1103 13.499 7.23919C13.254 7.2903 13.0013 7.3503 12.7474 7.4153L11.6051 6.58363C11.5518 5.7253 11.4524 4.87363 11.2729 4.02474C11.1729 4.00363 11.0701 3.98974 10.9685 3.97363C10.6929 5.25141 10.5963 6.53474 10.5607 7.83919C10.4863 8.42919 11.0613 9.00252 11.6546 8.86197ZM5.67125 14.3086C6.64681 13.4364 7.47959 12.4536 8.27625 11.4186C8.68347 10.9742 8.55959 10.1925 7.99292 9.94808C6.68403 9.51419 5.34681 9.20086 3.96903 9.06086C3.95347 9.16252 3.93292 9.26252 3.92236 9.3653C4.67347 9.79863 5.45847 10.1575 6.25792 10.4731L6.6957 11.8175C6.23514 12.542 5.8157 13.2875 5.46181 14.0775C5.53125 14.1547 5.59792 14.2347 5.67125 14.3086Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 112,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M12.4833 10.6484C13.1226 10.4366 13.7572 10.2106 14.3866 9.97062C14.9528 9.7564 15.5122 9.52443 16.0638 9.27507C16.0583 9.22618 16.0488 9.17895 16.0416 9.13062C14.7184 9.41013 13.4125 9.7661 12.1305 10.1967C11.756 10.3401 11.641 10.8973 11.901 11.1923C11.9288 11.2334 12.0121 11.3373 12.0405 11.3801C12.7777 12.3701 13.5471 13.3378 14.376 14.2556C14.411 14.2195 14.4433 14.1812 14.4771 14.1445C13.8194 13.004 13.0821 11.9128 12.326 10.839C12.2594 10.7184 12.3899 10.6784 12.4833 10.6484ZM5.52215 14.1451C5.55603 14.1817 5.58826 14.2206 5.62326 14.2562C6.45159 13.3384 7.22159 12.3706 7.95881 11.3806C7.9877 11.339 8.07104 11.2334 8.09826 11.1928C8.35937 10.8978 8.2427 10.3406 7.86937 10.1973C6.58736 9.76665 5.28146 9.41069 3.95826 9.13118C3.95159 9.17951 3.94215 9.22673 3.93604 9.27562C4.48992 9.5234 5.0477 9.75951 5.61381 9.97118C6.24323 10.211 6.87783 10.437 7.51715 10.649C7.61048 10.6784 7.74048 10.719 7.67381 10.8395C6.9177 11.9134 6.17992 13.0045 5.52215 14.1451ZM10.6821 12.3678C10.6516 12.3273 10.5771 12.2156 10.5466 12.1773C10.3466 11.8378 9.78048 11.7762 9.52881 12.0873C8.72322 13.1732 7.98124 14.3049 7.30659 15.4767C7.35029 15.4986 7.39437 15.5199 7.43881 15.5406C7.84573 15.0936 8.23852 14.6339 8.61659 14.1623C9.03916 13.6377 9.45019 13.1038 9.84937 12.5612C9.90604 12.4817 9.98492 12.3701 10.0788 12.4712C10.8677 13.5228 11.6777 14.5623 12.5599 15.5406C12.6051 15.5195 12.6499 15.4978 12.6944 15.4756C12.0783 14.4051 11.3955 13.3745 10.6821 12.3678ZM4.59715 7.15173C5.72659 7.65673 6.88604 8.09007 8.05604 8.48507C8.32937 8.58784 8.62215 8.6784 8.89659 8.48118C9.16937 8.28173 9.17326 7.97451 9.15992 7.68284C9.14659 6.4484 9.0927 5.21284 8.96103 3.9834C8.91215 3.99173 8.8627 3.99618 8.81437 4.00618C8.67881 5.28007 8.62715 6.55951 8.61604 7.8384C8.61715 7.93618 8.61881 8.07284 8.48326 8.04618C7.22604 7.6584 5.95881 7.29395 4.66937 7.02062L4.59715 7.15173ZM10.8399 7.6834C10.841 7.73395 10.8355 7.8684 10.8377 7.91729C10.7999 8.30951 11.2216 8.69173 11.6083 8.5884C12.8994 8.18288 14.166 7.70282 15.4016 7.15062L15.331 7.02229C14.7382 7.14487 14.1494 7.28605 13.5655 7.44562C12.9153 7.62163 12.269 7.81186 11.6271 8.01618C11.5344 8.04729 11.4049 8.09118 11.3883 7.95395C11.3683 6.63784 11.3233 5.3184 11.1844 4.00673C11.1366 3.99729 11.0866 3.99284 11.0383 3.98451C10.9083 5.21395 10.8544 6.44895 10.8399 7.6834Z",
+                                                                fill: "#E1E1E1"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 116,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                                        lineNumber: 79,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("clipPath", {
+                                                            id: "clip0_2002_110",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                                                width: "20",
+                                                                height: "20",
+                                                                fill: "white"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 123,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ContactSection.tsx",
+                                                            lineNumber: 122,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                                        lineNumber: 121,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                lineNumber: 72,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            "Circuit, drag, and rally tracks are available for test drives"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                        lineNumber: 71,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "flex flex-row gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                width: "20",
+                                                height: "20",
+                                                viewBox: "0 0 20 20",
+                                                fill: "none",
+                                                xmlns: "http://www.w3.org/2000/svg",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                                                        clipPath: "url(#clip0_2002_110)",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z",
+                                                                fill: "#191919"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 138,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.0001 19.4446C15.2161 19.4446 19.4446 15.2161 19.4446 10.0001C19.4446 4.78409 15.2161 0.555664 10.0001 0.555664C4.78409 0.555664 0.555664 4.78409 0.555664 10.0001C0.555664 15.2161 4.78409 19.4446 10.0001 19.4446Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 142,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.0001 17.2218C13.9888 17.2218 17.2223 13.9883 17.2223 9.99957C17.2223 6.01084 13.9888 2.77734 10.0001 2.77734C6.01133 2.77734 2.77783 6.01084 2.77783 9.99957C2.77783 13.9883 6.01133 17.2218 10.0001 17.2218Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 146,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99978 16.1109C13.3749 16.1109 16.1109 13.3749 16.1109 9.99978C16.1109 6.62471 13.3749 3.88867 9.99978 3.88867C6.62471 3.88867 3.88867 6.62471 3.88867 9.99978C3.88867 13.3749 6.62471 16.1109 9.99978 16.1109Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 150,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z",
+                                                                fill: "#787878"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 154,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99984 13.3337C11.8408 13.3337 13.3332 11.8413 13.3332 10.0003C13.3332 8.15938 11.8408 6.66699 9.99984 6.66699C8.15889 6.66699 6.6665 8.15938 6.6665 10.0003C6.6665 11.8413 8.15889 13.3337 9.99984 13.3337Z",
+                                                                fill: "#313131"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 158,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99978 11.1109C10.6134 11.1109 11.1109 10.6134 11.1109 9.99978C11.1109 9.38613 10.6134 8.88867 9.99978 8.88867C9.38613 8.88867 8.88867 9.38613 8.88867 9.99978C8.88867 10.6134 9.38613 11.1109 9.99978 11.1109Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 162,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M9.99989 10.5554C10.3067 10.5554 10.5554 10.3067 10.5554 9.99989C10.5554 9.69307 10.3067 9.44434 9.99989 9.44434C9.69307 9.44434 9.44434 9.69307 9.44434 9.99989C9.44434 10.3067 9.69307 10.5554 9.99989 10.5554Z",
+                                                                fill: "#E1E1E1"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 166,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M10.8168 12.0775C10.5201 11.5525 9.73792 11.4286 9.33014 11.8925C8.51292 13.0036 7.80181 14.1786 7.24236 15.4459C7.33385 15.4929 7.42681 15.5377 7.52125 15.5803C8.16514 14.9997 8.74625 14.3681 9.29348 13.7047H10.7074C11.2551 14.3675 11.8357 14.9981 12.479 15.5792C12.5735 15.5366 12.6666 15.4916 12.7585 15.4442C12.2313 14.2492 11.5546 13.1542 10.8168 12.0775ZM16.0779 9.36474C16.0674 9.26197 16.0468 9.16141 16.0313 9.0603C14.6535 9.20086 13.3168 9.51419 12.0074 9.94808C11.4396 10.1925 11.3168 10.9747 11.7235 11.4186C12.5196 12.4536 13.3529 13.4364 14.3285 14.3086C14.4018 14.2347 14.469 14.1547 14.5385 14.0775C14.1851 13.2875 13.7651 12.542 13.3046 11.8175L13.7424 10.4731C14.5418 10.157 15.3268 9.79808 16.0779 9.36474ZM4.56681 7.21586C5.69736 7.87308 6.88847 8.36141 8.11792 8.79863C8.65681 9.05197 9.37959 8.68252 9.42903 8.07474C9.43736 6.69586 9.32181 5.32697 9.02959 3.97363C8.92625 3.9903 8.82292 4.00419 8.72125 4.02586C8.59896 4.61816 8.51011 5.21689 8.45514 5.81919C8.42847 6.06808 8.40736 6.32697 8.3907 6.58863L7.24681 7.41752C6.4157 7.20363 5.57681 7.0353 4.71681 6.94308C4.66459 7.03234 4.61459 7.12326 4.56681 7.21586ZM11.6546 8.86197C12.969 8.44363 14.2357 7.91086 15.4329 7.21419C15.3848 7.12092 15.334 7.02903 15.2807 6.93863C14.6751 7.00308 14.0835 7.1103 13.499 7.23919C13.254 7.2903 13.0013 7.3503 12.7474 7.4153L11.6051 6.58363C11.5518 5.7253 11.4524 4.87363 11.2729 4.02474C11.1729 4.00363 11.0701 3.98974 10.9685 3.97363C10.6929 5.25141 10.5963 6.53474 10.5607 7.83919C10.4863 8.42919 11.0613 9.00252 11.6546 8.86197ZM5.67125 14.3086C6.64681 13.4364 7.47959 12.4536 8.27625 11.4186C8.68347 10.9742 8.55959 10.1925 7.99292 9.94808C6.68403 9.51419 5.34681 9.20086 3.96903 9.06086C3.95347 9.16252 3.93292 9.26252 3.92236 9.3653C4.67347 9.79863 5.45847 10.1575 6.25792 10.4731L6.6957 11.8175C6.23514 12.542 5.8157 13.2875 5.46181 14.0775C5.53125 14.1547 5.59792 14.2347 5.67125 14.3086Z",
+                                                                fill: "#AEB3B2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 170,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M12.4833 10.6484C13.1226 10.4366 13.7572 10.2106 14.3866 9.97062C14.9528 9.7564 15.5122 9.52443 16.0638 9.27507C16.0583 9.22618 16.0488 9.17895 16.0416 9.13062C14.7184 9.41013 13.4125 9.7661 12.1305 10.1967C11.756 10.3401 11.641 10.8973 11.901 11.1923C11.9288 11.2334 12.0121 11.3373 12.0405 11.3801C12.7777 12.3701 13.5471 13.3378 14.376 14.2556C14.411 14.2195 14.4433 14.1812 14.4771 14.1445C13.8194 13.004 13.0821 11.9128 12.326 10.839C12.2594 10.7184 12.3899 10.6784 12.4833 10.6484ZM5.52215 14.1451C5.55603 14.1817 5.58826 14.2206 5.62326 14.2562C6.45159 13.3384 7.22159 12.3706 7.95881 11.3806C7.9877 11.339 8.07104 11.2334 8.09826 11.1928C8.35937 10.8978 8.2427 10.3406 7.86937 10.1973C6.58736 9.76665 5.28146 9.41069 3.95826 9.13118C3.95159 9.17951 3.94215 9.22673 3.93604 9.27562C4.48992 9.5234 5.0477 9.75951 5.61381 9.97118C6.24323 10.211 6.87783 10.437 7.51715 10.649C7.61048 10.6784 7.74048 10.719 7.67381 10.8395C6.9177 11.9134 6.17992 13.0045 5.52215 14.1451ZM10.6821 12.3678C10.6516 12.3273 10.5771 12.2156 10.5466 12.1773C10.3466 11.8378 9.78048 11.7762 9.52881 12.0873C8.72322 13.1732 7.98124 14.3049 7.30659 15.4767C7.35029 15.4986 7.39437 15.5199 7.43881 15.5406C7.84573 15.0936 8.23852 14.6339 8.61659 14.1623C9.03916 13.6377 9.45019 13.1038 9.84937 12.5612C9.90604 12.4817 9.98492 12.3701 10.0788 12.4712C10.8677 13.5228 11.6777 14.5623 12.5599 15.5406C12.6051 15.5195 12.6499 15.4978 12.6944 15.4756C12.0783 14.4051 11.3955 13.3745 10.6821 12.3678ZM4.59715 7.15173C5.72659 7.65673 6.88604 8.09007 8.05604 8.48507C8.32937 8.58784 8.62215 8.6784 8.89659 8.48118C9.16937 8.28173 9.17326 7.97451 9.15992 7.68284C9.14659 6.4484 9.0927 5.21284 8.96103 3.9834C8.91215 3.99173 8.8627 3.99618 8.81437 4.00618C8.67881 5.28007 8.62715 6.55951 8.61604 7.8384C8.61715 7.93618 8.61881 8.07284 8.48326 8.04618C7.22604 7.6584 5.95881 7.29395 4.66937 7.02062L4.59715 7.15173ZM10.8399 7.6834C10.841 7.73395 10.8355 7.8684 10.8377 7.91729C10.7999 8.30951 11.2216 8.69173 11.6083 8.5884C12.8994 8.18288 14.166 7.70282 15.4016 7.15062L15.331 7.02229C14.7382 7.14487 14.1494 7.28605 13.5655 7.44562C12.9153 7.62163 12.269 7.81186 11.6271 8.01618C11.5344 8.04729 11.4049 8.09118 11.3883 7.95395C11.3683 6.63784 11.3233 5.3184 11.1844 4.00673C11.1366 3.99729 11.0866 3.99284 11.0383 3.98451C10.9083 5.21395 10.8544 6.44895 10.8399 7.6834Z",
+                                                                fill: "#E1E1E1"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 174,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                                        lineNumber: 137,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("clipPath", {
+                                                            id: "clip0_2002_110",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                                                width: "20",
+                                                                height: "20",
+                                                                fill: "white"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                                lineNumber: 181,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ContactSection.tsx",
+                                                            lineNumber: 180,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                                        lineNumber: 179,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/ContactSection.tsx",
+                                                lineNumber: 130,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            "Solo test drives for experienced drivers"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/ContactSection.tsx",
+                                        lineNumber: 129,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/ContactSection.tsx",
+                                lineNumber: 12,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/ContactSection.tsx",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                            id: "contactForm",
+                            className: "flex flex-col gap-4",
+                            action: "",
+                            method: "get",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "uppercase text-xl font-semibold text-center",
+                                    children: "Share your contact info"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ContactSection.tsx",
+                                    lineNumber: 196,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm text-center dark:text-secondary-text text-light-accent/30 font-medium",
+                                    children: "Your car is ready for you !!"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ContactSection.tsx",
+                                    lineNumber: 199,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                    className: "hidden",
+                                    htmlFor: "name"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ContactSection.tsx",
+                                    lineNumber: 202,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    className: "bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-105 focus:border-brand-accent-light",
+                                    name: "user_name",
+                                    id: "name",
+                                    placeholder: "Your name",
+                                    type: "text"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ContactSection.tsx",
+                                    lineNumber: 203,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                    className: "hidden",
+                                    htmlFor: "number"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ContactSection.tsx",
+                                    lineNumber: 210,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    className: "bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-105 focus:border-brand-accent-light",
+                                    name: " user_tel",
+                                    id: "number",
+                                    placeholder: "Your number",
+                                    type: "tel"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ContactSection.tsx",
+                                    lineNumber: 211,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "font-secondary text-primary-text uppercase tracking-tighter font-semibold text-[12px] px-3.5 py-2 dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer rounded-md",
+                                    type: "submit",
+                                    children: "start your engine, chief !"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ContactSection.tsx",
+                                    lineNumber: 219,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/ContactSection.tsx",
+                            lineNumber: 190,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ContactSection.tsx",
+                        lineNumber: 189,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/ContactSection.tsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ContactSection.tsx",
+        lineNumber: 3,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+const __TURBOPACK__default__export__ = ContactSection;
+}),
+"[project]/src/components/InfoSection.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>InfoSection
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+;
+function InfoSection() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "px-[10%] py-10 uppercase text-3xl font-semibold text-center dark:text-primary-text text-light-accent font-secondary",
+                children: "our advantages"
+            }, void 0, false, {
+                fileName: "[project]/src/components/InfoSection.tsx",
+                lineNumber: 4,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                className: "font-secondary text-primary-text flex flex-row gap-2 flex-wrap justify-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        className: "flex flex-row gap-2 p-5 dark:bg-secondary-background bg-light-bg hover:scale-105 transition delay-100 duration-200 easy-in",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-row",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    width: "40",
+                                    height: "40",
+                                    viewBox: "0 0 40 40",
+                                    fill: "none",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M30 38.3333C27.6944 38.3333 25.7294 37.5206 24.105 35.895C22.4806 34.2694 21.6678 32.3044 21.6667 30C21.6656 27.6956 22.4783 25.7306 24.105 24.105C25.7317 22.4794 27.6967 21.6667 30 21.6667C32.3033 21.6667 34.2689 22.4794 35.8967 24.105C37.5244 25.7306 38.3367 27.6956 38.3333 30C38.33 32.3044 37.5172 34.27 35.895 35.8967C34.2728 37.5233 32.3078 38.3356 30 38.3333ZM13.3333 15H26.6667C27.1389 15 27.535 14.84 27.855 14.52C28.175 14.2 28.3344 13.8044 28.3333 13.3333C28.3322 12.8622 28.1722 12.4667 27.8533 12.1467C27.5344 11.8267 27.1389 11.6667 26.6667 11.6667H13.3333C12.8611 11.6667 12.4656 11.8267 12.1467 12.1467C11.8278 12.4667 11.6678 12.8622 11.6667 13.3333C11.6656 13.8044 11.8256 14.2006 12.1467 14.5217C12.4678 14.8428 12.8633 15.0022 13.3333 15ZM8.33333 35C7.41667 35 6.63222 34.6739 5.98 34.0217C5.32778 33.3694 5.00111 32.5844 5 31.6667V8.33333C5 7.41667 5.32667 6.63222 5.98 5.98C6.63333 5.32778 7.41778 5.00111 8.33333 5H31.6667C32.5833 5 33.3683 5.32667 34.0217 5.98C34.675 6.63333 35.0011 7.41778 35 8.33333V17.4167C35 17.9167 34.7917 18.3056 34.375 18.5833C33.9583 18.8611 33.5139 18.9167 33.0417 18.75C32.5694 18.6111 32.0761 18.5067 31.5617 18.4367C31.0472 18.3667 30.5267 18.3322 30 18.3333C29.6944 18.3333 29.4094 18.3406 29.145 18.355C28.8806 18.3694 28.61 18.4039 28.3333 18.4583C28.0833 18.4028 27.8056 18.3683 27.5 18.355C27.1944 18.3417 26.9167 18.3344 26.6667 18.3333H13.3333C12.8611 18.3333 12.4656 18.4933 12.1467 18.8133C11.8278 19.1333 11.6678 19.5289 11.6667 20C11.6656 20.4711 11.8256 20.8672 12.1467 21.1883C12.4678 21.5094 12.8633 21.6689 13.3333 21.6667H21.875C21.375 22.1389 20.9239 22.6528 20.5217 23.2083C20.1194 23.7639 19.765 24.3611 19.4583 25H13.3333C12.8611 25 12.4656 25.16 12.1467 25.48C11.8278 25.8 11.6678 26.1956 11.6667 26.6667C11.6656 27.1378 11.8256 27.5339 12.1467 27.855C12.4678 28.1761 12.8633 28.3356 13.3333 28.3333H18.4583C18.4028 28.6111 18.3683 28.8822 18.355 29.1467C18.3417 29.4111 18.3344 29.6956 18.3333 30C18.3333 30.5556 18.3611 31.0833 18.4167 31.5833C18.4722 32.0833 18.5694 32.5694 18.7083 33.0417C18.8472 33.5139 18.7778 33.9583 18.5 34.375C18.2222 34.7917 17.8472 35 17.375 35H8.33333ZM31.7717 29.2717C32.2572 28.785 32.5 28.1944 32.5 27.5C32.5 26.8056 32.2572 26.2156 31.7717 25.73C31.2861 25.2444 30.6956 25.0011 30 25C29.3044 24.9989 28.7144 25.2422 28.23 25.73C27.7456 26.2178 27.5022 26.8078 27.5 27.5C27.4978 28.1922 27.7411 28.7828 28.23 29.2717C28.7189 29.7606 29.3089 30.0033 30 30C30.6911 29.9967 31.2817 29.7539 31.7717 29.2717ZM31.9583 34.605C32.5694 34.3406 33.1111 33.9583 33.5833 33.4583C33.7222 33.2917 33.7778 33.1044 33.75 32.8967C33.7222 32.6889 33.5972 32.5289 33.375 32.4167C32.8472 32.1667 32.2989 31.9794 31.73 31.855C31.1611 31.7306 30.5844 31.6678 30 31.6667C29.4156 31.6656 28.8394 31.7283 28.2717 31.855C27.7039 31.9817 27.155 32.1689 26.625 32.4167C26.4028 32.5 26.2778 32.6528 26.25 32.875C26.2222 33.0972 26.2778 33.2917 26.4167 33.4583C26.8889 33.9583 27.4306 34.3406 28.0417 34.605C28.6528 34.8694 29.3056 35.0011 30 35C30.6944 34.9989 31.3472 34.8672 31.9583 34.605Z",
+                                        fill: "#0D99FF"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 17,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/InfoSection.tsx",
+                                    lineNumber: 10,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/InfoSection.tsx",
+                                lineNumber: 9,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "uppercase text-xl font-semibold dark:text-primary-text text-light-accent",
+                                        children: "financing options"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 24,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm dark:font-normal font-medium dark:text-secondary-text text-light-simp-accent/50",
+                                        children: "Flexible Playment Plans"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 27,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/InfoSection.tsx",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/InfoSection.tsx",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        className: "flex flex-row gap-2 p-5 dark:bg-secondary-background bg-light-bg hover:scale-105 transition delay-100 duration-200 easy-in",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-row content-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    className: "block",
+                                    width: "37",
+                                    height: "37",
+                                    viewBox: "0 0 37 37",
+                                    fill: "none",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M18.3333 36.6667C15.2222 36.6667 12.3611 35.9583 9.75 34.5417C7.13889 33.125 5 31.2361 3.33333 28.875V33.3333H0V23.3333H10V26.6667H5.875C7.20833 28.6667 8.96555 30.2778 11.1467 31.5C13.3278 32.7222 15.7233 33.3333 18.3333 33.3333C20.4167 33.3333 22.3683 32.9378 24.1883 32.1467C26.0083 31.3556 27.5917 30.2861 28.9383 28.9383C30.285 27.5906 31.3544 26.0072 32.1467 24.1883C32.9389 22.3694 33.3344 20.4178 33.3333 18.3333H36.6667C36.6667 20.8611 36.1878 23.2361 35.23 25.4583C34.2722 27.6806 32.9594 29.625 31.2917 31.2917C29.6239 32.9583 27.6794 34.2711 25.4583 35.23C23.2372 36.1889 20.8622 36.6678 18.3333 36.6667ZM16.8333 30V27.8333C15.5278 27.5278 14.4656 26.9656 13.6467 26.1467C12.8278 25.3278 12.2233 24.2511 11.8333 22.9167L14.5833 21.8333C14.9167 22.9722 15.4378 23.8267 16.1467 24.3967C16.8556 24.9667 17.6678 25.2511 18.5833 25.25C19.4989 25.2489 20.2839 25.0339 20.9383 24.605C21.5928 24.1761 21.9189 23.5022 21.9167 22.5833C21.9167 21.7778 21.5767 21.125 20.8967 20.625C20.2167 20.125 19.0011 19.5556 17.25 18.9167C15.6111 18.3333 14.41 17.6389 13.6467 16.8333C12.8833 16.0278 12.5011 14.9722 12.5 13.6667C12.5 12.5278 12.8961 11.4933 13.6883 10.5633C14.4806 9.63333 15.5567 9.02889 16.9167 8.75V6.66667H19.8333V8.75C20.8333 8.83333 21.7433 9.23611 22.5633 9.95833C23.3833 10.6806 23.9456 11.5278 24.25 12.5L21.5833 13.5833C21.3611 12.9444 21 12.41 20.5 11.98C20 11.55 19.3056 11.3344 18.4167 11.3333C17.4444 11.3333 16.7011 11.5417 16.1867 11.9583C15.6722 12.375 15.4156 12.9444 15.4167 13.6667C15.4178 14.3889 15.7372 14.9583 16.375 15.375C17.0128 15.7917 18.1656 16.2778 19.8333 16.8333C21.8333 17.5556 23.1667 18.4028 23.8333 19.375C24.5 20.3472 24.8333 21.4167 24.8333 22.5833C24.8333 23.3889 24.6944 24.0972 24.4167 24.7083C24.1389 25.3194 23.7706 25.8406 23.3117 26.2717C22.8528 26.7028 22.3183 27.05 21.7083 27.3133C21.0983 27.5767 20.4456 27.7778 19.75 27.9167V30H16.8333ZM0 18.3333C0 15.8056 0.479444 13.4306 1.43833 11.2083C2.39722 8.98611 3.70944 7.04167 5.375 5.375C7.04055 3.70833 8.985 2.39611 11.2083 1.43833C13.4317 0.480556 15.8067 0.00111111 18.3333 0C21.4444 0 24.3056 0.708333 26.9167 2.125C29.5278 3.54167 31.6667 5.43056 33.3333 7.79167V3.33333H36.6667V13.3333H26.6667V10H30.7917C29.4583 8 27.7017 6.38889 25.5217 5.16667C23.3417 3.94444 20.9456 3.33333 18.3333 3.33333C16.25 3.33333 14.2989 3.72944 12.48 4.52167C10.6611 5.31389 9.07778 6.38278 7.73 7.72833C6.38222 9.07389 5.31278 10.6572 4.52167 12.4783C3.73056 14.2994 3.33444 16.2511 3.33333 18.3333H0Z",
+                                        fill: "#14AE5C"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 42,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/InfoSection.tsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/InfoSection.tsx",
+                                lineNumber: 33,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "uppercase text-xl font-semibold dark:text-primary-text text-light-accent",
+                                        children: "trade-in program"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 50,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm dark:font-normal font-medium dark:text-secondary-text text-light-simp-accent/50",
+                                        children: "Get the Best Value"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 53,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/InfoSection.tsx",
+                                lineNumber: 49,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/InfoSection.tsx",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        className: "flex flex-row gap-2 p-5 dark:bg-secondary-background bg-light-bg hover:scale-105 transition delay-100 duration-200 easy-in",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-row",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    width: "40",
+                                    height: "40",
+                                    viewBox: "0 0 40 40",
+                                    fill: "none",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M23.563 25.4797C24.6041 24.6875 25.3608 23.6663 25.833 22.4163H14.1664C14.6386 23.6663 15.3958 24.6875 16.438 25.4797C17.4802 26.2719 18.6675 26.6675 19.9997 26.6664C21.3319 26.6652 22.5197 26.2697 23.563 25.4797ZM17.603 19.2697C18.0897 18.7852 18.333 18.1952 18.333 17.4997C18.333 16.8041 18.0902 16.2141 17.6047 15.7297C17.1191 15.2452 16.5286 15.0019 15.833 14.9997C15.1375 14.9975 14.5475 15.2408 14.063 15.7297C13.5786 16.2186 13.3352 16.8086 13.333 17.4997C13.3308 18.1908 13.5741 18.7813 14.063 19.2713C14.5519 19.7613 15.1419 20.0041 15.833 19.9997C16.5241 19.9952 17.1147 19.7525 17.6047 19.2713M25.938 19.2713C26.4236 18.7847 26.6664 18.1941 26.6664 17.4997C26.6664 16.8052 26.4236 16.2152 25.938 15.7297C25.4525 15.2441 24.8619 15.0008 24.1664 14.9997C23.4708 14.9986 22.8808 15.2419 22.3964 15.7297C21.9119 16.2175 21.6686 16.8075 21.6664 17.4997C21.6641 18.1919 21.9075 18.7825 22.3964 19.2713C22.8852 19.7602 23.4753 20.003 24.1664 19.9997C24.8575 19.9964 25.448 19.7536 25.938 19.2713ZM12.708 10.6663L17.3747 4.62468C17.708 4.18024 18.1041 3.85413 18.563 3.64635C19.0219 3.43857 19.5008 3.33413 19.9997 3.33302C20.4986 3.33191 20.978 3.43635 21.438 3.64635C21.898 3.85635 22.2936 4.18246 22.6247 4.62468L27.2914 10.6663L34.3747 13.0413C35.0969 13.2636 35.6664 13.6736 36.083 14.2713C36.4997 14.8691 36.708 15.5286 36.708 16.2497C36.708 16.583 36.6591 16.9164 36.5614 17.2497C36.4636 17.583 36.3041 17.9025 36.083 18.208L31.4997 24.708L31.6664 31.5413C31.6941 32.5136 31.3747 33.333 30.708 33.9997C30.0414 34.6663 29.2636 34.9997 28.3747 34.9997C28.3191 34.9997 28.0136 34.958 27.458 34.8747L19.9997 32.7913L12.5414 34.8747C12.4025 34.9302 12.2497 34.9652 12.083 34.9797C11.9164 34.9941 11.7636 35.0008 11.6247 34.9997C10.7358 34.9997 9.95803 34.6663 9.29136 33.9997C8.62469 33.333 8.30525 32.5136 8.33303 31.5413L8.49969 24.6664L3.95803 18.208C3.7358 17.9025 3.5758 17.583 3.47803 17.2497C3.38025 16.9164 3.33192 16.583 3.33303 16.2497C3.33303 15.5552 3.53469 14.9097 3.93803 14.313C4.34136 13.7164 4.90358 13.2925 5.62469 13.0413L12.708 10.6663Z",
+                                        fill: "#FFA629"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 67,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/InfoSection.tsx",
+                                    lineNumber: 60,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/InfoSection.tsx",
+                                lineNumber: 59,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "uppercase text-xl font-semibold dark:text-primary-text text-light-accent",
+                                        children: "customer reviewes"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 74,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm dark:font-normal font-medium dark:text-secondary-text text-light-simp-accent/50",
+                                        children: "5-Star Rated Service"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/InfoSection.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/InfoSection.tsx",
+                                lineNumber: 73,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/InfoSection.tsx",
+                        lineNumber: 58,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/InfoSection.tsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/InfoSection.tsx",
+        lineNumber: 3,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/components/PosterSection.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>PosterSection
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$gif$2f$main$2e$gif$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$gif$2f$main$2e$gif__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/gif/main.gif.mjs { IMAGE => "[project]/src/assets/gif/main.gif (static in ecmascript, tag client)" } [app-rsc] (structured image object with data url, ecmascript)');
+;
+;
+function PosterSection() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-[url(${p})] bg-no-repeat bg-cover bg-center border-y-4 dark:border-brand-accent border-light-accent",
+            style: {
+                backgroundImage: `url(${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$gif$2f$main$2e$gif$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$gif$2f$main$2e$gif__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]})`
+            },
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-col gap-3 max-w-110  py-[10%] ml-[10%] ",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "font-primary text-8xl font-black text-primary-text uppercase leading-none",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: " text-simply-accent",
+                                children: "unleash"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/PosterSection.tsx",
+                                lineNumber: 12,
+                                columnNumber: 13
+                            }, this),
+                            " the speed"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/PosterSection.tsx",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                        className: "font-secondary text-primary-text uppercase tracking-tighter font-semibold text-xl",
+                        children: "find your dream sports car"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/PosterSection.tsx",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "#contactForm",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "w-max font-secondary text-primary-text uppercase tracking-tighter font-semibold text-normal px-8 py-2 dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-110 rounded-md transition delay-100 duration-200 easy-in cursor-pointer",
+                                type: "button",
+                                children: "test drive !"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/PosterSection.tsx",
+                                lineNumber: 19,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/PosterSection.tsx",
+                            lineNumber: 18,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/PosterSection.tsx",
+                        lineNumber: 17,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/PosterSection.tsx",
+                lineNumber: 10,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/PosterSection.tsx",
+            lineNumber: 6,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/PosterSection.tsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/components/TopSection.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+;
+// import CarCard from "@/enteties/CarCard";
+// import useTotalAuto from "@/shared/hooks/useTotalAuto";
+const TopSection = ()=>{
+    // const { totalAuto } = useTotalAuto();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "dark:text-primary-text text-light-accent font-secondary",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "px-[10%] py-10 uppercase text-3xl font-semibold text-center",
+                children: "our top models"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TopSection.tsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                className: "grid xl:grid-cols-4 gap-[2vw] px-[10%] lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pb-10"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TopSection.tsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/TopSection.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+const __TURBOPACK__default__export__ = TopSection;
+}),
+]})(),
+"[externals]/next/dist/server/app-render/module-loading/track-module-loading.external.js [external] (next/dist/server/app-render/module-loading/track-module-loading.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+var mod = __turbopack_context__.x("next/dist/server/app-render/module-loading/track-module-loading.external.js", () => require("next/dist/server/app-render/module-loading/track-module-loading.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+var mod = __turbopack_context__.x("next/dist/shared/lib/no-fallback-error.external.js", () => require("next/dist/shared/lib/no-fallback-error.external.js"));
+
+module.exports = mod;
+}),
+"[project]/src/app/(public)/page.tsx [app-rsc] (ecmascript, Next.js Server Component)", (function(__turbopack_context__){
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/(public)/page.tsx [app-rsc] (ecmascript)"));
+}),
+"[project]/src/assets/gif/main.gif (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/main.1nro0_nx2uezj.gif" + (globalThis["NEXT_CLIENT_ASSET_SUFFIX"] || ''));}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__12o02lgt3rpg_._.js.map
