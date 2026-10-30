@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { catalogApi } from "@/app/api/catalogApi";
-import type { ICar } from "@/shared/interface/catalog/car.interface";
+import { catalogApi } from "@/services/catalogApi";
+import type { ICar } from "@/shared/types/catalog/car.interface";
 
 export const useCatalog = () => {
   return useQuery({

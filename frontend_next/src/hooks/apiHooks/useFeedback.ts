@@ -1,7 +1,7 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { feedbackApi } from "@/app/api/feedbackApi";
-import type { ICallback } from "@/shared/interface/feedback/callback.interface";
-import type { INotifycationRequest } from "@/shared/interface/feedback/notification.interface";
+import { feedbackApi } from "@/services/feedbackApi";
+import type { ICallback } from "@/shared/types/feedback/callback.interface";
+import type { INotifycationRequest } from "@/shared/types/feedback/notification.interface";
 
 export const useRequestCallback = () => {
   return useMutation({
