@@ -5,12 +5,12 @@ import TopSection from "@/widgets/MainLanding/sections/TopSection";
 
 const MainLanding = () => {
   return (
-    <main className="dark:bg-primary-background bg-light-simp-bg">
+    <div className="dark:bg-primary-background bg-light-simp-bg">
       <PosterSection />
       <TopSection />
       <InfoSection />
       <ContactSection />
-    </main>
+    </div>
   );
 };
 

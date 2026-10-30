@@ -3,13 +3,7 @@ import Catalog from "@/widgets/Catalog";
 import Footer from "@/widgets/Footer";
 
 const CatalogPage = () => {
-  return (
-    <div className="dark:bg-primary-background bg-light-bg min-h-screen ">
-      <Header />
-      <Catalog />
-      <Footer />
-    </div>
-  );
+  return <Catalog />;
 };
 
 export default CatalogPage;
