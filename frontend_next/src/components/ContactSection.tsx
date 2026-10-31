@@ -1,4 +1,32 @@
+"use client";
+
+import { useRequestCallback } from "@/hooks/apiHooks/useFeedback";
+import {
+  createCallbackSchema,
+  type CallbackFormSchema,
+} from "@/shared/schems/callback.schema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+
 export default function ContactSection() {
+  const { mutate: requestCallback, isPending } = useRequestCallback();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<CallbackFormSchema>({
+    resolver: zodResolver(createCallbackSchema),
+  });
+
+  const onSubmit = (data: CallbackFormSchema) => {
+    requestCallback(data, {
+      onSuccess: () => {
+        reset();
+      },
+    });
+  };
+
   return (
     <section className="dark:text-primary-text text-light-accent font-secondary pb-10 flex flex-col items-center-safe">
       <h2 className=" py-10 uppercase text-3xl font-semibold text-center">
@@ -188,10 +216,9 @@ export default function ContactSection() {
         </div>
         <div className="">
           <form
+            onSubmit={handleSubmit(onSubmit)}
             id="contactForm"
             className="flex flex-col gap-4"
-            action=""
-            method="get"
           >
             <h3 className="uppercase text-xl font-semibold text-center">
               Share your contact info
@@ -202,25 +229,46 @@ export default function ContactSection() {
             <label className="hidden" htmlFor="name"></label>
             <input
               className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-105 focus:border-brand-accent-light"
-              name="user_name"
               id="name"
               placeholder="Your name"
-              type="text"
+              {...register("name")}
             />
+            {errors.name && (
+              <span className="text-red-500 text-sm">
+                {errors.name.message}
+              </span>
+            )}
             <label className="hidden" htmlFor="number"></label>
             <input
               className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-105 focus:border-brand-accent-light"
-              name=" user_tel"
               id="number"
               placeholder="Your number"
-              type="tel"
+              {...register("phone")}
             />
+            {errors.phone && (
+              <span className="text-red-500 text-sm">
+                {errors.phone.message}
+              </span>
+            )}
+            <label className="hidden" htmlFor="comment"></label>
+            <textarea
+              className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-105 focus:border-brand-accent-light"
+              id="comment"
+              placeholder="Your comment"
+              {...register("comment")}
+            />
+            {errors.comment && (
+              <span className="text-red-500 text-sm">
+                {errors.comment.message}
+              </span>
+            )}
 
             <button
               className="font-secondary text-primary-text uppercase tracking-tighter font-semibold text-[12px] px-3.5 py-2 dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer rounded-md"
               type="submit"
+              disabled={isPending}
             >
-              start your engine, chief !
+              {isPending ? "Sending.." : "start your engine, chief !"}
             </button>
           </form>
         </div>

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Admin/Desktop/Git/React-Car-Shop/frontend_next/src/app/(public)/page.tsx"],"sourcesContent":["import { Test } from \"./(test)/Test\";\r\n\r\nexport default function Home() {\r\n  return (\r\n    <Test\r\n      test={{\r\n        text: \"Hello World\"!,\r\n        author: \"RunDNA\",\r\n      }}\r\n    />\r\n  );\r\n}\r\n"],"names":["Home","Test","test","text","author"],"mappings":";;;;;;;;;;;;AAEe,SAASA;IACtB,qBACE,8OAACC;QACCC,MAAM;YACJC,MAAM;YACNC,QAAQ;QACV;;;;;;AAGN"}}]
-}
