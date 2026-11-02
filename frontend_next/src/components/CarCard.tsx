@@ -1,5 +1,6 @@
 import { PAGES } from "@/config/pages-class.config";
 import type { ICar } from "@/shared/types/catalog/car.interface";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function CarCard(auto: ICar) {
@@ -14,7 +15,7 @@ export default function CarCard(auto: ICar) {
       className="aspect-3/4 md:min-w-83.75 min-w-55 text-primary-text dark:bg-secondary-background bg-secondary-text flex flex-col  md:brightness-80 transition delay-100 duration-200 easy-in"
     >
       <div className="py-2 px-3 flex flex-col justify-between flex-2 relative w-full">
-        <img
+        <Image
           className="absolute top-0 left-0 aspect-3/4 w-full object-cover"
           src={auto.brand}
           alt="auto image"

@@ -34,7 +34,7 @@ const TopSection = () => {
           {cars
             .toSorted((a, b) => b.rating - a.rating)
             .filter((auto, i) => i <= 3)
-            .map((auto, index) => (
+            .map((auto) => (
               <CarCard key={auto.id} {...auto} />
             ))}
         </ul>

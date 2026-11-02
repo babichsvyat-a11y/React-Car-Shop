@@ -3,15 +3,14 @@ import globals from "globals";
 import reactHooks from "eslint-plugin-react-hooks";
 import nextPlugin from "@next/eslint-plugin-next";
 import { defineConfig, globalIgnores } from "eslint/config";
+import tseslint from "typescript-eslint";
 
 export default defineConfig([
-  // 1. Глобальні виключення (папки, які не потрібно лінтити)
   globalIgnores(["dist", ".next", "node_modules", "out", "build"]),
 
-  // 2. Базові рекомендовані правила JavaScript від ESLint
   js.configs.recommended,
+  ...tseslint.configs.recommended,
 
-  // 3. Офіційні правила Next.js для Flat Config (Core Web Vitals)
   {
     plugins: {
       "@next/next": nextPlugin,
@@ -22,7 +21,6 @@ export default defineConfig([
     },
   },
 
-  // 4. Правила для React Hooks
   {
     plugins: {
       "react-hooks": reactHooks,
@@ -30,24 +28,23 @@ export default defineConfig([
     rules: reactHooks.configs.recommended.rules,
   },
 
-  // 5. Головні налаштування середовища для ваших JS/TS/JSX/TSX файлів
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
-      ecmaVersion: 2024,
+      ecmaVersion: "latest",
       sourceType: "module",
       globals: {
         ...globals.browser,
         ...globals.node,
       },
       parserOptions: {
+        parser: tseslint.parser,
         ecmaFeatures: {
           jsx: true,
         },
       },
     },
     rules: {
-      // Ваше кастомне правило для ігнорування великих літер у невикористаних змінних
       "no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],
     },
   },
