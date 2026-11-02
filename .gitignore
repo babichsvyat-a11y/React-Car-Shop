@@ -1,32 +1,30 @@
-# Залежності
 node_modules/
+package-lock.json
 
+prisma/migrations/
 
-# Результати збірки Next.js
+.gif
+.svg
+
 .next/
 
-# Збірка продукту та кеші інструментів
 build/
 dist/
 .cache/
 .turbo/
 
-# Локальні змінні оточення (Секрети!)
 .env
 .env*.local
 
-# Кеші логів та звітів
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .eslintcache
 
-# Системні файли macOS / Windows
 .DS_Store
 Thumbs.db
 
-# Локальні налаштування редактора IDE
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
