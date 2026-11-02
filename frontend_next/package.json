@@ -1,0 +1,43 @@
+{
+  "name": "react-car-shop",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^6.0.2",
+    "@reduxjs/toolkit": "^2.5.1",
+    "@tanstack/react-query": "^5.66.0",
+    "axios": "^1.7.9",
+    "next": "^15.1.7",
+    "path-to-regexp": "^9.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-redux": "^9.2.0",
+    "tailwindcss": "^4.0.6",
+    "winston": "^3.17.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.6.2",
+    "babel-plugin-react-compiler": "^19.0.0-beta-df7b53d-20241127",
+    "eslint": "^9.20.1",
+    "eslint-config-next": "^15.1.7",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.15.0",
+    "postcss": "^8.5.32",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.72.1"
+  }
+}
