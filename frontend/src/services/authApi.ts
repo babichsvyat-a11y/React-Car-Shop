@@ -24,17 +24,19 @@ export class AuthApiService {
 
   async register(
     email: string,
+    phone: string,
     password: string,
     first_name: string | null,
     last_name: string,
   ): Promise<IAuthPayLoad> {
     const mutation = `
-      mutation Register($email: String!, $password: String!, $first_name: String, $last_name: String!){
-        register(input: {email: $email, password: $password, first_name: $first_name, last_name: $last_name}){
+      mutation Register($email: String!, $phone: String!, $password: String!, $first_name: String, $last_name: String!){
+        register(input: {email: $email, phone: $phone, password: $password, first_name: $first_name, last_name: $last_name}){
           access_token
           user{
             id
             email
+            phone
             first_name
             last_name
             role
@@ -46,7 +48,7 @@ export class AuthApiService {
     `;
     const data = await this.graphqlRequest<{ register: IAuthPayLoad }>(
       mutation,
-      { email, password, first_name, last_name },
+      { email, phone, password, first_name, last_name },
     );
     return data.register;
   }

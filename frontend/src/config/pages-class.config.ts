@@ -19,6 +19,10 @@ class PagesConfig {
     return `/profile`;
   }
 
+  get LOGIN() {
+    return `/login`;
+  }
+
   get ADMIN() {
     return `/admin`;
   }

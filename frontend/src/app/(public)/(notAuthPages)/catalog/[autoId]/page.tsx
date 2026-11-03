@@ -18,8 +18,6 @@ export default function ItemInfo({ params }: PageProps) {
   const { data: auto, isLoading, error } = useCar(autoId);
   const { btnAddToCart } = useCartReducer();
 
-  // console.log(auto);
-
   if (isLoading) {
     return (
       <main className="flex flex-col gap-20 p-[10%] bg-light-simp-bg dark:bg-primary-background">
@@ -147,7 +145,7 @@ export default function ItemInfo({ params }: PageProps) {
             About {auto.model}
           </h2>
           <p className="font-primary text-lg md:text-2xl text-justify font-medium dark:text-primary-text text-light-accent leading-none transition delay-100 duration-200 easy-in">
-            {auto?.about}
+            {auto.about}
           </p>
         </div>
         <ul className="flex flex-row font-secondary text-center text-lg md:text-2xl font-medium dark:text-primary-text text-light-accent leading-none transition delay-100 duration-200 easy-in">

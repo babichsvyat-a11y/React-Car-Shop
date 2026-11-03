@@ -29,15 +29,17 @@ export const useRegister = () => {
   return useMutation({
     mutationFn: ({
       email,
+      phone,
       password,
       first_name,
       last_name,
     }: {
       email: string;
+      phone: string;
       password: string;
       first_name: string | null;
       last_name: string;
-    }) => authApi.register(email, password, first_name, last_name),
+    }) => authApi.register(email, phone, password, first_name, last_name),
     onSuccess: (data) => {
       localStorage.setItem("access_token", data.access_token);
       queryClient.setQueryData(["auth", "me"], data.user);
@@ -51,6 +53,9 @@ export const useRefreshToken = () => {
     onSuccess: (data) => {
       localStorage.setItem("access_token", data.access_token);
     },
+    onError: () => {
+      localStorage.removeItem("access_token");
+    },
   });
 };
 
@@ -59,9 +64,10 @@ export const useLogout = () => {
 
   return useMutation({
     mutationFn: () => authApi.logout(),
-    onSuccess: () => {
-      localStorage.removeItem("access_token");
+    onSuccess: async () => {
+      await queryClient.cancelQueries({ queryKey: ["auth"] });
       queryClient.removeQueries({ queryKey: ["auth"] });
+      queryClient.invalidateQueries({ queryKey: ["auth"] });
     },
   });
 };

@@ -17,6 +17,7 @@ const registerUser = async (input: TRegisterInput) => {
   const user = await prisma.user.create({
     data: {
       email: input.email,
+      phone: input.phone,
       password: hashedPassword,
       first_name: input.first_name,
       last_name: input.last_name,
