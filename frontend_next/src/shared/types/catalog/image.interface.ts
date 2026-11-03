@@ -1,8 +1,8 @@
 export interface IImage {
-  id: String;
-  url: String;
-  car: String;
-  car_id: String;
-  color: Number | null;
-  color_id: Number | null;
+  id: string;
+  url: string;
+  car: string;
+  car_id: string;
+  color: number | null;
+  color_id: number | null;
 }

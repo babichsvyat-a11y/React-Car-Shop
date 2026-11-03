@@ -32,7 +32,7 @@ model CallbackTask{
   created_at        DateTime        @default(now())
   updated_at        DateTime        @updatedAt
 
-  @@map("callback")
+  @@map("callbackTask")
 }
 
 model NotificationLog{
@@ -44,5 +44,5 @@ model NotificationLog{
   payload           Json
   created_at        DateTime        @default(now())
 
-  @@map("notify")
+  @@map("notificationLog")
 }

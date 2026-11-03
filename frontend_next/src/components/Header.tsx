@@ -8,7 +8,7 @@ import light from "@/assets/icons/light_theme.svg";
 import Menu from "./Menu";
 
 const Header = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
   return (
     <header className="border border-transparent dark:border-b-border-gray fixed z-20 dark:bg-primary-background w-full h-12 bg-light-bg">
       <div className="flex flex-row px-[5%] justify-between h-full">
@@ -35,7 +35,6 @@ const Header = () => {
               alt="dark theme img"
               width={32}
               height={32}
-              priority
             />
             <Image
               src={light}
@@ -43,7 +42,6 @@ const Header = () => {
               alt="dark theme img"
               width={32}
               height={32}
-              priority
             />
           </button>
         </div>

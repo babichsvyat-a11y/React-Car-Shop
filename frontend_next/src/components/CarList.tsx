@@ -5,20 +5,13 @@ import errorImg from "@/assets/icons/error.svg";
 import Image from "next/image";
 
 interface Props {
-  searchAuto: string;
-  filterAuto: ICar[];
+  cars: ICar[];
 }
 
-const CarList = ({ searchAuto, filterAuto }: Props) => {
-  const debouncedSearch = useDebounce(searchAuto, 600);
+const CarList = ({ cars }: Props) => {
+  const debouncedSearch = useDebounce(cars, 600);
 
-  const autoList = filterAuto.filter(
-    (auto) =>
-      auto.model.toLowerCase().includes(debouncedSearch.toLowerCase()) ||
-      auto.brand.toLowerCase().includes(debouncedSearch.toLowerCase()),
-  );
-
-  return autoList.length === 0 ? (
+  return debouncedSearch.length === 0 ? (
     <div className="flex-col my-[10%]">
       <Image className="block mx-auto pb-5" src={errorImg} alt="error image" />
       <p className="text-center font-secondary text-primary-text uppercase tracking-tighter font-semibold text-lg">
@@ -27,7 +20,7 @@ const CarList = ({ searchAuto, filterAuto }: Props) => {
     </div>
   ) : (
     <ul className="grid xl:grid-cols-4 gap-[2vw] px-[10%] lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pb-10">
-      {(autoList ?? filterAuto).map((auto) => (
+      {debouncedSearch.map((auto) => (
         <CarCard key={auto.id} {...auto} />
       ))}
     </ul>

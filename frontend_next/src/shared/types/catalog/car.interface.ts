@@ -1,4 +1,4 @@
-import { type IColor } from "./color.interface";
+import { type ICarColor } from "./carColor.interface";
 import { type IImage } from "./image.interface";
 
 export interface ICar {
@@ -21,6 +21,6 @@ export interface ICar {
   drive_type: string;
   is_available: boolean;
   created_at: Date;
-  colors: IColor[];
+  colors: ICarColor[];
   images: IImage[] | undefined;
 }

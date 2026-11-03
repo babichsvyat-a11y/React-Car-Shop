@@ -4,30 +4,42 @@ import errorImg from "@/assets/icons/error.svg";
 import lapImg from "@/assets/icons/lap.svg";
 import dragImg from "@/assets/icons/drag.svg";
 import rallyImg from "@/assets/icons/rally.svg";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useCatalog } from "@/hooks/apiHooks/useCatalog";
 import Image from "next/image";
 import CarList from "@/components/CarList";
-import { ICar } from "@/shared/types/catalog/car.interface";
 
 export default function Catalog() {
   const { data: cars = [], isLoading, error } = useCatalog();
-  const [filterAuto, setFilterAuto] = useState<ICar[]>(cars);
   const [searchAuto, setSearchAuto] = useState<string>("");
-  const [classFilter, setFilterClass] = useState<string | null>("hidden");
-  const [classFilterBtn, setFilterClassBtn] = useState<string | null>("hidden");
-  const [isActive, setIsActive] = useState<boolean>(false);
+  const [selectedStyle, setSelectedStyle] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
-  function goFilterModal() {
-    setFilterClass((prev) => (prev === "hidden" ? "" : "hidden"));
-    setFilterClassBtn((prev) => (prev === "hidden" ? "" : "hidden"));
-    setIsActive((prev) => (prev === false ? true : false));
+  const filteredCars = useMemo(() => {
+    return cars.filter((auto) => {
+      const searchByModel = auto.model
+        .toLowerCase()
+        .includes(searchAuto.toLowerCase());
+      const searchByBrand = auto.brand
+        .toLowerCase()
+        .includes(searchAuto.toLowerCase());
+      const searchByStyle = selectedStyle ? auto.style === selectedStyle : true;
+      return searchByModel || (searchByBrand && searchByStyle);
+    });
+  }, [cars, searchAuto, selectedStyle]);
+
+  function toggleFilterModal() {
+    setIsModalOpen((prev) => !prev);
   }
 
   function handleFilterChoose(style: string) {
-    const filtered = cars.filter((auto) => auto.style === style);
-    setFilterAuto(filtered);
-    goFilterModal();
+    setSelectedStyle(style);
+    setIsModalOpen(false);
+  }
+
+  function handleResetFilter() {
+    setSelectedStyle(null);
+    setSearchAuto("");
   }
 
   return (
@@ -41,7 +53,7 @@ export default function Catalog() {
             <p className="font-secondary dark:text-primary-text text-light-bg uppercase tracking-tighter font-semibold lg:text-start text-center lg:text-lg text-sm transition delay-100 duration-200 easy-in">
               the roster :
               <span className="dark:text-brand-accent text-light-accent lg:text-xl text-base font-bold transition delay-100 duration-200 easy-in">
-                {" " + (filterAuto || cars).length}
+                {" " + filteredCars.length}
               </span>
             </p>
           </div>
@@ -65,7 +77,7 @@ export default function Catalog() {
                   className=" [&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none bg-secondary-text/60  outline-none block w-full p-3 ps-9 border-2 border-secondary-text text-base rounded-4xl hover:border-brand-accent focus:border-brand-accent-dark group focus:scale-101 transition delay-100 duration-200 easy-in disabled:bg-brand-accent-dark disabled:border-brand-accent"
                   placeholder="Lock it in"
                   value={searchAuto}
-                  disabled={isActive}
+                  disabled={isModalOpen}
                   onChange={(e) => {
                     setSearchAuto(e.target.value);
                   }}
@@ -73,13 +85,21 @@ export default function Catalog() {
               </div>
             </form>
           </div>
-          <div className="flex xl:justify-end justify-start">
+          <div className="flex xl:justify-end justify-start gap-4">
+            {selectedStyle && (
+              <button
+                onClick={handleResetFilter}
+                className="px-4 text-xs dark:bg-brand-accent  dark:hover:bg-brand-accent-dark hover:bg-light-accent hover:scale-105 bg-light-simp-accent uppercase font-bold rounded-full"
+              >
+                Reset
+              </button>
+            )}
             <button
-              onClick={goFilterModal}
+              onClick={toggleFilterModal}
               className="min-w-12 h-12 my-0.5  xl:px-6 xl:py-2 p-0 rounded-[50%] dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 xl:rounded-md transition delay-100 duration-200 easy-in cursor-pointer disabled:bg-brand-accent-dark disabled:scale-105"
               type="button"
               id="filterBtn"
-              disabled={isActive}
+              disabled={isModalOpen}
             >
               <p className="font-secondary text-second-text text-lg w-max text-primary-text uppercase tracking-tighter font-semibold text-normal hidden xl:block">
                 fine-tune your search
@@ -100,94 +120,87 @@ export default function Catalog() {
             </button>
           </div>
         </section>
-        <div
-          id="filterModal"
-          className={`${classFilter} +" sticky dark:bg-secondary-background bg-light-bg right-[10%] left-[10%] top-30 z-10 w-[80%] rounded-2xl shadow-2xl animate-fadeIn"`}
-        >
-          <div className=" relative p-6  h-max min-h-[45vh]   flex flex-row gap-6 flex-wrap ">
-            <button
-              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
-              onClick={() => handleFilterChoose("lap")}
-            >
-              <Image
-                className="m-auto sm:pb-8 sm:h-40 sm:w-40 h-20 w-20"
-                src={lapImg}
-                alt="lap image"
-                width={80}
-                height={80}
-              />
-              <h2
-                className="font-primary
-                text-3xl
-                font-black
-                dark:text-primary-text
-                text-light-accent
-                uppercase
-                leading-none
-                text-center"
-              >
-                Circuit racing car
-              </h2>
-            </button>
-            <button
-              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
-              onClick={() => handleFilterChoose("drag")}
-            >
-              <Image
-                className="m-auto sm:pb-8 sm:h-40 sm:w-40 h-20 w-20"
-                src={dragImg}
-                alt="lap image"
-                width={80}
-                height={80}
-              />
-              <h2
-                className="font-primary
-                text-3xl
-                font-black
-                dark:text-primary-text
-                text-light-accent
-                uppercase
-                leading-none
-                text-center"
-              >
-                Drag racing car
-              </h2>
-            </button>
-            <button
-              className={`${classFilterBtn} + "flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"`}
-              onClick={() => handleFilterChoose("rally")}
-            >
-              <Image
-                className="m-auto sm:pb-8 sm:h-40 sm:w-40 h-20 w-20"
-                src={rallyImg}
-                alt="lap image"
-                width={80}
-                height={80}
-              />
-              <h2
-                className="font-primary
-                text-3xl
-                font-black
-                dark:text-primary-text
-                text-light-accent
-                uppercase
-                leading-none
-                text-center"
-              >
-                Rally racing car
-              </h2>
-            </button>
-          </div>
-          <button
-            className="absolute top-3 right-3.25 h-10 w-10 rounded-full hover:bg-secondary-text/20 group transition delay-100 duration-200 easy-in cursor-pointer"
-            onClick={goFilterModal}
+        {isModalOpen && (
+          <div
+            id="filterModal"
+            className=" sticky dark:bg-secondary-background bg-light-bg right-[10%] left-[10%] top-30 z-10 w-[80%] rounded-2xl shadow-2xl animate-fadeIn"
           >
-            <div className="relative">
-              <div className="group-hover:bg-secondary-background absolute bg-secondary-text w-1 h-8 -bottom-4 right-4.5 rotate-45 transition delay-100 duration-200 easy-in cursor-pointer"></div>
-              <div className="group-hover:bg-secondary-background absolute bg-secondary-text w-1 h-8 -bottom-4 right-4.5 rotate-135 transition delay-100 duration-200 easy-in cursor-pointer"></div>
+            <div className=" relative p-6  h-max min-h-[45vh]   flex flex-row gap-6 flex-wrap ">
+              <button
+                className="flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"
+                onClick={() => handleFilterChoose("lap")}
+              >
+                <Image
+                  className="m-auto sm:pb-8 sm:h-40 sm:w-40 h-20 w-20"
+                  src={lapImg}
+                  alt="lap image"
+                  width={80}
+                  height={80}
+                />
+                <h2
+                  className="font-primary
+                text-3xl
+                font-black
+                dark:text-primary-text
+                text-light-accent
+                uppercase
+                leading-none
+                text-center"
+                >
+                  Circuit racing car
+                </h2>
+              </button>
+              <button
+                className="flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"
+                onClick={() => handleFilterChoose("drag")}
+              >
+                <Image
+                  className="m-auto sm:pb-8 sm:h-40 sm:w-40 h-20 w-20"
+                  src={dragImg}
+                  alt="lap image"
+                  width={80}
+                  height={80}
+                />
+                <h2
+                  className="font-primary
+                text-3xl
+                font-black
+                dark:text-primary-text
+                text-light-accent
+                uppercase
+                leading-none
+                text-center"
+                >
+                  Drag racing car
+                </h2>
+              </button>
+              <button
+                className="flex flex-col flex-1 min-w-40 dark:hover:bg-secondary-text/20 hover:bg-light-accent/20 rounded-2xl transition delay-100 duration-200 easy-in cursor-pointer"
+                onClick={() => handleFilterChoose("rally")}
+              >
+                <Image
+                  className="m-auto sm:pb-8 sm:h-40 sm:w-40 h-20 w-20"
+                  src={rallyImg}
+                  alt="lap image"
+                  width={80}
+                  height={80}
+                />
+                <h2
+                  className="font-primary
+                text-3xl
+                font-black
+                dark:text-primary-text
+                text-light-accent
+                uppercase
+                leading-none
+                text-center"
+                >
+                  Rally racing car
+                </h2>
+              </button>
             </div>
-          </button>
-        </div>
+          </div>
+        )}
         <section className="flex-1">
           {isLoading ? (
             <ul className="grid xl:grid-cols-4 gap-[2vw] px-[10%] lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 pb-10">
@@ -205,7 +218,7 @@ export default function Catalog() {
               />
             </div>
           ) : (
-            <CarList searchAuto={searchAuto} filterAuto={filterAuto} />
+            <CarList cars={filteredCars} />
           )}
         </section>
       </div>

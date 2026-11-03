@@ -29,6 +29,17 @@ const TopSection = () => {
             alt="error image"
           />
         </div>
+      ) : cars.length === 0 ? (
+        <div className="flex-col my-[10%]">
+          <Image
+            className="block mx-auto pb-5"
+            src={errorImg}
+            alt="error image"
+          />
+          <p className="text-center font-secondary text-primary-text uppercase tracking-tighter font-semibold text-lg">
+            lost data
+          </p>
+        </div>
       ) : (
         <ul className="grid xl:grid-cols-4 gap-[2vw] px-[10%] lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 pb-10">
           {cars
