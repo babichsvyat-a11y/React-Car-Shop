@@ -44,7 +44,9 @@ export default function RegisterForm() {
       id="registerForm"
       className="flex flex-col gap-4"
     >
-      <h3 className="uppercase text-xl font-semibold text-center">Register</h3>
+      <h2 className="text-2xl dark:text-primary-text text-light-accent uppercase font-semibold text-center">
+        Register
+      </h2>
       <p className="text-sm text-center dark:text-secondary-text text-light-accent/30 font-medium">
         Take you contact info!
       </p>

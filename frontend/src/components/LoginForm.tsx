@@ -31,25 +31,14 @@ export default function LoginForm() {
         reset();
       },
       onError: (error: any) => {
-        const errorMessage = error.response.data.message;
+        const errorMessage = error.response?.data?.message || error.message;
         if (errorMessage.toLowerCase().includes("password")) {
           setError("password", {
             type: "server",
             message: "Incorrect password",
           });
-        } else if (
-          errorMessage.toLowerCase().includes("user") ||
-          errorMessage.toLowerCase().includes("email")
-        ) {
-          setError("email", {
-            type: "server",
-            message: "User not found",
-          });
         } else {
-          setError("root.serverError", {
-            type: "server",
-            message: errorMessage || "Login failed. Take later...",
-          });
+          setError("email", { type: "server", message: "User not found" });
         }
       },
     });
@@ -60,7 +49,9 @@ export default function LoginForm() {
       id="loginForm"
       className="flex flex-col gap-4"
     >
-      <h3 className="uppercase text-xl font-semibold text-center">Login</h3>
+      <h2 className="text-2xl dark:text-primary-text text-light-accent uppercase font-semibold text-center">
+        Login
+      </h2>
       <p className="text-sm text-center dark:text-secondary-text text-light-accent/30 font-medium">
         Welcome back! Please enter your details.
       </p>

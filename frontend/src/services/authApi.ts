@@ -1,5 +1,5 @@
 import type { IAuthPayLoad } from "@/shared/types/auth/authPayLoad.interface";
-import { privateApi } from "@/services/axiosInstance";
+import { privateApi, publicApi } from "@/services/axiosInstance";
 import type { IUser } from "@/shared/types/auth/user.interface";
 
 export class AuthApiService {
@@ -12,13 +12,24 @@ export class AuthApiService {
       variables,
     });
 
-    if (response.data.errors && response.data.errors.length > 0) {
-      const errorMessage = response.data.errors
-        .map((err: any) => err.message)
-        .join(", ");
-      throw new Error(errorMessage || "GraphQL Error");
+    if (response.data?.errors?.length > 0) {
+      throw new Error(response.data.errors[0].message);
     }
+    return response.data.data;
+  }
 
+  private async publicGraphqlRequest<T>(
+    query: string,
+    variables?: Record<string, any>,
+  ): Promise<T> {
+    const response = await publicApi.post("/graphql", {
+      query,
+      variables,
+    });
+
+    if (response.data?.errors?.length > 0) {
+      throw new Error(response.data.errors[0].message);
+    }
     return response.data.data;
   }
 
@@ -46,7 +57,7 @@ export class AuthApiService {
         }
       }
     `;
-    const data = await this.graphqlRequest<{ register: IAuthPayLoad }>(
+    const data = await this.publicGraphqlRequest<{ register: IAuthPayLoad }>(
       mutation,
       { email, phone, password, first_name, last_name },
     );
@@ -70,10 +81,13 @@ export class AuthApiService {
         }
       }
     `;
-    const data = await this.graphqlRequest<{ login: IAuthPayLoad }>(mutation, {
-      email,
-      password,
-    });
+    const data = await this.publicGraphqlRequest<{ login: IAuthPayLoad }>(
+      mutation,
+      {
+        email,
+        password,
+      },
+    );
     return data.login;
   }
 
