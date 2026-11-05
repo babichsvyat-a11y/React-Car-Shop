@@ -5,11 +5,20 @@ import {
   createLoginSchema,
   LoginFormSchema,
 } from "@/shared/schems/login.schema";
+import IApiErrorShape from "@/shared/types/ApiEror.interface";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 export default function LoginForm() {
   const { mutate, isPending } = useLogin();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const fromPath = searchParams.get("from");
+  const safeRedirect =
+    fromPath && fromPath.startsWith("/") && !fromPath.startsWith("//")
+      ? fromPath
+      : "/";
 
   const {
     register,
@@ -29,20 +38,46 @@ export default function LoginForm() {
     mutate(data, {
       onSuccess: () => {
         reset();
+        console.log(1);
+        router.replace(safeRedirect);
+
+        router.refresh();
       },
-      onError: (error: any) => {
-        const errorMessage = error.response?.data?.message || error.message;
-        if (errorMessage.toLowerCase().includes("password")) {
+      onError: (err: unknown) => {
+        const errorObj = err as IApiErrorShape;
+
+        const errorMessage =
+          errorObj.response?.data?.errors?.[0]?.message ||
+          errorObj.response?.data?.message ||
+          errorObj.message ||
+          "";
+
+        const lowerMessage = errorMessage.toLowerCase();
+
+        if (lowerMessage.includes("password")) {
           setError("password", {
             type: "server",
             message: "Incorrect password",
           });
+        } else if (
+          lowerMessage.includes("user") ||
+          lowerMessage.includes("found") ||
+          lowerMessage.includes("email")
+        ) {
+          setError("email", {
+            type: "server",
+            message: "User not found",
+          });
         } else {
-          setError("email", { type: "server", message: "User not found" });
+          setError("root.serverError", {
+            type: "server",
+            message: errorMessage || "Something went wrong. Please try again.",
+          });
         }
       },
     });
   };
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}

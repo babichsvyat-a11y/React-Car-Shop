@@ -5,16 +5,26 @@ import {
   createRegisterSchema,
   RegisterFormSchema,
 } from "@/shared/schems/register.schema";
+import IApiErrorShape from "@/shared/types/ApiEror.interface";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 export default function RegisterForm() {
   const { mutate, isPending } = useRegister();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const fromPath = searchParams.get("from");
+  const safeRedirect =
+    fromPath && fromPath.startsWith("/") && !fromPath.startsWith("//")
+      ? fromPath
+      : "/";
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setError,
     reset,
   } = useForm<RegisterFormSchema>({
     resolver: zodResolver(createRegisterSchema),
@@ -32,12 +42,44 @@ export default function RegisterForm() {
       ...data,
       first_name: data.first_name?.trim() || null,
     };
+
     mutate(mutationPayload, {
       onSuccess: () => {
         reset();
+        router.replace(safeRedirect);
+        router.refresh();
+      },
+      onError: (err: unknown) => {
+        const errorObj = err as IApiErrorShape;
+
+        const errorMessage =
+          errorObj.response?.data?.errors?.[0]?.message ||
+          errorObj.response?.data?.message ||
+          errorObj.message ||
+          "";
+
+        const lowerMessage = errorMessage.toLowerCase();
+
+        if (lowerMessage.includes("email") && lowerMessage.includes("exist")) {
+          setError("email", {
+            type: "server",
+            message: "Email is already registered",
+          });
+        } else if (lowerMessage.includes("phone")) {
+          setError("phone", {
+            type: "server",
+            message: "Phone number is already taken",
+          });
+        } else {
+          setError("root.serverError", {
+            type: "server",
+            message: errorMessage || "Registration failed. Please try again.",
+          });
+        }
       },
     });
   };
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -50,6 +92,7 @@ export default function RegisterForm() {
       <p className="text-sm text-center dark:text-secondary-text text-light-accent/30 font-medium">
         Take you contact info!
       </p>
+
       <label className="hidden" htmlFor="email"></label>
       <input
         className="bg-white border-simply-accent-light border-3 rounded-xl text-secondary-text font-secondary text-base font-semibold pl-4 focus:scale-105 focus:border-brand-accent-light"
@@ -106,6 +149,12 @@ export default function RegisterForm() {
       />
       {errors.last_name && (
         <span className="text-red-500 text-sm">{errors.last_name.message}</span>
+      )}
+
+      {errors.root?.serverError && (
+        <span className="text-red-500 text-sm text-center font-semibold animate-fadeIn">
+          {errors.root.serverError.message}
+        </span>
       )}
 
       <button

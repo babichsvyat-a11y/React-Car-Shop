@@ -1,6 +1,17 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { authApi } from "@/services/authApi";
 
+const clearAuthTokens = () => {
+  localStorage.removeItem("access_token");
+  document.cookie = "access_token=; path=/; max-age=0; SameSite=Lax";
+};
+
+const setAuthTokens = (token: string) => {
+  localStorage.setItem("access_token", token);
+  document.cookie = `access_token=${token}; path=/; max-age=604800; SameSite=Lax`;
+  console.log(2);
+};
+
 export const useMe = () => {
   return useQuery({
     queryKey: ["auth", "me"],
@@ -17,7 +28,7 @@ export const useLogin = () => {
     mutationFn: ({ email, password }: { email: string; password: string }) =>
       authApi.login(email, password),
     onSuccess: (data) => {
-      localStorage.setItem("access_token", data.access_token);
+      setAuthTokens(data.access_token);
       queryClient.setQueryData(["auth", "me"], data.user);
     },
   });
@@ -41,7 +52,7 @@ export const useRegister = () => {
       last_name: string;
     }) => authApi.register(email, phone, password, first_name, last_name),
     onSuccess: (data) => {
-      localStorage.setItem("access_token", data.access_token);
+      setAuthTokens(data.access_token);
       queryClient.setQueryData(["auth", "me"], data.user);
     },
   });
@@ -51,10 +62,10 @@ export const useRefreshToken = () => {
   return useMutation({
     mutationFn: () => authApi.refreshToken(),
     onSuccess: (data) => {
-      localStorage.setItem("access_token", data.access_token);
+      setAuthTokens(data.access_token);
     },
     onError: () => {
-      localStorage.removeItem("access_token");
+      clearAuthTokens();
     },
   });
 };
@@ -65,9 +76,8 @@ export const useLogout = () => {
   return useMutation({
     mutationFn: () => authApi.logout(),
     onSuccess: async () => {
-      await queryClient.cancelQueries({ queryKey: ["auth"] });
-      queryClient.removeQueries({ queryKey: ["auth"] });
-      queryClient.invalidateQueries({ queryKey: ["auth"] });
+      clearAuthTokens();
+      await queryClient.resetQueries({ queryKey: ["auth"], exact: false });
     },
   });
 };
