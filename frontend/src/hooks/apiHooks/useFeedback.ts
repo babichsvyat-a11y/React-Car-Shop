@@ -17,6 +17,7 @@ export const useSendNotification = () => {
 };
 
 export const useCallbacks = () => {
+  console.log("111");
   return useQuery({
     queryKey: ["admin", "callbacks"],
     queryFn: () => feedbackApi.getAllCallbacks(),

@@ -1,5 +1,11 @@
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import {
+  useMutation,
+  useQuery,
+  useQueryClient,
+  UseQueryResult,
+} from "@tanstack/react-query";
 import { authApi } from "@/services/authApi";
+import { IUser } from "@/shared/types/auth/user.interface";
 
 const clearAuthTokens = () => {
   localStorage.removeItem("access_token");
@@ -9,11 +15,10 @@ const clearAuthTokens = () => {
 const setAuthTokens = (token: string) => {
   localStorage.setItem("access_token", token);
   document.cookie = `access_token=${token}; path=/; max-age=604800; SameSite=Lax`;
-  console.log(2);
 };
 
 export const useMe = () => {
-  return useQuery({
+  return useQuery<IUser, Error>({
     queryKey: ["auth", "me"],
     queryFn: () => authApi.queryMe(),
     retry: false,

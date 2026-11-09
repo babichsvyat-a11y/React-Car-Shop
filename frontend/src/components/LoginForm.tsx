@@ -38,7 +38,6 @@ export default function LoginForm() {
     mutate(data, {
       onSuccess: () => {
         reset();
-        console.log(1);
         router.replace(safeRedirect);
 
         router.refresh();

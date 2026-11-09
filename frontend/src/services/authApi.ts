@@ -130,6 +130,7 @@ export class AuthApiService {
         me{
           id
           email
+          phone
           first_name
           last_name
           role

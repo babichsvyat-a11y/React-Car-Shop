@@ -1,15 +1,49 @@
 "use client";
 
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useCartReducer } from "@/hooks/useCartReducer";
 import Image from "next/image";
 import cartImg from "@/assets/icons/cart.svg";
 import comingImg from "@/assets/img/imageCar.svg";
+import { useRequestCallback } from "@/hooks/apiHooks/useFeedback";
+import { useMe } from "@/hooks/apiHooks/useAuth";
+import { CallbackFormSchema } from "@/shared/schems/callback.schema";
+import CarCardSkeleton from "@/components/CarCardSkeleton";
+import { ICar } from "@/shared/types/catalog/car.interface";
 
 const LazyCompList = lazy(() => import("@/components/CompList"));
 
 export default function Cart() {
   const { cartList, btnDeleteCartItem } = useCartReducer();
+  const { data: user, isLoading: isUserLoading } = useMe();
+  const { mutate: requestCallback, isPending } = useRequestCallback();
+  const [compList, setCompList] = useState<ICar[]>([]);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const comment = useMemo(() => {
+    return cartList.map((item) => item.model).join("/-----/");
+  }, [cartList]);
+
+  const userName = user?.last_name;
+  const userPhone = user?.phone;
+
+  function contactToBuyBtn(data: CallbackFormSchema) {
+    requestCallback(data);
+  }
+
+  if (!isMounted) {
+    return (
+      <div className=" text-center font-primary text-xl dark:text-primary-text">
+        <ul>
+          <CarCardSkeleton />
+        </ul>
+      </div>
+    );
+  }
 
   return (
     <main className="flex-auto pt-22 bg-light-simp-bg dark:bg-primary-background px-[10%] flex flex-col gap-10">
@@ -18,31 +52,38 @@ export default function Cart() {
           Your dream cart
         </h1>
         <p className="font-secondary dark:text-primary-text text-light-accent tracking-tighter font-semibold text-left lg:text-lg text-sm transition delay-100 duration-200 easy-in">
-          {cartList.length} items in your cart
+          {!isUserLoading ? cartList.length : 0} items in your cart
         </p>
       </div>
-      {cartList.length === 0 ? (
+      {isUserLoading && cartList.length > 0 ? (
+        <div className=" text-center font-primary text-xl dark:text-primary-text">
+          <ul>
+            <CarCardSkeleton />
+          </ul>
+        </div>
+      ) : cartList.length === 0 ? (
         <div className=" text-center font-primary text-xl dark:text-primary-text">
           <Image
             className="block mx-auto pb-5"
             src={cartImg}
             alt="error image"
+            priority
           />
           <p> {"Cart empty"}</p>
         </div>
       ) : (
-        <div className="flex flex-row gap-4 justify-between lg:pl-[10%]">
+        <div className="flex flex-row gap-4 justify-between lg:pl-[10%] flex-wrap-reverse">
           <ul className="flex flex-col gap-4 flex-3 max-w-200">
             {cartList.map((auto) => (
               <li
-                className="flex flex-row border border-secondary-text p-4 gap-4 justify-between"
+                className="flex flex-row border border-secondary-text p-4 justify-between min-w-95"
                 key={auto.id}
               >
                 <div className="flex flex-row gap-4">
-                  <div className="max-h-50 flex">
+                  <div className="max-h-50 aspect-3/4 flex">
                     {!auto.images || auto.images.length === 0 ? (
                       <Image
-                        className="aspect-3/4 w-full object-cover"
+                        className="max-h-50 aspect-3/4 w-full object-cover"
                         src={comingImg}
                         alt={auto.model}
                         width={380}
@@ -51,7 +92,7 @@ export default function Cart() {
                       />
                     ) : (
                       <Image
-                        className="aspect-3/4 w-full object-cover"
+                        className="max-h-50 aspect-3/4 w-full object-cover"
                         src={`/${auto.images[0].url}`}
                         alt={auto.model}
                         width={380}
@@ -60,13 +101,13 @@ export default function Cart() {
                       />
                     )}
                   </div>
-                  <div className="flex flex-col justify-between gap-4">
+                  <div className="flex flex-col justify-between">
                     <div className="flex flex-col gap-4">
                       <h2 className="font-secondary dark:text-primary-text text-light-accent tracking-tighter font-black text-left lg:text-3xl text-2xl transition delay-100 duration-200 easy-in">
                         {auto.model}
                       </h2>
                       <p className="font-secondary dark:text-primary-text text-light-accent tracking-tighter font-semibold text-left lg:text-xl text-lg transition delay-100 duration-200 easy-in">
-                        Color:
+                        Color:{" "}
                         <span className="font-normal">
                           {auto.colors[0].color.name}
                         </span>
@@ -74,7 +115,14 @@ export default function Cart() {
                     </div>
                     <button
                       type="button"
-                      className="min-w-12 px-6 py-1 rounded-lg dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer font-secondary text-second-text text-md w-max text-primary-text uppercase tracking-tighter font-semibold text-normal"
+                      onClick={() => {
+                        setCompList((prevList) => [...prevList, auto]);
+                      }}
+                      disabled={
+                        compList.some((item) => item.id === auto.id) ||
+                        compList.length >= 3
+                      }
+                      className="min-w-12 px-6 py-1 rounded-lg dark:bg-brand-accent disabled:dark:bg-brand-accent-dark dark:hover:bg-brand-accent-dark bg-light-simp-accent disabled:bg-light-accent hover:bg-light-accent disabled:hover:scale-100 hover:scale-105 transition delay-100 duration-200 easy-in disabled:cursor-no-drop cursor-pointer font-secondary text-second-text text-md w-max text-primary-text uppercase tracking-tighter font-semibold text-normal"
                     >
                       add to comparison
                     </button>
@@ -100,7 +148,7 @@ export default function Cart() {
               </li>
             ))}
           </ul>
-          <div className="max-w-150">
+          <div className="max-w-150 mx-auto">
             <div className="flex-2 flex flex-col border border-secondary-text p-4 gap-4 w-full">
               <div className="flex flex-col gap-2 w-full">
                 <h2 className="font-secondary dark:text-primary-text text-light-accent tracking-normal font-black text-left lg:text-3xl text-2xl transition delay-100 duration-200 easy-in">
@@ -120,8 +168,22 @@ export default function Cart() {
                   </li>
                 ))}
               </ul>
-              <button className="w-full px-6 py-1 rounded-lg dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer font-secondary text-second-text text-md text-primary-text uppercase tracking-tighter font-semibold text-normal">
-                contact to buy
+              <button
+                onClick={
+                  userName && userPhone
+                    ? () =>
+                        contactToBuyBtn({
+                          name: userName,
+                          phone: userPhone,
+                          comment: comment,
+                        })
+                    : undefined
+                }
+                disabled={!userName && !userPhone}
+                type="button"
+                className="w-full px-6 py-1 rounded-lg dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-105 transition delay-100 duration-200 easy-in cursor-pointer font-secondary text-second-text text-md text-primary-text uppercase tracking-tighter font-semibold text-normal"
+              >
+                {isPending ? "Sending.." : "contact to buy!"}
               </button>
             </div>
           </div>
@@ -134,7 +196,7 @@ export default function Cart() {
           </div>
         }
       >
-        <LazyCompList />
+        <LazyCompList compList={compList} setCompList={setCompList} />
       </Suspense>
     </main>
   );

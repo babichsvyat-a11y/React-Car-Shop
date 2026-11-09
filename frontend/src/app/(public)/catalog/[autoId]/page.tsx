@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useCar } from "@/hooks/apiHooks/useCatalog";
 import Image from "next/image";
 import comingImg from "@/assets/img/imageCar.svg";
@@ -17,6 +18,11 @@ export default function ItemInfo({ params }: PageProps) {
   const { autoId } = use(params);
   const { data: auto, isLoading, error } = useCar(autoId);
   const { btnAddToCart } = useCartReducer();
+  const router = useRouter();
+
+  function goToContact() {
+    router.replace("/#contactForm");
+  }
 
   if (isLoading) {
     return (
@@ -131,6 +137,7 @@ export default function ItemInfo({ params }: PageProps) {
               </button>
 
               <button
+                onClick={goToContact}
                 className="w-full font-primary text-primary-text uppercase tracking-tighter font-bold text-sm/4 md:text-lg/4 xl:text-2xl px-2 py-2 dark:bg-brand-accent dark:hover:bg-brand-accent-dark bg-light-simp-accent hover:bg-light-accent hover:scale-110 rounded-md transition delay-100 duration-200 easy-in cursor-pointer"
                 type="button"
               >
