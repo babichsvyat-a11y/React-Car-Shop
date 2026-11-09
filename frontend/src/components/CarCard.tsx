@@ -17,7 +17,7 @@ export default function CarCard(auto: ICar) {
   return (
     <li
       key={auto.id}
-      className="aspect-3/4 md:min-w-83.75 min-w-55 text-primary-text dark:bg-secondary-background bg-secondary-text flex flex-col  md:brightness-80 transition delay-100 duration-200 easy-in"
+      className="aspect-3/4 md:min-w-60 min-w-45 text-primary-text dark:bg-secondary-background bg-secondary-text flex flex-col  md:brightness-80 transition delay-100 duration-200 easy-in"
     >
       <div className="flex flex-col justify-between flex-2 relative w-full">
         <Image
@@ -28,8 +28,10 @@ export default function CarCard(auto: ICar) {
           height={680}
           priority
         />
-        <h3 className="uppercase text-2xl font-semibold">{auto.model}</h3>
-        {style && <div className={styleMark[auto.style]}></div>}
+        <div className="pl-3 pt-2 z-10">
+          <h3 className="uppercase text-2xl font-semibold">{auto.model}</h3>
+          {style && <div className={styleMark[auto.style]}></div>}
+        </div>
 
         <div className="grid grid-cols-2 gap-2 px-[10%] backdrop-brightness-50 z-10">
           <div className="flex flex-col">

@@ -16,15 +16,13 @@ export default function Catalog() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const filteredCars = useMemo(() => {
+    const searchLower = searchAuto.toLowerCase().trim();
     return cars.filter((auto) => {
-      const searchByModel = auto.model
-        .toLowerCase()
-        .includes(searchAuto.toLowerCase());
-      const searchByBrand = auto.brand
-        .toLowerCase()
-        .includes(searchAuto.toLowerCase());
-      const searchByStyle = selectedStyle ? auto.style === selectedStyle : true;
-      return searchByModel || (searchByBrand && searchByStyle);
+      const matchesSearch =
+        auto.model.toLowerCase().includes(searchLower) ||
+        auto.brand.toLowerCase().includes(searchLower);
+      const matchesStyle = selectedStyle ? auto.style === selectedStyle : true;
+      return matchesSearch && matchesStyle;
     });
   }, [cars, searchAuto, selectedStyle]);
 
