@@ -194,15 +194,19 @@ export default function Cart() {
           </div>
         </div>
       )}
-      <Suspense
-        fallback={
-          <div className="dark:text-primary-text text-light-accent">
-            Loading...
-          </div>
-        }
-      >
-        <LazyCompList compList={compList} setCompList={setCompList} />
-      </Suspense>
+      {compList.length > 0 ? (
+        <Suspense
+          fallback={
+            <div className="dark:text-primary-text text-light-accent">
+              Loading...
+            </div>
+          }
+        >
+          <LazyCompList compList={compList} setCompList={setCompList} />
+        </Suspense>
+      ) : (
+        0
+      )}
     </main>
   );
 }
