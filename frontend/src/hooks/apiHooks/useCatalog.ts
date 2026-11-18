@@ -19,8 +19,16 @@ export const useCar = (id: string) => {
 
 export const useCreateCar = () => {
   const queryClient = useQueryClient();
+
   return useMutation({
-    mutationFn: (newCar: Omit<ICar, "id">) => catalogApi.createCar(newCar),
+    mutationFn: (data: Omit<ICar, "id" | "is_available" | "created_at">) => {
+      const carPayload: Omit<ICar, "id"> = {
+        ...data,
+        is_available: true,
+        created_at: new Date().toISOString(),
+      };
+      return catalogApi.createCar(carPayload);
+    },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["cars"] });
     },

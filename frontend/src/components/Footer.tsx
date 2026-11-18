@@ -1,15 +1,17 @@
-const Footer = () => {
+import Link from "next/link";
+
+export default function Footer() {
   return (
     <footer className=" dark:text-primary-text text-light-accent font-medium text-sm font-secondary dark:border-t-brand-accent border-t-transparent border-t-4 transition delay-100 duration-200 easy-in">
       <div className="flex flex-row justify-between px-[10%] py-10">
         <div className="flex flex-col gap-5">
           <div className="">
-            <a
+            <Link
               className="font-primary text-[32px] font-black italic text-brand-accent"
               href="/"
             >
               Fire<span className="text-primary-text">Wheel</span>
-            </a>
+            </Link>
           </div>
           <p className="italic font-medium dark:font-light dark:text-secondary-text text-light-accent/50 transition delay-100 duration-200 easy-in">
             "Code is like DNA, but spun from our thoughts, desires and dreams"
@@ -61,6 +63,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

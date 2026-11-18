@@ -11,6 +11,7 @@ function createJwt(user: any) {
     email: user.email,
     firstName: user.first_name,
     lastName: user.last_name,
+    role: user.role,
   };
 
   const accessToken = jwt.sign(payload, secret, {

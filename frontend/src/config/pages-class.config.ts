@@ -26,6 +26,22 @@ class PagesConfig {
   get ADMIN() {
     return `/admin`;
   }
+
+  get USERS() {
+    return `/admin/users`;
+  }
+
+  get PRODUCTS() {
+    return `/admin/products`;
+  }
+
+  get POST() {
+    return `/admin/post`;
+  }
+
+  get PAYMENTS() {
+    return `/admin/payments`;
+  }
 }
 
 export const PAGES = new PagesConfig();

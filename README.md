@@ -1,159 +1,123 @@
-# Luxury & Sport Cars Platform (`React-Car-Shop`)
+<div align="center">
 
-A modern, high-performance e-commerce and reservation platform designed for renting, scheduling test drives, and acquiring luxury and sports automobiles. Built with a robust microservices architecture featuring an NGINX API Gateway, asynchronous task processing, caching, and a modular React frontend.
+# 🚗 React Car Shop (Microservices Architecture)
+
+[![Project Status: Archived / Learning Phase](https://img.shields.io/badge/Status-Archived%20%2F%20Completed%20Learning-blue?style=for-the-badge)]()
+[![Tech Stack](https://img.shields.io/badge/Stack-Next.js%20%7C%20Node.js%20%7C%20Docker%20%7C%20GraphQL-green?style=for-the-badge)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+_A containerized full-stack e-commerce platform for cars, built to explore microservices architecture, asynchronous task processing, and modern web technologies._
+
+</div>
 
 ---
 
-## 🎯 Target Audience
+## 📌 Project Status & Learning Outcomes
 
-- **Young & Wealthy Enthusiasts:** Seeking seamless online booking for high-end test drives and sports car purchases.
-- **Gift Shoppers & Parents:** Looking to arrange exclusive driving experiences and memorable luxury car rentals for family members or events.
+This project served as an intensive hands-on sandbox for mastering **microservices design patterns, backend scalability, and modern frontend development**.
+
+- **Current Status:** **Archived / Paused.** The core microservices and frontend migration have been successfully completed, and the project has fulfilled its educational purpose.
+- **What's Done:** Fully operational microservices backend, containerized infrastructure via Docker, complete frontend rewrite to **Next.js**, HTTP-only cookie authentication, and the initial implementation of the Admin Panel.
+- **What's Left Out / Not Implemented:** SEO optimization, full test coverage, and remaining views for the Admin Panel.
 
 ---
 
-## 🏗️ System Architecture Overview
+## 🏗 System Architecture
 
-The platform uses a microservices pattern with Docker containerization, route proxying via NGINX API Gateway, asynchronous workers for heavy tasks, and caching layers for optimized performance.
+The application is split into decoupled microservices coordinated via an API Gateway, utilizing Redis for caching and message queuing.
 
+```text
+       [ Client (Next.js Frontend) ]
+                    │
+                    ▼
+          [ Nginx API Gateway ]
+        ┌───────────┼───────────┐
+        ▼           ▼           ▼
+   [ Catalog ]  [ Payment ] [ Auth (GraphQL) ]
+        │           │           │
+        └───────────┼───────────┘
+                    ▼
+    [ Fastify + BullMQ + Redis + PostgreSQL ]
+    🛠 Tech Stack
+Frontend
+Framework: Next.js (App Router, Server/Client components)
+
+Styling: Tailwind CSS / Modern CSS modules
+
+<p align="center">
+  <img src="./assets/demo-1.gif" width="500" alt="UI DEMO 1" />
+</p>
+
+<p align="center">
+  <img src="./assets/demo-2.gif" width="500" alt="UI DEMO 2" />
+</p>
+
+
+Backend & Microservices
+API Gateway: Nginx
+
+Catalog Service: Express.js, PostgreSQL (Prisma ORM), Redis (Caching)
+
+Payment Service: Express.js, PostgreSQL
+
+Notification & Feedback Service: Fastify, BullMQ (Background job queues), Redis, PostgreSQL
+
+Auth Service: GraphQL (Yoga), secure HTTP-only cookies for session management
+
+DevOps & Infrastructure
+Containerization: Docker & Docker Compose
+
+Message Broker & Queue: Redis + BullMQ
+
+✨ Key Features Implemented
+Microservices Communication: Independent backend services communicating behind a single Nginx reverse proxy / API Gateway.
+
+Next.js Migration: Fully refactored frontend from standard Vite/React to Next.js for better routing and performance capabilities.
+
+Secure Authentication: Implementation of cookie-based authentication (HTTP-only cookies) via a dedicated GraphQL Auth Service.
+
+Asynchronous Background Processing: Integrated BullMQ with Redis to handle queue-based tasks (notifications and feedback processing) smoothly without blocking the main event loop.
+
+Admin Panel (Incomplete): Started structural implementation for product management and operational oversight.
+
+Full Dockerization: Run the entire multi-container architecture locally using a single command.
+
+🚀 Getting Started (Local Development)
+Prerequisites
+Docker & Docker Compose installed on your machine.
+
+Node.js (v18+) if you want to run services locally outside containers.
+
+Installation & Running
+Clone the repository:
+
+Bash
+git clone [https://github.com/YourUsername/React-Car-Shop.git](https://github.com/YourUsername/React-Car-Shop.git)
+cd React-Car-Shop
+Configure Environment Variables:
+Create .env files for each microservice based on their respective .env.example templates.
+
+Spin up the infrastructure with Docker Compose:
+
+Bash
+docker-compose up --build
+Access the application:
+
+Frontend: http://localhost:3000 (or respective configured port)
+
+API Gateway: http://localhost:8080
+
+📚 What I Learned
+Through building and eventually archiving this project, I gained deep practical experience in:
+
+Designing distributed systems and separating monoliths into domain-driven microservices.
+
+Implementing secure cookie-based auth flows in modern web apps.
+
+Managing background job queues with BullMQ and Redis.
+
+Writing clean API documentation and containerizing multi-service environments with Docker.
+
+📜 License
+This project is open-source and available under the MIT License.
 ```
-                                  +-------------------+
-                                  |   React SPA       |
-                                  |   (Tailwind v4)   |
-                                  +---------+---------+
-                                            |
-                                            v
-                                  +-------------------+
-                                  | NGINX API Gateway |
-                                  |   (Port 8000)     |
-                                  +---------+---------+
-                                            |
-     +-------------------+------------------+-------------------+-------------------+
-     |                   |                                      |                   |
-     v                   v                                      v                   v
-+----+----------+  +-----+------------+                  +------+-----------+  +----+-------------+
-| Catalog       |  | Auth Service     |                  | Payment          |  | Feedback         |
-| Service       |  | (GraphQL Yoga)   |                  | Service          |  | Service          |
-| (Express/REST)|  | PostgreSQL       |                  | (Express/REST)   |  | (Fastify/BullMQ) |
-| PG + Redis    |  | Redis            |                  | PostgreSQL       |  | PG + Redis       |
-+---------------+  +------------------+                  +------------------+  +------------------+
-```
-
----
-
-## 🧩 Microservices Breakdown
-
-| Service Name         | Path Directory                      | Tech Stack                                                     | Responsibilities                                                                            |
-| :------------------- | :---------------------------------- | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| **Frontend**         | `/frontend`                         | React 19, Vite, Tailwind CSS v4, Redux Toolkit, TanStack Query | Responsive client UI, car catalog display, test drive booking, and shopping cart.           |
-| **API Gateway**      | `/gateway`                          | NGINX                                                          | Centralized entry point (`:8000`), reverse proxying, CORS management, headers sanitization. |
-| **Auth Service**     | `/backend/services/authService`     | Express, GraphQL Yoga, PostgreSQL, Argon2, Redis               | User registration, authentication, JWT tokens management, and GraphQL schema (`/graphql`).  |
-| **Catalog Service**  | `/backend/services/catalogService`  | Express, REST API, PostgreSQL, Redis                           | Vehicle listing catalog, specs management, availability checking, and Redis caching.        |
-| **Payment Service**  | `/backend/services/paymentService`  | Express, REST API, PostgreSQL                                  | Secure payment transactions, deposit handling for test drives, and purchase orders.         |
-| **Feedback Service** | `/backend/services/feedbackService` | Fastify, BullMQ, Redis, PostgreSQL, Nodemailer                 | Asynchronous background processing, notification dispatching (Email/SMS), user reviews.     |
-
----
-
-## 📂 Project Repository Structure
-
-```
-React-Car-Shop/
-├── .postman/                   # Postman collection files for API testing
-├── backend/
-│   ├── logs/                   # Aggregated server logs (combined.log, error.log)
-│   └── services/               # Backend Microservices
-│       ├── authService/        # Auth & Users Microservice (GraphQL)
-│       ├── catalogService/     # Catalog & Inventory Microservice (REST)
-│       ├── feedbackService/    # Notifications & Reviews Microservice (Fastify + BullMQ)
-│       └── paymentService/     # Payments Microservice (REST)
-├── frontend/                   # React Single Page Application (Feature-Sliced Design)
-├── gateway/                    # API Gateway (NGINX configuration)
-├── postman/                    # Additional Postman environments & tests
-├── .env                        # Central root environment variables file
-├── .gitignore
-├── docker-compose.yml          # Container orchestration for all microservices & databases
-└── README.md                   # Root documentation
-```
-
----
-
-## ⚙️ Prerequisites & Environment Setup
-
-### Prerequisites
-
-- [Docker Desktop](https://www.docker.com/) (v20.10+) with **Docker Compose**
-- [Node.js](https://nodejs.org/) (v18+ or v20+) for local development
-- [Git](https://git-scm.com/)
-
-### Central `.env` Configuration
-
-Create a `.env` file in the project root folder based on the required service ports and DB connection strings:
-
-```env
-# General
-NODE_ENV=development
-
-# NGINX Gateway Port
-GATEWAY_PORT=8000
-
-# PostgreSQL Configuration
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres_password
-POSTGRES_DB=car_shop_db
-
-# Redis Configuration
-REDIS_HOST=redis
-REDIS_PORT=6379
-
-# Service Secrets & Tokens
-JWT_ACCESS_SECRET=your_jwt_access_secret_key
-JWT_REFRESH_SECRET=your_jwt_refresh_secret_key
-INTERNAL_API_SECRET=your_shared_internal_secret
-
-# SMTP Mailer Settings
-SMTP_HOST=smtp.mailtrap.io
-SMTP_PORT=2525
-SMTP_USER=your_smtp_user
-SMTP_PASS=your_smtp_password
-```
-
----
-
-## 🚀 Quick Start with Docker Compose
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/your-username/React-Car-Shop.git
-   cd React-Car-Shop
-   ```
-
-2. **Configure environment variables:**
-
-   ```bash
-   cp .env.example .env  # Or create your .env manually
-   ```
-
-3. **Spin up the entire stack:**
-
-   ```bash
-   docker-compose up --build -d
-   ```
-
-4. **Access the application:**
-   - **Frontend UI:** `http://localhost:3000` (or as proxied by gateway)
-   - **API Gateway Entry Point:** `http://localhost:8000`
-   - **GraphQL Auth Endpoint:** `http://localhost:8000/graphql`
-   - **Catalog API Endpoint:** `http://localhost:8000/api/v1/catalog`
-   - **Payment API Endpoint:** `http://localhost:8000/api/v1/payment`
-   - **Feedback API Endpoint:** `http://localhost:8000/api/v1/feedback`
-
----
-
-## 🧪 Testing
-
-- **Postman Collection:** You can import the API collection located in `.postman/` or `postman/` to test all microservices endpoints via NGINX Gateway (`:8000`).
-- **Frontend Tests:**
-  ```bash
-  cd frontend
-  npm run test
-  ```

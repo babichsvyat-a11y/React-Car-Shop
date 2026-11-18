@@ -37,6 +37,7 @@ const refreshTokenUser = async (curentToken: string) => {
     data: {
       token: newRefreshToken,
       user_id: tokenRecord.user.id,
+      role: tokenRecord.user.role,
       expires_at: timeMark,
     },
   });

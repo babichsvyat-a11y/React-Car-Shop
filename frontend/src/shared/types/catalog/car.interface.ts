@@ -20,7 +20,7 @@ export interface ICar {
   transmission: string;
   drive_type: string;
   is_available: boolean;
-  created_at: Date;
+  created_at: string;
   colors: ICarColor[];
   images: IImage[] | undefined;
 }
