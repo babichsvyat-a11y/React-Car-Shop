@@ -26,6 +26,14 @@ This project served as an intensive hands-on sandbox for mastering **microservic
 
 The application is split into decoupled microservices coordinated via an API Gateway, utilizing Redis for caching and message queuing.
 
+<p align="center">
+  <img src="./assets/demo-1.gif" width="500" alt="UI DEMO 1" />
+</p>
+
+<p align="center">
+  <img src="./assets/demo-2.gif" width="500" alt="UI DEMO 2" />
+</p>
+
 ```text
        [ Client (Next.js Frontend) ]
                     │
@@ -43,15 +51,6 @@ Frontend
 Framework: Next.js (App Router, Server/Client components)
 
 Styling: Tailwind CSS / Modern CSS modules
-
-<p align="center">
-  <img src="./assets/demo-1.gif" width="500" alt="UI DEMO 1" />
-</p>
-
-<p align="center">
-  <img src="./assets/demo-2.gif" width="500" alt="UI DEMO 2" />
-</p>
-
 
 Backend & Microservices
 API Gateway: Nginx
